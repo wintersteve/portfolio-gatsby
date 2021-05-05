@@ -21,5 +21,11 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+          postCssPlugins: [require("tailwindcss")],
+          },
+      },
   ],
 };
