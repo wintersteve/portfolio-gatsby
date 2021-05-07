@@ -24,8 +24,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
-          postCssPlugins: [require("tailwindcss")],
-          },
+        postCssPlugins: [require("tailwindcss")],
       },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Montserrat`],
+        display: "swap",
+      },
+    },
   ],
 };
