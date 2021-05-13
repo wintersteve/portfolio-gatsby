@@ -5,3 +5,16 @@ body {
 p {
   font-family: "Open Sans";
 }
+
+*:focus:not(.focus-visible) {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 2px solid rgb(31 41 55 / 15%) !important;
+}
+
+input:focus,
+textarea:focus {
+  outline: none !important;
+}
