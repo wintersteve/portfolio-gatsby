@@ -1,0 +1,40 @@
+[
+  {
+    "title": "FRONT END",
+    "description": "I like to code things from scratch, and enjoy bringing ideas to life in the browser.",
+    "categories": [
+      {
+        "title": "Languages",
+        "values": ["HTML", "CSS", "JavaScript", "TypeScript"]
+      },
+      {
+        "title": "JavaScript Frameworks",
+        "values": ["React", "Angular", "Vue", "Nuxt"]
+      },
+      {
+        "title": "CSS Frameworks",
+        "values": ["Tailwind", "Bootstrap"]
+      }
+    ]
+  },
+  {
+    "title": "BACK END",
+    "description": "I value simple content structure, clean design patterns, and thoughtful interactions.",
+    "categories": [
+      {
+        "title": "Languages",
+        "values": ["Node", "Go", "Java", "JavaScript", "TypeScript"]
+      }
+    ]
+  },
+  {
+    "title": "OTHER",
+    "description": "I value simple content structure, clean design patterns, and thoughtful interactions.",
+    "categories": [
+      {
+        "title": "Testing",
+        "values": ["Cypress", "Mocha"]
+      }
+    ]
+  }
+]
