@@ -10,8 +10,8 @@ const isEven = (num) => num % 2 === 0;
 
 function Projects() {
   return (
-    <section className="max-w-screen-2xl mb-40 m-auto" id="projects">
-      <div className="text-center">
+    <section className="max-w-screen-2xl mb-20 lg:mb-40 m-auto" id="projects">
+      <div className="text-center px-20">
         <h2 className="mb-5 font-bold text-5xl text-gray-700">My Projects</h2>
         <p className="mb-16 text-gray-500 text-lg">
           Here are some projects I've worked on recently. You would like to see
@@ -20,14 +20,14 @@ function Projects() {
       </div>
       {projects.map((project, index) => (
         <article
-          className="items-center grid grid-cols-2 mx-5 mb-20"
+          className="items-center flex flex-col-reverse lg:grid lg:grid-cols-2 mx-4 mb-10 lg:mb-20"
           key={project}
         >
           <div
-            className={`row-start-1 " ${
+            className={`row-start-1 ${
               isEven(index)
-                ? "col-start-1 pr-20 pl-10"
-                : "col-start-2 pl-20 pr-10"
+                ? "col-start-1 py-10 px-6 lg:pr-20 lg:pl-10"
+                : "col-start-2 py-10 px-6 lg:pl-20 lg:pr-10"
             }`}
           >
             <h4 className="font-bold mb-5 text-2xl text-gray-600">
@@ -53,7 +53,7 @@ function Projects() {
               </li>
             </ul>
             <a
-              className="font-bold inline-block p-5 rounded text-sm"
+              className="font-bold inline-block p-5 rounded text-sm w-full lg:w-auto"
               style={{ backgroundColor: "#eefaf5", color: "rgb(87 117 105)" }}
             >
               Take me to Project Title

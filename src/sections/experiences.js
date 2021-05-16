@@ -63,13 +63,16 @@ function Experiences() {
   };
 
   return (
-    <section id="experience" className="flex mx-12 py-36 px-80">
-      <div className="min-w-max">
+    <section
+      id="experience"
+      className="lg:flex lg:mx-12 py-20 lg:py-36 px-6 lg:px-80"
+    >
+      <div>
         <h2 className="font-bold mb-5 text-4xl text-gray-700">Experience</h2>
-        <ul>
+        <ul className="flex lg:block overflow-x-scroll mb-6 lg:mb-0">
           {experiences.map((experience, index) => (
             <li
-              className={`border-l-4 text-sm`}
+              className={`border-b-2 lg:border-b-0 lg:border-l-4 text-sm`}
               style={{
                 transition: "all .3s cubic-bezier(0.645,0.045,0.355,1)",
                 ...(activeTab === index
@@ -79,7 +82,7 @@ function Experiences() {
               key={experience.title}
             >
               <button
-                className={`py-6 px-5 text-gray-400 ${
+                className={`min-w-max py-4 lg:py-6 px-3 lg:px-5 text-gray-400 ${
                   activeTab === index && "text-gray-900"
                 }`}
                 onClick={() => handleClick(index)}
@@ -90,11 +93,11 @@ function Experiences() {
           ))}
         </ul>
       </div>
-      <div className="fade ml-20 py-2">
+      <div className="fade lg:ml-20 py-2">
         <h4 className="font-semibold text-lg">{experiences[activeTab].role}</h4>
         <time className="block mb-3">{experiences[activeTab].date}</time>
         <p className="mb-5">{experiences[activeTab].description}</p>
-        <ul className="list-disc ml-5">
+        <ul className="list-disc ml-6 lg:ml-5">
           {experiences[activeTab].tools.map((tool) => (
             <li className="p-2 py-1" key={tool}>
               {tool}

@@ -6,7 +6,7 @@ import githubSvg from "../images/github.svg";
 function Footer() {
   return (
     <footer
-      className="text-white text-center px-40 py-28"
+      className="text-white text-center px-20 lg:px-40 py-20 lg:py-28"
       style={{ backgroundColor: "#1f2937" }}
     >
       <h5 className="font-bold">More about me</h5>

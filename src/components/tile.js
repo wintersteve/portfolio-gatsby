@@ -1,8 +1,8 @@
 import React from "react";
 
-function Tile({ height, images, label }) {
+function Tile({ className, height, images, label }) {
   return (
-    <button className="bg-gray-100 p-16 w-full rounded relative">
+    <button className={`bg-gray-100 p-16 w-full rounded relative ${className}`}>
       <h3 className="absolute font-semibold text-sm text-gray-400 top-3 left-3">
         {label.toUpperCase()}
       </h3>

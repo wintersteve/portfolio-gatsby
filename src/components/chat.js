@@ -10,7 +10,7 @@ function Chat() {
   };
 
   return (
-    <aside className="bottom-12 fixed right-12 z-10">
+    <aside className="bottom-6 lg:bottom-12 fixed right-6 lg:right-12 z-10">
       <button
         className="bg-gray-300 p-4 rounded-full shadow-4xl"
         onClick={toggle}
@@ -20,7 +20,7 @@ function Chat() {
 
       {isOpen && (
         <form
-          className={`absolute bg-white bottom-0 right-0 p-5 rounded transition-all w-96 shadow-4xl ${
+          className={`fixed lg:absolute bg-white bottom-0 right-0 p-5 lg:rounded transition-all w-full lg:w-96 shadow-4xl ${
             isOpen && "fade"
           }`}
         >

@@ -37,19 +37,21 @@ function Header({ isScrollTop, lastScrollY }) {
   return (
     <>
       <header
-        className={`bg-white duration-500 py-9 px-56 flex font-bold justify-between items-center sticky transition-all z-50 ${
+        className={`bg-white duration-500 py-7 lg:py-9 px-8 md:px-28 2xl:px-56 flex font-bold justify-between items-center shadow-lg sticky transform transition-all top-0 z-50 ${
           lastScrollY === 0 && "shadow-none"
-        } ${isScrollTop ? "-top-32 shadow-2xl" : "top-0 shadow-lg"}`}
+        } ${
+          lastScrollY > 100 && isScrollTop ? "-translate-y-32" : "translate-y-0"
+        }`}
       >
         <h1>
           <span className="text-gray-600 text-xl font-bold mr-3">
             Steve Winter
           </span>
-          <span className="text-gray-400 text-xs font-bold">
+          <span className="block xl:inline text-gray-400 text-xs font-bold">
             Full-Stack Web Developer
           </span>
         </h1>
-        <nav>
+        <nav className="hidden lg:block">
           {navItems.map((item) => (
             <FragmentLink id={item.id} key={item.id}>
               {item.label}
@@ -59,7 +61,7 @@ function Header({ isScrollTop, lastScrollY }) {
             Resumé
           </button>
         </nav>
-        <Hamburger />
+        <Hamburger className="lg:hidden" />
       </header>
     </>
   );

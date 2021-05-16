@@ -14,22 +14,25 @@ const FORM = {
 
 function Contact() {
   return (
-    <section className="bg-gray-100 text-center py-40" id="contact">
+    <section
+      className="bg-gray-100 text-center py-16 lg:py-40 px-2"
+      id="contact"
+    >
       <h2 className="font-bold mb-5 text-4xl text-gray-700">
         Interested in collaborating?
       </h2>
-      <p className="mb-10">
+      <p className="mb-10 px-20">
         Feel free to contact me to discuss your needs or partnership
         opportunities.{" "}
       </p>
-      <form className="w-6/12 mb-8 mx-auto">
-        <div className="grid grid-cols-2 gap-5 mb-5">
+      <form className="w-9/12 lg:w-6/12 mb-8 mx-auto">
+        <div className="lg:grid lg:grid-cols-2 gap-5 lg:mb-5">
           <input
-            className="bg-gray-200 p-8 rounded-xl"
+            className="bg-gray-200 mb-5 lg:mb-0 p-8 rounded-xl w-full lg:w-auto"
             placeholder={FORM.name.placeholder}
           />
           <input
-            className="bg-gray-200 p-8 rounded-xl"
+            className="bg-gray-200 mb-5 lg:mb-0 p-8 rounded-xl w-full lg:w-auto"
             placeholder={FORM.email.placeholder}
           />
         </div>
@@ -40,7 +43,7 @@ function Contact() {
           ></textarea>
         </div>
       </form>
-      <button className="border-2 bg-gray-700 border-solid font-bold py-3 px-8 rounded-full text-white">
+      <button className="border-2 bg-gray-700 border-solid font-semibold py-3 px-8 rounded-full text-white">
         SUBMIT
       </button>
     </section>

@@ -37,8 +37,8 @@ function Certificates() {
   };
 
   return (
-    <section id="certificates" className="my-40">
-      <div className="items-center grid grid-cols-2 mx-40 mb-10">
+    <section id="certificates" className="my-20 lg:my-40">
+      <div className="items-center grid grid-cols-2 mx-6 lg:mx-40 mb-10">
         <h2 className="font-bold text-4xl text-gray-600">Certificates</h2>
         <div className="grid grid-cols-2 justify-self-end">
           <button
@@ -64,15 +64,14 @@ function Certificates() {
       </div>
       <div
         className="overflow-x-scroll"
-        style={{ scrollBehavior: "smooth", scrollbarWidth: "none" }}
+        style={{ scrollBehavior: "smooth" }}
         onScroll={handleScroll}
         ref={scrollContainer}
       >
-        <div className="flex px-40">
+        <div className="flex px-6 lg:px-40">
           {certificates.map((certificate) => (
             <div
-              className="mr-8"
-              style={{ flex: "0 0 33.3333%", maxWidth: "33.3333%" }}
+              className="mr-4 lg:mr-8 flex-5/6 lg:flex-2/6"
               key={certificate.title}
             >
               <img className="shadow-lg" src={certificate.image} />

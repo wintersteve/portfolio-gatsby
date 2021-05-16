@@ -3,13 +3,17 @@ import img from "../images/banner.jpg";
 
 function Banner() {
   return (
-    <section className="after mx-6 relative rounded overflow-hidden">
-      <div className="absolute text-white text-right transform -translate-y-1/2 top-1/2 right-40 z-10">
-        <h2 className="font-semibold text-7xl mb-4">
+    <section className="after lg:mx-6 relative rounded overflow-hidden">
+      <div className="absolute pb-3 text-white text-right transform -translate-y-1/2 top-1/2 right-12 lg:right-44 z-10">
+        <h2 className="font-semibold text-6xl lg:text-7xl mb-5">
+          <span className="block font-normal mb-5 mr-1 opacity-95 text-xl">
+            Hi, I am Steve Winter
+          </span>
           Full-Stack <br /> <span className="opacity-70">Web Developer</span>
         </h2>
-        <h3 className="opacity-60 text-xl">
-          Fast, performant and optimized applications.
+        <h3 className="opacity-60 mr-1 text-lg">
+          I'm a Germany-based software engineer <br />
+          who excels at building digital experiences.
         </h3>
       </div>
       <img
