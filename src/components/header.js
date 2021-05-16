@@ -57,9 +57,13 @@ function Header({ isScrollTop, lastScrollY }) {
               {item.label}
             </FragmentLink>
           ))}
-          <button className="border-2 ml-4 px-3 py-2 font-semibold rounded-sm text-sm text-gray-500">
+          <a
+            className="border-2 ml-4 px-3 py-2 font-semibold rounded-sm text-sm text-gray-500"
+            download
+            href="/resume.pdf"
+          >
             Resumé
-          </button>
+          </a>
         </nav>
         <Hamburger className="lg:hidden" />
       </header>
