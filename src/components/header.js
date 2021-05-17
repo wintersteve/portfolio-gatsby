@@ -37,7 +37,7 @@ function Header({ isScrollTop, lastScrollY }) {
   return (
     <>
       <header
-        className={`bg-white duration-500 py-7 lg:py-9 px-8 md:px-28 2xl:px-56 flex font-bold justify-between items-center shadow-lg sticky transform transition-all top-0 z-50 ${
+        className={`bg-white duration-500 py-7 lg:py-9 px-8 md:px-16 2xl:px-56 flex font-bold justify-between items-center shadow-lg sticky transform transition-all top-0 z-50 ${
           lastScrollY === 0 && "shadow-none"
         } ${
           lastScrollY > 100 && isScrollTop ? "-translate-y-32" : "translate-y-0"
@@ -58,7 +58,7 @@ function Header({ isScrollTop, lastScrollY }) {
             </FragmentLink>
           ))}
           <a
-            className="border-2 ml-4 px-3 py-2 font-semibold rounded-sm text-sm text-gray-500"
+            className="hover:bg-gray-100 border-2 ml-4 px-3 py-2 font-semibold rounded-sm transition-all text-sm text-gray-500 hover:text-gray-600"
             download
             href="/resume.pdf"
           >

@@ -12,7 +12,7 @@ function Services() {
   return (
     <section
       id="services"
-      className="max-w-screen-2xl m-auto my-20 px-6 lg:px-20 lg:grid lg:grid-cols-2 gap-10"
+      className="max-w-screen-2xl m-auto my-20 px-6 md:px-12 2xl:px-20 lg:grid lg:grid-cols-2 2xl:gap-10"
     >
       <div className="lg:pr-12">
         <div className="mb-10 lg:mb-0">

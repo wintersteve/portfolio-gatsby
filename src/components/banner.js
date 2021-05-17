@@ -1,26 +1,30 @@
 import React from "react";
-import img from "../images/banner.jpg";
+import avatar from "../images/avatar.svg";
 
 function Banner() {
   return (
-    <section className="after lg:mx-6 relative rounded overflow-hidden">
-      <div className="absolute pb-3 text-white text-right transform -translate-y-1/2 top-1/2 right-12 lg:right-44 z-10">
-        <h2 className="font-semibold text-6xl lg:text-7xl mb-5">
-          <span className="block font-normal mb-5 mr-1 opacity-95 text-xl">
+    <section className="bg-gray-100 flex flex-col items-center justify-center py-20 md:py-28 lg:py-48 2xl:mx-6 relative">
+      <div className="flex flex-col md:flex-row items-start">
+        <img
+          className="h-48 md:h-80 mx-auto md:mx-0 mb-12 md:mb-0 md:mr-12"
+          src={avatar}
+        />
+        <div className="px-6 md:px-0 mb-6 md:mb-0">
+          <h2 className="font-semibold ml-1 mb-1 md:mb-4 opacity-75 text-lg">
             Hi, I am Steve Winter
-          </span>
-          Full-Stack <br /> <span className="opacity-70">Web Developer</span>
-        </h2>
-        <h3 className="opacity-60 mr-1 text-lg">
-          I'm a Germany-based software engineer <br />
-          who excels at building digital experiences.
-        </h3>
+          </h2>
+          <h3 className="font-bold mb-6 text-5xl lg:text-7xl">
+            <span className="block mb-2">Full-Stack</span>
+            <span className="opacity-75">Web Developer</span>
+          </h3>
+          <p className="max-w-md ml-2 opacity-75 text-md">
+            I'm a Germany-based software engineer who excels at building digital
+            experiences. Currently, I'm an engineer at Upstatement focused on
+            building accessible, human-centered products.
+          </p>
+        </div>
       </div>
-      <img
-        className="object-cover w-full rounded"
-        src={img}
-        style={{ height: "65vh" }}
-      />
+
       <svg
         className="editorial"
         xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +43,7 @@ function Banner() {
           />
         </defs>
         <g className="parallax3">
-          <use href="#gentle-wave" x="50" y="9" fill="#374151" />
+          <use href="#gentle-wave" x="50" y="9" fill="rgb(229, 231, 235)" />
         </g>
         <g className="parallax4">
           <use href="#gentle-wave" x="50" y="6" fill="#fff" />

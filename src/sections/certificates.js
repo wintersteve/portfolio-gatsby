@@ -38,7 +38,7 @@ function Certificates() {
 
   return (
     <section id="certificates" className="my-20 lg:my-40">
-      <div className="items-center grid grid-cols-2 mx-6 lg:mx-40 mb-10">
+      <div className="items-center grid grid-cols-2 mx-6 md:mx-12 lg:mx-12 2xl:mx-40 mb-10">
         <h2 className="font-bold text-4xl text-gray-600">Certificates</h2>
         <div className="grid grid-cols-2 justify-self-end">
           <button
@@ -68,10 +68,10 @@ function Certificates() {
         onScroll={handleScroll}
         ref={scrollContainer}
       >
-        <div className="flex px-6 lg:px-40">
+        <div className="flex px-6 md:px-12 lg:px-12 2xl:px-40">
           {certificates.map((certificate) => (
             <div
-              className="mr-4 lg:mr-8 flex-5/6 lg:flex-2/6"
+              className="mr-4 2xl:mr-8 flex-5/6 lg:flex-2/6"
               key={certificate.title}
             >
               <img className="shadow-lg" src={certificate.image} />

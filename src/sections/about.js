@@ -3,12 +3,11 @@ import React from "react";
 function About() {
   return (
     <section
-      className="lg:mx-6 py-20 lg:py-52 px-14 lg:px-96"
+      className="2xl:mx-6 py-20 md:py-28 lg:py-52 px-14 md:px-28 lg:px-48 xl:px-72 2xl:px-96"
       id="about"
       style={{ backgroundColor: "rgb(238, 250, 245)" }}
     >
       <h2 className="font-bold mb-5 text-4xl text-gray-700">About me</h2>
-      <h4 className="font-semibold mb-1 text-md">Hi, I am Steve Winter</h4>
       <p className="mb-5">
         Since beginning my journey as a freelance designer nearly 10 years ago,
         I've done remote work for agencies, consulted for startups, and

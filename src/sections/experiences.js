@@ -65,7 +65,7 @@ function Experiences() {
   return (
     <section
       id="experience"
-      className="lg:flex lg:mx-12 py-20 lg:py-36 px-6 lg:px-80"
+      className="lg:flex lg:mx-12 py-20 lg:py-28 xl:py-36 px-6 md:px-12 lg:px-18 xl:px-32 2xl:px-72"
     >
       <div>
         <h2 className="font-bold mb-5 text-4xl text-gray-700">Experience</h2>
@@ -95,7 +95,9 @@ function Experiences() {
       </div>
       <div className="fade lg:ml-20 py-2">
         <h4 className="font-semibold text-lg">{experiences[activeTab].role}</h4>
-        <time className="block mb-3">{experiences[activeTab].date}</time>
+        <time className="block italic mb-3 text-sm">
+          {experiences[activeTab].date}
+        </time>
         <p className="mb-5">{experiences[activeTab].description}</p>
         <ul className="list-disc ml-6 lg:ml-5">
           {experiences[activeTab].tools.map((tool) => (

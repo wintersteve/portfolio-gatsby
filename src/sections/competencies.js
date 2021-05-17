@@ -6,9 +6,9 @@ import competencies from "../data/competencies.json";
 
 function Competencies() {
   return (
-    <section className="lg:mx-6" id="competencies">
+    <section className="2xl:mx-6" id="competencies">
       <div
-        className="px-10 lg:px-52 pb-48 lg:pb-60 pt-20 lg:pt-40 relative"
+        className="px-10 md:px-16 lg:px-20 xl:px-36 2xl:px-52 pb-48 lg:pb-60 pt-20 lg:pt-40 relative"
         style={{
           background: "linear-gradient(45deg, rgb(31, 41, 55), #111827)",
         }}
@@ -19,7 +19,7 @@ function Competencies() {
           <span className="block opacity-80">amazing apps</span>
         </h2>
       </div>
-      <div className="lg:grid lg:grid-cols-3 mx-4 lg:mx-40 overflow-hidden relative rounded-2xl shadow-4xl -top-40">
+      <div className="lg:grid lg:grid-cols-3 mx-4 md:mx-10 lg:mx-12 xl:mx-28 2xl:mx-40 overflow-hidden relative rounded-2xl shadow-4xl -top-40">
         {competencies.map((competency, index) => (
           <div
             className={`bg-white border-b-2 px-20 py-16 lg:py-20 text-center ${

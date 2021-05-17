@@ -15,7 +15,7 @@ function BottomNavigation({ className, lastScrollY }) {
       } ${className}`}
     >
       {icons.map((icon) => (
-        <img className="opacity-75 pb-5" src={icon} key={icon} />
+        <img className="pb-5" src={icon} key={icon} />
       ))}
       <div className="bg-gray-400 h-10" style={{ width: 2 }}></div>
     </aside>
