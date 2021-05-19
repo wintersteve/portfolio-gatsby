@@ -1,0 +1,50 @@
+.fade {
+  animation: 0.25s ease-out fadeIn 1;
+}
+
+.slideIn {
+  animation: 0.35s var(--transition) slideIn forwards;
+}
+
+.moveForever\:1 {
+  animation: move-forever1 6s linear infinite;
+}
+
+.moveForever\:2 {
+  animation: move-forever2 4s linear infinite;
+}
+
+@keyframes move-forever1 {
+  0% {
+    transform: translate(85px, 0%);
+  }
+  100% {
+    transform: translate(-90px, 0%);
+  }
+}
+@keyframes move-forever2 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
