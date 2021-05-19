@@ -1,3 +1,35 @@
+@import "./animations.css";
+@import "./base.css";
+@import "./wave.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .shadow-4xl {
+    box-shadow: 0 1rem 3rem rgba(52, 58, 64, 0.175);
+  }
+
+  @responsive {
+    .flex-5\/6 {
+      flex: 0 0 75%;
+      max-width: 75%;
+    }
+
+    .flex-4\/6 {
+      flex: 0 0 66.6666%;
+      max-width: 66.6666%;
+    }
+
+    .flex-3\/6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    .flex-2\/6 {
+      flex: 0 0 33.3333%;
+      max-width: 33.3333%;
+    }
+  }
+}
