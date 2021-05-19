@@ -34,5 +34,12 @@ module.exports = {
         display: "swap",
       },
     },
+    {
+      resolve: `gatsby-plugin-portal`,
+      options: {
+        key: "menu",
+        id: "menu",
+      },
+    },
   ],
 };
