@@ -3,7 +3,7 @@ import avatar from "../images/avatar.svg";
 
 function Banner() {
   return (
-    <section className="bg-gray-100 flex flex-col items-center justify-center py-20 md:py-28 lg:py-48 2xl:mx-6 relative">
+    <section className="bg-gray-100 flex flex-col items-center justify-center py-16 md:py-28 lg:py-48 2xl:mx-6 relative">
       <div className="flex flex-col md:flex-row items-start">
         <img
           className="h-48 md:h-80 mx-auto md:mx-0 mb-12 md:mb-0 md:mr-12"
@@ -26,7 +26,7 @@ function Banner() {
       </div>
 
       <svg
-        className="editorial"
+        className="absolute block bottom-0 left-0 w-full z-10 h-16"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 24 150 28 "
         preserveAspectRatio="none"
@@ -42,10 +42,10 @@ function Banner() {
     v44h-352z"
           />
         </defs>
-        <g className="parallax3">
+        <g className="moveForever:1">
           <use href="#gentle-wave" x="50" y="9" fill="rgb(229, 231, 235)" />
         </g>
-        <g className="parallax4">
+        <g className="moveForever:2">
           <use href="#gentle-wave" x="50" y="6" fill="#fff" />
         </g>
       </svg>
