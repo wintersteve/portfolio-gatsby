@@ -8,13 +8,8 @@ import competencies from "../data/competencies.json";
 function Competencies() {
   return (
     <section className="2xl:mx-6" id="competencies">
-      <div
-        className="px-10 md:px-16 lg:px-20 xl:px-36 2xl:px-52 pb-48 lg:pb-60 pt-20 lg:pt-40 relative"
-        style={{
-          background: "linear-gradient(to left, rgb(31, 41, 55), #111827)",
-        }}
-      >
-        <TiltDivider background="linear-gradient(to left, rgb(31, 41, 55), #111827)" />
+      <div className="px-10 md:px-16 lg:px-20 xl:px-36 2xl:px-52 pb-48 lg:pb-60 pt-20 lg:pt-40 relative bg-gradient-to-l from-primary to-primary-dark">
+        <TiltDivider className="-bottom-80 sm:-bottom-40 h-96 sm:h-80" />
         <ScrollAnimation animateIn="fade" duration={1}>
           <h2 className="font-semibold text-white text-4xl lg:text-5xl">
             The tools I use to build
