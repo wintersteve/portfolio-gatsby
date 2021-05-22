@@ -15,11 +15,11 @@ function About() {
       style={{ backgroundColor: "rgb(238, 250, 245)" }}
     >
       <ScrollAnimation animateIn="fade">
-        <div className="flex items-center mb-5">
+        <div className="sm:flex sm:items-center mb-5">
           <h2 className="font-bold text-4xl text-gray-700">About me</h2>
-          <div className="flex ml-7">
+          <div className="flex sm:ml-7 sm:mt-0 mt-3">
             {icons.map((icon) => (
-              <img className="mr-3 w-6" key={icon} src={icon} />
+              <img className="mr-3 w-5 sm:w-6" key={icon} src={icon} />
             ))}
           </div>
         </div>
