@@ -10,8 +10,13 @@ const DEFAULT_STYLE = {
   width: "100%",
 };
 
-function TiltDivider(props) {
-  return <div style={Object.assign({}, DEFAULT_STYLE, props)}></div>;
+function TiltDivider({ className, ...props }) {
+  return (
+    <div
+      className={className}
+      style={Object.assign({}, DEFAULT_STYLE, props)}
+    ></div>
+  );
 }
 
 export default TiltDivider;

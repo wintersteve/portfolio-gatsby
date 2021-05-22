@@ -11,10 +11,10 @@ function Competencies() {
       <div
         className="px-10 md:px-16 lg:px-20 xl:px-36 2xl:px-52 pb-48 lg:pb-60 pt-20 lg:pt-40 relative"
         style={{
-          background: "linear-gradient(45deg, rgb(31, 41, 55), #111827)",
+          background: "linear-gradient(to left, rgb(31, 41, 55), #111827)",
         }}
       >
-        <TiltDivider background="linear-gradient(45deg, rgb(31, 41, 55), #111827)" />
+        <TiltDivider background="linear-gradient(to left, rgb(31, 41, 55), #111827)" />
         <ScrollAnimation animateIn="fade" duration={1}>
           <h2 className="font-semibold text-white text-4xl lg:text-5xl">
             The tools I use to build

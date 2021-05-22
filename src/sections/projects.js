@@ -12,8 +12,11 @@ const isEven = (num) => num % 2 === 0;
 
 function Projects() {
   return (
-    <section className="max-w-screen-2xl mb-20 lg:mb-40 m-auto" id="projects">
-      <div className="text-center px-20 md:px-40">
+    <section
+      className="max-w-screen-2xl mb-20 lg:mb-40 m-auto overflow-hidden"
+      id="projects"
+    >
+      <div className="text-center px-12 md:px-40">
         <h2 className="mb-5 font-bold text-5xl text-gray-700">My Projects</h2>
         <p className="mb-16 text-gray-500 text-lg">
           Here are some projects I've worked on recently. You would like to see

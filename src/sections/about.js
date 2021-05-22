@@ -21,7 +21,7 @@ function About() {
       <ScrollAnimation animateIn="fade">
         <div className="sm:flex sm:items-center mb-5">
           <h2 className="font-bold text-4xl text-gray-700">About me</h2>
-          <div className="flex sm:ml-7 sm:mt-0 mt-3">
+          <div className="flex sm:ml-7 sm:mt-0 mt-5">
             {icons.map((icon) => (
               <img
                 alt={icon.alt}
