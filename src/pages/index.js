@@ -13,6 +13,8 @@ import Services from "../sections/services";
 
 const IndexPage = () => {
   let ticking = false;
+  let lastScrollY = 0;
+
   const [scroll, setScroll] = React.useState({
     isScrollTop: false,
     lastScrollY: 0,
@@ -23,9 +25,10 @@ const IndexPage = () => {
 
     if (!ticking) {
       window.requestAnimationFrame(() => {
-        const isScrollTop = scrollY > scroll.lastScrollY;
+        const isScrollTop = scrollY > lastScrollY;
         setScroll({ isScrollTop, lastScrollY: scrollY });
 
+        lastScrollY = scrollY;
         ticking = false;
       });
 
@@ -39,7 +42,7 @@ const IndexPage = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [scroll]);
+  }, []);
 
   return (
     <>
