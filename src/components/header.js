@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useRef } from "react";
+import ScrollAnimation from "react-animate-on-scroll";
+import Branding from "./branding";
 import FragmentLink from "./fragment-link";
 import Hamburger from "./hamburger";
+import Menu from "./menu";
+
+import githubIcon from "../images/github-gray.svg";
+import facebookIcon from "../images/facebook-gray.svg";
+import linkedinIcon from "../images/linkedin-gray.svg";
 
 const navItems = [
   {
@@ -34,39 +41,78 @@ const navItems = [
 ];
 
 function Header({ isScrollTop, lastScrollY }) {
+  const menuRef = useRef();
+
   return (
     <>
       <header
-        className={`bg-white duration-500 py-7 lg:py-9 px-8 md:px-16 2xl:px-56 flex font-bold justify-between items-center shadow-lg sticky transform transition-all top-0 z-50 ${
+        className={`bg-white duration-500 py-7 lg:py-9 px-10 md:px-16 2xl:px-56 font-bold shadow-lg sticky transform transition-all top-0 z-50 ${
           lastScrollY === 0 && "shadow-none"
         } ${
           lastScrollY > 100 && isScrollTop ? "-translate-y-32" : "translate-y-0"
         }`}
       >
-        <h1>
-          <span className="text-gray-600 text-xl font-bold mr-3">
-            Steve Winter
-          </span>
-          <span className="block xl:inline text-gray-400 text-xs font-bold">
-            Full-Stack Web Developer
-          </span>
-        </h1>
-        <nav className="hidden lg:block">
-          {navItems.map((item) => (
-            <FragmentLink id={item.id} key={item.id}>
-              {item.label}
-            </FragmentLink>
-          ))}
-          <a
-            className="hover:bg-gray-100 border-2 ml-4 px-3 py-2 font-semibold rounded-sm transition-all text-sm text-gray-500 hover:text-gray-600"
-            download
-            href="/resume.pdf"
-          >
-            Resumé
-          </a>
-        </nav>
-        <Hamburger className="lg:hidden" />
+        <ScrollAnimation
+          animateIn="fade"
+          className="flex justify-between items-center"
+          offset={0}
+        >
+          <Branding />
+          <nav className="hidden lg:block">
+            {navItems.map((item) => (
+              <FragmentLink id={item.id} key={item.id}>
+                {item.label}
+              </FragmentLink>
+            ))}
+            <a
+              className="hover:bg-gray-100 border-2 ml-4 px-3 py-2 font-semibold rounded-sm transition-all text-sm text-gray-500 hover:text-gray-600"
+              download
+              href="/resume.pdf"
+            >
+              Resumé
+            </a>
+          </nav>
+          <Hamburger
+            className="lg:hidden"
+            handleClick={() => menuRef.current.open()}
+          />
+        </ScrollAnimation>
       </header>
+
+      <Menu ref={menuRef} title={<Branding />}>
+        <nav className="flex flex-col mb-12">
+          {navItems.map((item) => (
+            <div className="px-3 pb-5" key={item.id}>
+              <FragmentLink
+                callback={() => menuRef.current.close()}
+                className="text-lg px-5"
+                id={item.id}
+                offset={20}
+              >
+                {item.label}
+              </FragmentLink>
+            </div>
+          ))}
+          <div className="px-5">
+            <a
+              className="hover:bg-gray-100 border-2 ml-4 px-8 py-3 font-semibold inline-block rounded-sm transition-all text-lg text-gray-500 hover:text-gray-600 w-c"
+              download
+              href="/resume.pdf"
+            >
+              Resumé
+            </a>
+          </div>
+        </nav>
+        <div className="px-10">
+          <h5 className="font-semibold mb-1 text-lg">Contact me at</h5>
+          <p className="">contact@wintersteve.com</p>
+        </div>
+        <div className="flex p-10">
+          <img className="mr-4 w-10" src={facebookIcon} />
+          <img className="mr-4 w-10" src={linkedinIcon} />
+          <img className="mr-4 w-10" src={githubIcon} />
+        </div>
+      </Menu>
     </>
   );
 }
