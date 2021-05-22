@@ -50,6 +50,7 @@ function Certificates() {
               onClick={() => scroll(DIRECTIONS.LEFT)}
             >
               <img
+                alt="scroll left"
                 className={canScroll.left ? "opacity-75" : "opacity-25"}
                 src={leftArrow}
               />
@@ -59,6 +60,7 @@ function Certificates() {
               onClick={() => scroll(DIRECTIONS.RIGHT)}
             >
               <img
+                alt="scroll right"
                 className={canScroll.right ? "opacity-75" : "opacity-25"}
                 src={rightArrow}
               />
@@ -81,7 +83,11 @@ function Certificates() {
               duration={0.5}
               key={certificate.title}
             >
-              <img className="shadow-lg" src={certificate.image} />
+              <img
+                alt={certificate.title}
+                className="shadow-lg"
+                src={certificate.image}
+              />
               <h5 className="font-bold m-2 text-gray-500">
                 {certificate.title}
               </h5>

@@ -15,7 +15,7 @@ function Chat() {
         className="bg-gray-300 p-4 rounded-full shadow-4xl"
         onClick={toggle}
       >
-        <img src={chatIcon} width="25" />
+        <img alt="open chat" src={chatIcon} width="25" />
       </button>
 
       {isOpen && (

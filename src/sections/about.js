@@ -5,7 +5,11 @@ import facebookGrayIcon from "../images/facebook-gray.svg";
 import linkedinGrayIcon from "../images/linkedin-gray.svg";
 import githubGrayIcon from "../images/github-gray.svg";
 
-const icons = [facebookGrayIcon, linkedinGrayIcon, githubGrayIcon];
+const icons = [
+  { alt: "open facebook", src: facebookGrayIcon },
+  { alt: "open linkedin", src: linkedinGrayIcon },
+  { alt: "open facebook", src: githubGrayIcon },
+];
 
 function About() {
   return (
@@ -19,7 +23,12 @@ function About() {
           <h2 className="font-bold text-4xl text-gray-700">About me</h2>
           <div className="flex sm:ml-7 sm:mt-0 mt-3">
             {icons.map((icon) => (
-              <img className="mr-3 w-5 sm:w-6" key={icon} src={icon} />
+              <img
+                alt={icon.alt}
+                className="mr-3 w-5 sm:w-6"
+                key={icon.src}
+                src={icon.src}
+              />
             ))}
           </div>
         </div>

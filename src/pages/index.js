@@ -20,23 +20,24 @@ const IndexPage = () => {
     lastScrollY: 0,
   });
 
-  const handleScroll = () => {
-    const { scrollY } = window;
-
-    if (!ticking) {
-      window.requestAnimationFrame(() => {
-        const isScrollTop = scrollY > lastScrollY;
-        setScroll({ isScrollTop, lastScrollY: scrollY });
-
-        lastScrollY = scrollY;
-        ticking = false;
-      });
-
-      ticking = true;
-    }
-  };
-
   React.useEffect(() => {
+    const handleScroll = () => {
+      const { scrollY } = window;
+
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const isScrollTop = scrollY > lastScrollY;
+          setScroll({ isScrollTop, lastScrollY: scrollY });
+
+          lastScrollY = scrollY;
+          ticking = false;
+        });
+
+        ticking = true;
+      }
+    };
+
+    console.log("test");
     window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {

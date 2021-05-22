@@ -1,7 +1,14 @@
 import React from "react";
+
 import facebookSvg from "../images/facebook.svg";
 import linkedinSvg from "../images/linkedin.svg";
 import githubSvg from "../images/github.svg";
+
+const icons = [
+  { alt: "open facebook", src: facebookSvg },
+  { alt: "open linkedin", src: linkedinSvg },
+  { alt: "open facebook", src: githubSvg },
+];
 
 function Footer() {
   return (
@@ -11,9 +18,15 @@ function Footer() {
     >
       <h5 className="font-bold">More about me</h5>
       <div className="flex justify-center my-10">
-        <img src={facebookSvg} width="50" />
-        <img className="mx-8" src={linkedinSvg} width="50" />
-        <img src={githubSvg} width="50" />
+        {icons.map((icon) => (
+          <img
+            alt={icon.alt}
+            className="mx-4"
+            key={icon.src}
+            src={icon.src}
+            width="50"
+          />
+        ))}
       </div>
       <div className="mb-2">Contact me</div>
       <div className="font-bold mb-10">contact@wintersteve.com</div>

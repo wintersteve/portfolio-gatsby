@@ -108,9 +108,9 @@ function Header({ isScrollTop, lastScrollY }) {
           <p className="">contact@wintersteve.com</p>
         </div>
         <div className="flex p-10">
-          <img className="mr-4 w-10" src={facebookIcon} />
-          <img className="mr-4 w-10" src={linkedinIcon} />
-          <img className="mr-4 w-10" src={githubIcon} />
+          <img alt="open facebook" className="mr-4 w-10" src={facebookIcon} />
+          <img alt="open linkedin" className="mr-4 w-10" src={linkedinIcon} />
+          <img alt="open github" className="mr-4 w-10" src={githubIcon} />
         </div>
       </Menu>
     </>

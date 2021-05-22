@@ -8,6 +8,7 @@ function Banner() {
       <section className="bg-gray-100 flex flex-col items-center justify-center py-16 md:py-28 lg:py-48 2xl:mx-6 relative">
         <div className="flex flex-col md:flex-row items-start">
           <img
+            alt="avatar"
             className="h-48 md:h-80 mx-auto md:mx-0 mb-12 md:mb-0 md:mr-12"
             src={avatar}
           />
