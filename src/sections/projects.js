@@ -13,7 +13,7 @@ const isEven = (num) => num % 2 === 0;
 function Projects() {
   return (
     <section
-      className="max-w-screen-2xl mb-20 lg:mb-40 m-auto overflow-hidden"
+      className="max-w-screen-2xl mb-20 lg:mb-40 m-auto overflow-hidden sm:overflow-visible"
       id="projects"
     >
       <div className="text-center px-12 md:px-40">
