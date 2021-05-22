@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
+import ScrollAnimation from "react-animate-on-scroll";
 import certificates from "../data/certificates.json";
+
 import leftArrow from "../images/left-arrow.svg";
 import rightArrow from "../images/right-arrow.svg";
 
@@ -38,30 +40,32 @@ function Certificates() {
 
   return (
     <section id="certificates" className="my-20 lg:my-40">
-      <div className="items-center grid grid-cols-2 mx-6 md:mx-12 lg:mx-12 2xl:mx-40 mb-10">
-        <h2 className="font-bold text-4xl text-gray-600">Certificates</h2>
-        <div className="grid grid-cols-2 justify-self-end">
-          <button
-            className="p-2 w-12"
-            disabled={!canScroll.left}
-            onClick={() => scroll(DIRECTIONS.LEFT)}
-          >
-            <img
-              className={canScroll.left ? "opacity-75" : "opacity-25"}
-              src={leftArrow}
-            />
-          </button>
-          <button
-            className="ml-2 p-2 w-12"
-            onClick={() => scroll(DIRECTIONS.RIGHT)}
-          >
-            <img
-              className={canScroll.right ? "opacity-75" : "opacity-25"}
-              src={rightArrow}
-            />
-          </button>
+      <ScrollAnimation animateIn="fade">
+        <div className="items-center grid grid-cols-2 mx-6 md:mx-12 lg:mx-12 2xl:mx-40 mb-10">
+          <h2 className="font-bold text-4xl text-gray-600">Certificates</h2>
+          <div className="grid grid-cols-2 items-center justify-self-end">
+            <button
+              className="px-0 md:p-2 w-8 md:w-12"
+              disabled={!canScroll.left}
+              onClick={() => scroll(DIRECTIONS.LEFT)}
+            >
+              <img
+                className={canScroll.left ? "opacity-75" : "opacity-25"}
+                src={leftArrow}
+              />
+            </button>
+            <button
+              className="ml-2 px-0 md:p-2 w-8 md:w-12"
+              onClick={() => scroll(DIRECTIONS.RIGHT)}
+            >
+              <img
+                className={canScroll.right ? "opacity-75" : "opacity-25"}
+                src={rightArrow}
+              />
+            </button>
+          </div>
         </div>
-      </div>
+      </ScrollAnimation>
       <div
         className="overflow-x-scroll"
         style={{ scrollBehavior: "smooth" }}
@@ -69,16 +73,19 @@ function Certificates() {
         ref={scrollContainer}
       >
         <div className="flex px-6 md:px-12 lg:px-12 2xl:px-40">
-          {certificates.map((certificate) => (
-            <div
+          {certificates.map((certificate, index) => (
+            <ScrollAnimation
+              animateIn="fade"
               className="mr-4 2xl:mr-8 flex-5/6 lg:flex-2/6"
+              delay={150 * (index + 1)}
+              duration={0.5}
               key={certificate.title}
             >
               <img className="shadow-lg" src={certificate.image} />
               <h5 className="font-bold m-2 text-gray-500">
                 {certificate.title}
               </h5>
-            </div>
+            </ScrollAnimation>
           ))}
         </div>
       </div>
