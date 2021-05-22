@@ -1,6 +1,5 @@
 import * as React from "react";
-import Banner from "../components/banner";
-import BottomNavigation from "../components/bottom-navigation";
+import Banner from "../sections/banner";
 import Chat from "../components/chat";
 import Header from "../components/header";
 import About from "../sections/about";
@@ -49,7 +48,7 @@ const IndexPage = () => {
         lastScrollY={scroll.lastScrollY}
       />
       <Banner />
-      <main className="">
+      <main>
         <Services />
         <About />
         <Experiences />
@@ -60,7 +59,6 @@ const IndexPage = () => {
       </main>
       <Footer />
       <Chat />
-      <BottomNavigation lastScrollY={scroll.lastScrollY} />
     </>
   );
 };
