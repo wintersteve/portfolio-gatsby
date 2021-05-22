@@ -19,7 +19,7 @@ function About() {
           <h2 className="font-bold text-4xl text-gray-700">About me</h2>
           <div className="flex ml-7">
             {icons.map((icon) => (
-              <img className="mr-3 w-6" src={icon} />
+              <img className="mr-3 w-6" key={icon} src={icon} />
             ))}
           </div>
         </div>
