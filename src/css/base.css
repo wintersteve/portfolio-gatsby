@@ -1,9 +1,11 @@
 :root {
   --transition: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --primary: #1f2937;
+  --primary-dark: #111827;
 }
 
 body {
-  color: #1f2937;
+  color: var(--primary);
 }
 
 p {
