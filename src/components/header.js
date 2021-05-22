@@ -65,7 +65,7 @@ function Header({ isScrollTop, lastScrollY }) {
               </FragmentLink>
             ))}
             <a
-              className="hover:bg-gray-100 border-2 ml-4 px-3 py-2 font-semibold rounded-sm transition-all text-sm text-gray-500 hover:text-gray-600"
+              className="hover:bg-gray-100 border-2 ml-2 px-4 py-2 font-semibold rounded-full transition-all text-sm text-gray-500 hover:text-gray-600"
               download
               href="/resume.pdf"
             >
