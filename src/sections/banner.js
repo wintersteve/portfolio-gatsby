@@ -9,7 +9,7 @@ function Banner() {
         <div className="flex flex-col md:flex-row items-start">
           <img
             alt="avatar"
-            className="h-48 md:h-80 mx-auto md:mx-0 mb-12 md:mb-0 md:mr-12"
+            className="h-48 md:h-72 mx-auto md:mx-0 mb-12 md:mb-0 md:mr-12"
             src={avatar}
           />
           <div className="px-6 md:px-0 mb-6 md:mb-0">
