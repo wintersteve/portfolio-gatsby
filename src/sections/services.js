@@ -13,12 +13,12 @@ function Services() {
   return (
     <section
       id="services"
-      className="max-w-screen-2xl m-auto my-20 px-6 md:px-12 2xl:px-20 lg:grid lg:grid-cols-2 2xl:gap-10"
+      className="max-w-screen-2xl m-auto my-20 px-6 md:px-12 lg:px-28 2xl:px-20 lg:grid lg:grid-cols-2 2xl:gap-10"
     >
       <div className="lg:pr-12">
         <div className="mb-10 lg:mb-0 fade">
           <ScrollAnimation animateIn="fade" delay={250} offset={1000}>
-            <h2 className="font-bold text-5xl mb-6">
+            <h2 className="font-bold text-5xl mb-6 lg:mt-5">
               <span className="text-gray-600">What Can </span>
               <div>I do for you?</div>
             </h2>

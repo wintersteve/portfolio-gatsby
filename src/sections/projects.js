@@ -25,7 +25,7 @@ function Projects() {
       </div>
       {projects.map((project, index) => (
         <article
-          className="items-center flex flex-col-reverse lg:grid lg:grid-cols-2 mx-4 md:mx-12 mb-10 lg:mb-20"
+          className="items-center flex flex-col-reverse lg:grid lg:grid-cols-2 mx-4 md:mx-12 lg:mx-20 mb-10 lg:mb-20"
           key={project}
         >
           <ScrollAnimation
