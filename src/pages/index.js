@@ -37,7 +37,6 @@ const IndexPage = () => {
       }
     };
 
-    console.log("test");
     window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
