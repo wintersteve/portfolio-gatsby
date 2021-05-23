@@ -4,7 +4,7 @@ import React, {
   forwardRef,
   useImperativeHandle,
 } from "react";
-import Portal from "./Portal";
+import Portal from "./portal";
 
 import closeIcon from "../images/close.png";
 import useScroll from "../hooks/use-scroll";
