@@ -16,7 +16,7 @@ const FORM = {
 function Contact() {
   return (
     <section
-      className="bg-gray-100 text-center py-16 lg:py-40 px-2"
+      className="bg-gray-100 text-center pt-16 pb-32 lg:pt-40 lg:pb-64 px-2"
       id="contact"
     >
       <ScrollAnimation animateIn="fade">
@@ -48,7 +48,7 @@ function Contact() {
           </div>
         </form>
       </ScrollAnimation>
-      <button className="border-2 bg-gray-700 border-solid font-semibold py-3 px-8 rounded-full text-white">
+      <button className="border-2 bg-gray-700 border-solid font-semibold py-3 px-8 relative rounded-full text-white z-10">
         SUBMIT
       </button>
     </section>

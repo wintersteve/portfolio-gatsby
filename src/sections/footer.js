@@ -12,25 +12,37 @@ const icons = [
 
 function Footer() {
   return (
-    <footer
-      className="text-white text-center px-20 lg:px-40 py-20 lg:py-28"
-      style={{ backgroundColor: "#1f2937" }}
-    >
-      <h5 className="font-bold">More about me</h5>
-      <div className="flex justify-center my-10">
-        {icons.map((icon) => (
-          <img
-            alt={icon.alt}
-            className="mx-4"
-            key={icon.src}
-            src={icon.src}
-            width="50"
-          />
-        ))}
+    <footer className="relative">
+      <svg
+        className="absolute bg-gray-100 left-0 -top-24 sm:-top-32 md:-top-40 lg:-top-56 xl:-top-64 2xl:-top-80"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#1f2937"
+          fillOpacity="1"
+          d="M0,96L40,117.3C80,139,160,181,240,197.3C320,213,400,203,480,192C560,181,640,171,720,165.3C800,160,880,160,960,176C1040,192,1120,224,1200,229.3C1280,235,1360,213,1400,202.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
+      <div
+        className="relative text-white text-center px-20 lg:px-40 py-20 lg:pb-28 lg:pt-0"
+        style={{ backgroundColor: "#1f2937" }}
+      >
+        <div className="flex justify-center mb-10">
+          {icons.map((icon) => (
+            <img
+              alt={icon.alt}
+              className="mx-4"
+              key={icon.src}
+              src={icon.src}
+              width="50"
+            />
+          ))}
+        </div>
+        <div className="mb-2">Contact me</div>
+        <div className="font-bold mb-10">contact@wintersteve.com</div>
+        <div className="text-sm">© Steve Winter</div>
       </div>
-      <div className="mb-2">Contact me</div>
-      <div className="font-bold mb-10">contact@wintersteve.com</div>
-      <div className="text-sm">© Steve Winter</div>
     </footer>
   );
 }
