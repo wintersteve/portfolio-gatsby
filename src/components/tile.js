@@ -2,7 +2,7 @@ import React from "react";
 
 function Tile({ alt, className, imageStyle, images, label }) {
   return (
-    <button
+    <div
       className={`border-4 border-gray-100 w-full rounded-2xl relative ${className}`}
     >
       <h3 className="absolute font-semibold text-sm text-gray-400 top-3 left-4">
@@ -21,7 +21,7 @@ function Tile({ alt, className, imageStyle, images, label }) {
           />
         ))}
       </div>
-    </button>
+    </div>
   );
 }
 
