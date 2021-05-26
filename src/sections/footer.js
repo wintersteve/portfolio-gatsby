@@ -1,14 +1,5 @@
 import React from "react";
-
-import facebookSvg from "../images/facebook.svg";
-import linkedinSvg from "../images/linkedin.svg";
-import githubSvg from "../images/github.svg";
-
-const icons = [
-  { alt: "open facebook", src: facebookSvg },
-  { alt: "open linkedin", src: linkedinSvg },
-  { alt: "open facebook", src: githubSvg },
-];
+import SocialMediaNavigation from "../components/social-media-navigation";
 
 function Footer() {
   return (
@@ -28,18 +19,8 @@ function Footer() {
         className="relative text-white text-center px-20 lg:px-40 py-20 lg:pb-28 lg:pt-0"
         style={{ backgroundColor: "#1f2937" }}
       >
-        <div className="flex justify-center mb-10">
-          {icons.map((icon) => (
-            <img
-              alt={icon.alt}
-              className="mx-4"
-              key={icon.src}
-              src={icon.src}
-              width="50"
-            />
-          ))}
-        </div>
-        <div className="mb-2">Contact me</div>
+        <SocialMediaNavigation iconStyle="mx-4 w-12" />
+        <div className="mt-10 mb-2">Contact me</div>
         <div className="font-bold mb-10">contact@wintersteve.com</div>
         <div className="text-sm">© Steve Winter</div>
       </div>

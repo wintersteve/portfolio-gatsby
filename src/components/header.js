@@ -4,10 +4,7 @@ import Branding from "./branding";
 import FragmentLink from "./fragment-link";
 import Hamburger from "./hamburger";
 import Menu from "./menu";
-
-import githubIcon from "../images/github-gray.svg";
-import facebookIcon from "../images/facebook-gray.svg";
-import linkedinIcon from "../images/linkedin-gray.svg";
+import SocialMediaNavigation from "./social-media-navigation";
 
 const navItems = [
   {
@@ -105,12 +102,10 @@ function Header({ isScrollTop, lastScrollY }) {
         </nav>
         <div className="px-10">
           <h5 className="font-semibold mb-1 text-lg">Contact me at</h5>
-          <p className="">contact@wintersteve.com</p>
-        </div>
-        <div className="flex p-10">
-          <img alt="open facebook" className="mr-4 w-10" src={facebookIcon} />
-          <img alt="open linkedin" className="mr-4 w-10" src={linkedinIcon} />
-          <img alt="open github" className="mr-4 w-10" src={githubIcon} />
+          <p className="mb-8">contact@wintersteve.com</p>
+          <div className="mb-10">
+            <SocialMediaNavigation theme="gray" iconStyle="mr-3 w-10" />
+          </div>
         </div>
       </Menu>
     </>

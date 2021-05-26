@@ -1,15 +1,8 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
+import SocialMediaNavigation from "../components/social-media-navigation";
 
-import facebookGrayIcon from "../images/facebook-gray.svg";
-import linkedinGrayIcon from "../images/linkedin-gray.svg";
-import githubGrayIcon from "../images/github-gray.svg";
-
-const icons = [
-  { alt: "open facebook", src: facebookGrayIcon },
-  { alt: "open linkedin", src: linkedinGrayIcon },
-  { alt: "open facebook", src: githubGrayIcon },
-];
+import icons from "../data/social-media.json";
 
 function About() {
   return (
@@ -19,18 +12,11 @@ function About() {
       style={{ backgroundColor: "rgb(238, 250, 245)" }}
     >
       <ScrollAnimation animateIn="fade">
-        <div className="sm:flex sm:items-center mb-5">
-          <h2 className="font-bold text-4xl text-gray-700">About me</h2>
-          <div className="flex sm:ml-7 sm:mt-0 mt-5">
-            {icons.map((icon) => (
-              <img
-                alt={icon.alt}
-                className="mr-3 w-5 sm:w-6"
-                key={icon.src}
-                src={icon.src}
-              />
-            ))}
-          </div>
+        <div className="sm:flex sm:items-center mb-6">
+          <h2 className="font-bold mb-6 sm:mb-0 mr-6 text-4xl text-gray-700">
+            About me
+          </h2>
+          <SocialMediaNavigation theme="gray" iconStyle="mr-4" />
         </div>
         <p className="mb-5">
           Since beginning my journey as a freelance designer nearly 10 years
