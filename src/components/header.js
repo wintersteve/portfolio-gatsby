@@ -92,7 +92,7 @@ function Header({ isScrollTop, lastScrollY }) {
           ))}
           <div className="px-5">
             <a
-              className="hover:bg-gray-100 border-2 ml-4 px-8 py-3 font-semibold inline-block rounded-sm transition-all text-lg text-gray-500 hover:text-gray-600 w-c"
+              className="hover:bg-gray-100 border-4 ml-4 px-8 py-3 font-semibold inline-block rounded-xl transition-all text-lg text-gray-500 hover:text-gray-600 w-c"
               download
               href="/resume.pdf"
             >
@@ -102,9 +102,9 @@ function Header({ isScrollTop, lastScrollY }) {
         </nav>
         <div className="px-10">
           <h5 className="font-semibold mb-1 text-lg">Contact me at</h5>
-          <p className="mb-8">contact@wintersteve.com</p>
-          <div className="mb-10">
-            <SocialMediaNavigation theme="gray" iconStyle="mr-3 w-10" />
+          <p className="mb-12">contact@wintersteve.com</p>
+          <div className="mb-12">
+            <SocialMediaNavigation theme="gray" iconStyle="mr-4 w-10" />
           </div>
         </div>
       </Menu>
