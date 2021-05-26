@@ -23,6 +23,9 @@ function Chat() {
           className={`fixed lg:absolute bg-white bottom-0 right-0 p-5 lg:rounded transition-all w-full lg:w-96 shadow-4xl ${
             isOpen && "fade"
           }`}
+          name="chat"
+          method="POST"
+          data-netlify="true"
         >
           <div
             className="flex justify-between mb-5 p-3 rounded"

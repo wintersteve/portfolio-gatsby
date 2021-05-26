@@ -29,7 +29,12 @@ function Contact() {
         </p>
       </ScrollAnimation>
       <ScrollAnimation animateIn="fade">
-        <form className="w-9/12 xl:w-6/12 mb-8 mx-auto">
+        <form
+          className="w-9/12 xl:w-6/12 mb-8 mx-auto"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+        >
           <div className="lg:grid lg:grid-cols-2 gap-5 lg:mb-5">
             <input
               className="bg-gray-200 mb-5 lg:mb-0 p-8 rounded-xl w-full lg:w-auto"
