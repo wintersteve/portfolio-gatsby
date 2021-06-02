@@ -8,10 +8,6 @@ body {
   color: var(--primary);
 }
 
-p {
-  font-family: "Open Sans";
-}
-
 *:focus:not(.focus-visible) {
   outline: none;
 }

@@ -3,7 +3,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ["Poppins", "Open Sans", "Arial", "sans-serif"],
+      sans: ["Poppins", "Arial", "sans-serif"],
     },
     extend: {},
   },
