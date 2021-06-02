@@ -21,7 +21,7 @@ function Competencies() {
         {competencies.map((competency, index) => (
           <ScrollAnimation
             animateIn="slideUp"
-            delay={150}
+            delay={75}
             duration={0.4 * (index + 1)}
             key={competency.title}
           >

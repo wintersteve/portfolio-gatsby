@@ -11,7 +11,7 @@ function About() {
       id="about"
       style={{ backgroundColor: "rgb(238, 250, 245)" }}
     >
-      <ScrollAnimation animateIn="fade">
+      <ScrollAnimation animateIn="fade" duration={0.75}>
         <div className="sm:flex sm:items-center mb-6">
           <h2 className="font-bold mb-6 sm:mb-0 mr-6 text-4xl text-gray-700">
             About me

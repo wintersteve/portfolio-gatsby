@@ -69,7 +69,7 @@ function Experiences() {
       className="lg:flex lg:mx-12 py-20 lg:py-28 xl:py-44 px-6 md:px-12 lg:px-18 xl:px-32 2xl:px-72"
     >
       <div>
-        <ScrollAnimation animateIn="fade">
+        <ScrollAnimation animateIn="fade" duration={0.5}>
           <h2 className="font-bold mb-5 text-4xl text-gray-700">Experience</h2>
           <ul className="flex lg:block overflow-x-scroll mb-6 lg:mb-0">
             {experiences.map((experience, index) => (
@@ -97,7 +97,7 @@ function Experiences() {
         </ScrollAnimation>
       </div>
       <div className="fade lg:ml-20 py-2">
-        <ScrollAnimation animateIn="fade">
+        <ScrollAnimation animateIn="fade" duration={0.5}>
           <h4 className="font-semibold text-lg">
             {experiences[activeTab].role}
           </h4>

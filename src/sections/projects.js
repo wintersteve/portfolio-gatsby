@@ -35,7 +35,7 @@ function Projects() {
                 ? "col-start-1 py-10 px-6 lg:pr-10 2xl:pr-20 lg:pl-10 2xl:pl-20"
                 : "col-start-2 py-10 px-6 lg:pl-10 2xl:pl-20 lg:pr-10 2xl:pr-20"
             }`}
-            duration={1.2}
+            duration={1}
           >
             <div>
               <h4 className="font-bold mb-5 text-2xl text-gray-600">
@@ -70,6 +70,7 @@ function Projects() {
           </ScrollAnimation>
           <ScrollAnimation
             animateIn={isEven(index) ? "slideRight" : "slideLeft"}
+            duration={0.7}
           >
             <img
               className={`row-start-1 rounded-md shadow-4xl ${

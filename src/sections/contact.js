@@ -30,7 +30,7 @@ function Contact() {
       </ScrollAnimation>
       <ScrollAnimation animateIn="fade">
         <form
-          className="w-9/12 xl:w-6/12 mb-8 mx-auto"
+          className="w-9/12 xl:w-6/12 mx-auto"
           name="contact"
           method="POST"
           data-netlify="true"
@@ -45,17 +45,20 @@ function Contact() {
               placeholder={FORM.email.placeholder}
             />
           </div>
-          <div>
+          <div className="mb-8">
             <textarea
               className="bg-gray-200 p-8 rounded-xl w-full"
               placeholder={FORM.message.placeholder}
             ></textarea>
           </div>
+          <button
+            className="border-2 bg-gray-700 border-solid font-semibold py-3 px-8 relative rounded-full text-white z-10"
+            type="submit"
+          >
+            SUBMIT
+          </button>
         </form>
       </ScrollAnimation>
-      <button className="border-2 bg-gray-700 border-solid font-semibold py-3 px-8 relative rounded-full text-white z-10">
-        SUBMIT
-      </button>
     </section>
   );
 }

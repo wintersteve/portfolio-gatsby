@@ -1,5 +1,5 @@
 .fade {
-  animation: 0.25s ease-out fadeIn 1;
+  animation: 0.25s ease fadeIn 1;
 }
 
 .slideIn {
@@ -15,11 +15,11 @@
 }
 
 .slideRight {
-  animation: 0.35s var(--transition) slideRight forwards;
+  animation: 0.35s ease slideRight forwards;
 }
 
 .slideLeft {
-  animation: 0.35s var(--transition) slideLeft forwards;
+  animation: 0.35s ease slideLeft forwards;
 }
 
 .moveForever\:1 {
