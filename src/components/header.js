@@ -82,7 +82,7 @@ function Header({ isScrollTop, lastScrollY }) {
             <div className="px-3 pb-5" key={item.id}>
               <FragmentLink
                 callback={() => menuRef.current.close()}
-                className="text-lg px-5"
+                className="text-md px-5"
                 id={item.id}
                 offset={20}
               >
@@ -92,7 +92,7 @@ function Header({ isScrollTop, lastScrollY }) {
           ))}
           <div className="px-5">
             <a
-              className="hover:bg-gray-100 border-4 ml-4 px-8 py-3 font-semibold inline-block rounded-xl transition-all text-lg text-gray-500 hover:text-gray-600 w-c"
+              className="hover:bg-gray-100 border-4 ml-4 px-8 py-3 font-semibold inline-block rounded-xl transition-all text-md text-gray-500 hover:text-gray-600"
               download
               href="/resume.pdf"
             >
@@ -101,10 +101,10 @@ function Header({ isScrollTop, lastScrollY }) {
           </div>
         </nav>
         <div className="px-10">
-          <h5 className="font-semibold mb-1 text-lg">Contact me at</h5>
+          <h5 className="font-semibold mb-1 text-md">Contact me at</h5>
           <p className="mb-12">contact@wintersteve.com</p>
           <div className="mb-12">
-            <SocialMediaNavigation theme="gray" iconStyle="mr-4 w-10" />
+            <SocialMediaNavigation theme="gray" iconStyle="mr-4 w-8" />
           </div>
         </div>
       </Menu>

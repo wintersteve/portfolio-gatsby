@@ -4,16 +4,19 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 function Banner() {
   return (
-    <ScrollAnimation animateIn="fade">
-      <section className="bg-gray-100 flex flex-col items-center justify-center py-16 md:py-28 lg:py-48 2xl:mx-6 relative">
-        <div className="flex flex-col md:flex-row items-start">
+    <section className="bg-gray-100 flex flex-col items-center justify-center py-16 md:py-28 lg:py-48 2xl:mx-6 relative">
+      <div>
+        <ScrollAnimation
+          animateIn="fade"
+          className="flex flex-col md:flex-row items-start"
+        >
           <img
             alt="avatar"
             className="h-48 md:h-72 mx-auto md:mx-0 mb-12 md:mb-0 md:mr-12"
             src={avatar}
           />
           <div className="px-6 md:px-0 mb-6 md:mb-0">
-            <h2 className="font-semibold ml-1 mb-1 md:mb-4 opacity-75 text-lg">
+            <h2 className="font-semibold ml-1 mb-1 md:mb-3 opacity-75 text-lg">
               Hi, I am Steve Winter
             </h2>
             <h3 className="font-bold mb-6 text-5xl lg:text-7xl">
@@ -26,34 +29,34 @@ function Banner() {
               focused on building accessible, human-centered products.
             </p>
           </div>
-        </div>
+        </ScrollAnimation>
+      </div>
 
-        <svg
-          className="absolute block bottom-0 left-0 w-full z-10 h-16"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 24 150 28 "
-          preserveAspectRatio="none"
-        >
-          <defs>
-            <path
-              id="gentle-wave"
-              d="M-160 44c30 0 
+      <svg
+        className="absolute block bottom-0 left-0 w-full z-10 h-16"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 24 150 28 "
+        preserveAspectRatio="none"
+      >
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 
     58-18 88-18s
     58 18 88 18 
     58-18 88-18 
     58 18 88 18
     v44h-352z"
-            />
-          </defs>
-          <g className="moveForever:1">
-            <use href="#gentle-wave" x="50" y="9" fill="rgb(229, 231, 235)" />
-          </g>
-          <g className="moveForever:2">
-            <use href="#gentle-wave" x="50" y="6" fill="#fff" />
-          </g>
-        </svg>
-      </section>
-    </ScrollAnimation>
+          />
+        </defs>
+        <g className="moveForever:1">
+          <use href="#gentle-wave" x="50" y="9" fill="rgb(229, 231, 235)" />
+        </g>
+        <g className="moveForever:2">
+          <use href="#gentle-wave" x="50" y="6" fill="#fff" />
+        </g>
+      </svg>
+    </section>
   );
 }
 
