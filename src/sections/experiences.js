@@ -84,7 +84,7 @@ function Experiences() {
                 key={experience.title}
               >
                 <button
-                  className={`font-semibold min-w-max py-4 lg:py-6 px-3 lg:px-5 text-gray-400 ${
+                  className={`font-semibold min-w-max py-4 lg:py-6 px-3 lg:px-5 text-gray-400 w-max ${
                     activeTab === index && "text-gray-900"
                   }`}
                   onClick={() => handleClick(index)}
