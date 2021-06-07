@@ -41,5 +41,12 @@ module.exports = {
         id: "menu",
       },
     },
+    {
+      resolve: `gatsby-plugin-portal`,
+      options: {
+        key: "chat",
+        id: "chat",
+      },
+    },
   ],
 };
