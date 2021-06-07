@@ -1,23 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const root =
-  typeof document !== `undefined` ? document.getElementById("menu") : null;
-
 class Portal extends React.Component {
-  constructor() {
+  constructor(props) {
     super();
     // Use a ternary operator to make sure that the document object is defined
     this.el =
       typeof document !== `undefined` ? document.createElement("div") : null;
+
+    this.root =
+      typeof document !== `undefined`
+        ? document.getElementById(props.root)
+        : null;
   }
 
   componentDidMount = () => {
-    root.appendChild(this.el);
+    this.root.appendChild(this.el);
   };
 
   componentWillUnmount = () => {
-    root.removeChild(this.el);
+    this.root.removeChild(this.el);
   };
 
   render() {
