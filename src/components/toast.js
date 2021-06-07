@@ -6,7 +6,7 @@ import React, {
 } from "react";
 import closeIcon from "../images/close.png";
 
-const Toast = forwardRef(({ text, duration = 2500 }, ref) => {
+const Toast = forwardRef(({ text, duration = 500000 }, ref) => {
   const [display, setDisplay] = useState(false);
 
   const handleClick = () => {
@@ -40,8 +40,13 @@ const Toast = forwardRef(({ text, duration = 2500 }, ref) => {
   return (
     display && (
       <aside
-        className="bottom-6 lg:bottom-12 fixed flex font-semibold items-start p-6 right-18 rounded lg:right-36 w-96 shadow-4xl text-left text-sm z-10"
-        style={{ background: "rgb(238, 250, 245)" }}
+        className={`bottom-6 lg:bottom-12 fade fixed flex font-semibold items-start
+          justify-between left-2/4 md:left-unset p-6 right-18 rounded lg:right-36
+          w-11/12 md:w-96 shadow-4xl text-left text-sm transform -translate-x-2/4 md:-translate-x-0 z-60
+        `}
+        style={{
+          background: "rgb(238, 250, 245)",
+        }}
       >
         <span className="mr-5">{text}</span>
         <button className="p-1" onClick={handleClick}>
