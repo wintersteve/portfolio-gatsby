@@ -7,7 +7,7 @@ import icons from "../data/social-media.json";
 function About() {
   return (
     <section
-      className="2xl:mx-6 py-20 md:py-28 lg:py-60 px-14 md:px-28 lg:px-48 xl:px-72 2xl:px-96"
+      className="2xl:mx-6 py-20 md:py-28 lg:py-60 px-10 md:px-28 lg:px-48 xl:px-72 2xl:px-96"
       id="about"
       style={{ backgroundColor: "rgb(238, 250, 245)" }}
     >
