@@ -40,7 +40,7 @@ const Menu = forwardRef((props, ref) => {
 
   if (display) {
     return (
-      <Portal>
+      <Portal root="menu">
         <div className="bg-white fixed h-full left-0 overflow-scroll slideIn top-0 w-full z-50">
           <div className="bg-white flex items-center justify-between p-10 sticky top-0">
             <div>{props.title}</div>
