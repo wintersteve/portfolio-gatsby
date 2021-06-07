@@ -40,7 +40,7 @@ function Services() {
       </div>
       <div className="fade">
         <div className="grid grid-cols-2 gap-3 md:gap-6 lg:mb-6">
-          <ScrollAnimation animateIn="fade" delay={500} offset={1000}>
+          <ScrollAnimation animateIn="fade" delay={150} offset={1000}>
             <Tile
               className="mb-4 p-8 md:p-16 lg:mb-0"
               imageStyle="h-16 md:h-28 mx-2 md:mx-4"
@@ -48,7 +48,7 @@ function Services() {
               label={"Web Design"}
             />
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fade" delay={750} offset={1000}>
+          <ScrollAnimation animateIn="fade" delay={150} offset={1000}>
             <Tile
               className="mb-4 p-8 md:p-16 lg:mb-0"
               imageStyle="h-16 md:h-28 mx-2 md:mx-4"
@@ -57,7 +57,7 @@ function Services() {
             />
           </ScrollAnimation>
         </div>
-        <ScrollAnimation animateIn="fade" delay={100} offset={1000}>
+        <ScrollAnimation animateIn="fade" delay={150} offset={1000}>
           <Tile
             className="p-8 px-0 md:p-16"
             imageStyle="h-12 md:h-16 mx-2 md:mx-6"
