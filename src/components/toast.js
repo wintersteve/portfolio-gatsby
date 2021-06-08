@@ -6,7 +6,7 @@ import React, {
 } from "react";
 import closeIcon from "../images/close.png";
 
-const Toast = forwardRef(({ text, duration = 500000 }, ref) => {
+const Toast = forwardRef(({ text, duration = 5000 }, ref) => {
   const [display, setDisplay] = useState(false);
 
   const handleClick = () => {
