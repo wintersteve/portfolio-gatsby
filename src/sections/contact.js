@@ -32,7 +32,7 @@ function Contact() {
         ...formData,
       }),
     })
-      .then((s) => toastRef.current.open())
+      .then(() => toastRef.current.open())
       .catch((error) => alert(error));
   };
 
