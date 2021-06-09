@@ -18,7 +18,7 @@ function Services() {
       <div className="lg:pr-12">
         <div className="mb-10 lg:mb-0 fade">
           <ScrollAnimation animateIn="fade" delay={250} offset={1000}>
-            <h2 className="font-bold text-5xl mb-6 lg:mt-5">
+            <h2 className="font-bold text-4xl md:text-5xl mb-6 lg:mt-5">
               <span className="text-gray-600">What Can </span>
               <div>I do for you?</div>
             </h2>
