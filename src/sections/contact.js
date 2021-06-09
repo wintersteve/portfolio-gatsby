@@ -2,18 +2,7 @@ import React, { useRef, useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import Toast from "../components/toast";
 import { encode } from "../utils/encode";
-
-const FORM = {
-  name: {
-    placeholder: "Please enter your name",
-  },
-  email: {
-    placeholder: "Please enter your email address",
-  },
-  message: {
-    placeholder: "Tell me what I can help you with",
-  },
-};
+import formJSON from "../data/forms.json";
 
 const DEFAULT_DATA = { email: "", message: "", name: "" };
 
@@ -68,7 +57,7 @@ function Contact() {
             autoComplete="off"
             className="bg-gray-200 mb-5 lg:mb-0 p-8 rounded-xl w-full lg:w-auto"
             name="name"
-            placeholder={FORM.name.placeholder}
+            placeholder={formJSON.name.placeholder}
             required
             type="text"
             value={formData.name}
@@ -78,7 +67,7 @@ function Contact() {
             autoComplete="off"
             className="bg-gray-200 mb-5 lg:mb-0 p-8 rounded-xl w-full lg:w-auto"
             name="email"
-            placeholder={FORM.email.placeholder}
+            placeholder={formJSON.email.placeholder}
             required
             type="email"
             value={formData.email}
@@ -89,7 +78,7 @@ function Contact() {
           <textarea
             className="bg-gray-200 p-8 rounded-xl w-full"
             name="message"
-            placeholder={FORM.message.placeholder}
+            placeholder={formJSON.message.placeholder}
             required
             value={formData.message}
             onChange={handleChange}
