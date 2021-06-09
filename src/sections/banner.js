@@ -12,11 +12,11 @@ function Banner() {
         >
           <img
             alt="avatar"
-            className="h-48 md:h-72 mx-auto md:mx-0 mb-12 md:mb-0 md:mr-12"
+            className="h-44 md:h-72 mx-auto md:mx-0 mb-12 md:mb-0 md:mr-12"
             src={avatar}
           />
           <div className="px-6 md:px-0 mb-6 md:mb-0">
-            <h2 className="font-semibold ml-1 mb-1 md:mb-3 opacity-75 text-lg">
+            <h2 className="font-semibold ml-1 mb-1 opacity-75 text-lg">
               Hi, I am Steve Winter
             </h2>
             <h3 className="font-bold mb-6 text-5xl lg:text-7xl">
