@@ -1,0 +1,11 @@
+{
+  "name": {
+    "placeholder": "Please enter your name"
+  },
+  "email": {
+    "placeholder": "Please enter your email address"
+  },
+  "message": {
+    "placeholder": "Tell me what I can help you with"
+  }
+}
