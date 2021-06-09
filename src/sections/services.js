@@ -43,7 +43,7 @@ function Services() {
           <ScrollAnimation animateIn="fade" delay={150} offset={1000}>
             <Tile
               className="mb-4 p-8 md:p-16 lg:mb-0"
-              imageStyle="h-16 md:h-28 mx-2 md:mx-4"
+              imageStyle="h-12 md:h-28 mx-2 md:mx-4"
               images={[webDesignImage]}
               label={"Web Design"}
             />
@@ -51,7 +51,7 @@ function Services() {
           <ScrollAnimation animateIn="fade" delay={150} offset={1000}>
             <Tile
               className="mb-4 p-8 md:p-16 lg:mb-0"
-              imageStyle="h-16 md:h-28 mx-2 md:mx-4"
+              imageStyle="h-12 md:h-28 mx-2 md:mx-4"
               images={[marketingImage]}
               label={"SEO & Analytics"}
             />
