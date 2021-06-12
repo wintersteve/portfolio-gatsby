@@ -4,6 +4,7 @@ import { encode } from "../utils/encode";
 import { ToastContext } from "../providers/toast-provider";
 
 import formJSON from "../data/forms.json";
+import { NOTIFICATION } from "../models/notification";
 
 const DEFAULT_DATA = { email: "", message: "", name: "" };
 
@@ -27,7 +28,12 @@ function Contact() {
           text: "Thank you for the submission! I will get back to you shortly",
         })
       )
-      .catch((error) => alert(error));
+      .catch(() =>
+        toastRef.current.open({
+          text: "Something went wrong. Please try again",
+          type: NOTIFICATION.ERROR,
+        })
+      );
   };
 
   const handleChange = (event) => {
