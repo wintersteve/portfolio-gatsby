@@ -1,20 +1,38 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import useScroll from "../hooks/use-scroll";
 import chatIcon from "../images/chat.svg";
 import closeIcon from "../images/close.png";
+import Field from "./field";
+import Form from "./form";
 import Portal from "./portal";
+import Toast from "./toast";
+import formJSON from "../data/forms.json";
+import { encode } from "../utils/encode";
+
+const DEFAULT_DATA = { email: "", message: "", name: "" };
 
 function Chat() {
+  const toastRef = useRef();
+
   const [isOpen, setIsOpen] = useState(false);
   const [blockScroll, allowScroll] = useScroll();
 
   useEffect(() => {
-    if (isOpen) {
-      blockScroll();
-    } else {
-      allowScroll();
-    }
+    isOpen ? blockScroll() : allowScroll();
   }, [isOpen]);
+
+  const handleSubmit = (formData) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode(formData),
+    })
+      .then(() => {
+        setIsOpen(false);
+        toastRef.current.open();
+      })
+      .catch((error) => console.error(error));
+  };
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -25,7 +43,7 @@ function Chat() {
       {isOpen && (
         <div
           className="fade fixed h-full left-0 top-0 w-full z-50"
-          style={{ background: "hsl(0deg 0% 0% / 15%)" }}
+          style={{ background: "hsl(0deg 0% 0% / 20%)" }}
         ></div>
       )}
 
@@ -38,13 +56,15 @@ function Chat() {
         </button>
 
         {isOpen && (
-          <form
+          <Form
             className={`fixed lg:absolute bg-white bottom-0 right-0 p-5 lg:rounded transition-all w-full lg:w-96 shadow-4xl ${
               isOpen && "fade"
             }`}
-            name="chat"
-            method="POST"
             data-netlify="true"
+            method="POST"
+            name="chat"
+            initialValues={DEFAULT_DATA}
+            handleSubmit={handleSubmit}
           >
             <div
               className="flex justify-between mb-5 p-3 rounded"
@@ -65,29 +85,43 @@ function Chat() {
             <p className="px-2 mb-2 text-sm text-gray-500">
               Fill out the form and I will get back to you within minutes
             </p>
-            <input
+            <Field
+              autoComplete="off"
               className="border-b-2 mb-5 px-2 py-4 text-sm w-full"
               type="text"
-              placeholder="Name"
+              minLength="3"
+              name="name"
+              placeholder={formJSON.name.placeholder}
+              required
             />
-            <input
+            <Field
+              autoComplete="off"
               className="border-b-2 mb-5 px-2 py-4 text-sm w-full"
-              type="text"
-              placeholder="Email"
+              type="email"
+              name="email"
+              placeholder={formJSON.email.placeholder}
+              required
             />
-            <textarea
+            <Field
+              as="textarea"
               className="border-b-2 mb-5 px-2 py-4 text-sm w-full"
-              placeholder="Enter your message..."
-            ></textarea>
+              name="message"
+              placeholder={formJSON.message.placeholder}
+              required
+            />
             <button
               className="bg-gray-700 font-semibold p-3 text-white rounded w-full"
               type="submit"
             >
               SUBMIT
             </button>
-          </form>
+          </Form>
         )}
       </aside>
+      <Toast
+        ref={toastRef}
+        text="Thank you for the submission! I will get back to you shortly"
+      />
     </Portal>
   );
 }
