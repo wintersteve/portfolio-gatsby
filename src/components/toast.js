@@ -6,35 +6,42 @@ import React, {
   useState,
 } from "react";
 import closeIcon from "../images/close.png";
+import { NOTIFICATION } from "../models/notification";
 
 const Toast = forwardRef((props, ref) => {
   const [display, setDisplay] = useState(false);
   const [text, setText] = useState("");
+  const [type, setType] = useState(NOTIFICATION.SUCCESS);
 
   const handleClick = () => {
     setDisplay(!display);
   };
 
-  const handleOpen = ({ text, duration }) => {
+  const handleOpen = ({ duration, text, type }) => {
+    console.log(duration);
+
     setDisplay(true);
     setText(text);
+    setType(type);
+
     closeAfterTimeout(duration);
   };
 
   const handleClose = () => {
     setDisplay(false);
+    setText(null);
+    setType(null);
   };
 
   const closeAfterTimeout = useCallback((duration) => {
-    setTimeout(() => setDisplay(false), duration);
+    setTimeout(() => handleClose(), duration);
   }, []);
 
-  useImperativeHandle(ref, () => {
-    return {
-      open: ({ text, duration = 5000 }) => handleOpen({ text, duration }),
-      close: () => handleClose(),
-    };
-  });
+  useImperativeHandle(ref, () => ({
+    open: ({ duration = 5000, text, type = NOTIFICATION.SUCCESS }) =>
+      handleOpen({ duration, text, type }),
+    close: () => handleClose(),
+  }));
 
   useEffect(() => {
     closeAfterTimeout();
@@ -48,7 +55,8 @@ const Toast = forwardRef((props, ref) => {
           w-11/12 md:w-96 shadow-4xl text-left text-sm transform -translate-x-2/4 md:-translate-x-0 z-60
         `}
         style={{
-          background: "rgb(238, 250, 245)",
+          background:
+            type === NOTIFICATION.SUCCESS ? "rgb(238, 250, 245)" : "#D62828",
         }}
       >
         <span className="mr-5">{text}</span>
