@@ -1,0 +1,6 @@
+const NOTIFICATION = {
+  SUCCESS: "SUCCESS",
+  ERROR: "ERROR",
+};
+
+export { NOTIFICATION };
