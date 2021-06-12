@@ -18,8 +18,6 @@ const Toast = forwardRef((props, ref) => {
   };
 
   const handleOpen = ({ duration, text, type }) => {
-    console.log(duration);
-
     setDisplay(true);
     setText(text);
     setType(type);
