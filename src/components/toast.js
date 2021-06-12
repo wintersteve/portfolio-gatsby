@@ -1,41 +1,44 @@
 import React, {
   forwardRef,
+  useCallback,
   useEffect,
   useImperativeHandle,
   useState,
 } from "react";
 import closeIcon from "../images/close.png";
 
-const Toast = forwardRef(({ text, duration = 5000 }, ref) => {
+const Toast = forwardRef((props, ref) => {
   const [display, setDisplay] = useState(false);
+  const [text, setText] = useState("");
 
   const handleClick = () => {
     setDisplay(!display);
   };
 
-  const handleOpen = () => {
+  const handleOpen = ({ text, duration }) => {
     setDisplay(true);
-    closeAfterTimeout();
+    setText(text);
+    closeAfterTimeout(duration);
   };
 
   const handleClose = () => {
     setDisplay(false);
   };
 
-  const closeAfterTimeout = () => {
+  const closeAfterTimeout = useCallback((duration) => {
     setTimeout(() => setDisplay(false), duration);
-  };
+  }, []);
 
   useImperativeHandle(ref, () => {
     return {
-      open: () => handleOpen(),
+      open: ({ text, duration = 5000 }) => handleOpen({ text, duration }),
       close: () => handleClose(),
     };
   });
 
   useEffect(() => {
     closeAfterTimeout();
-  });
+  }, [closeAfterTimeout]);
 
   return (
     display && (
