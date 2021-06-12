@@ -1,13 +1,14 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
-import Toast from "../components/toast";
 import { encode } from "../utils/encode";
+import { ToastContext } from "../providers/toast-provider";
+
 import formJSON from "../data/forms.json";
 
 const DEFAULT_DATA = { email: "", message: "", name: "" };
 
 function Contact() {
-  const toastRef = useRef();
+  const toastRef = useContext(ToastContext);
   const [formData, setFormData] = useState(DEFAULT_DATA);
 
   const handleSubmit = (event) => {
@@ -21,7 +22,11 @@ function Contact() {
         ...formData,
       }),
     })
-      .then(() => toastRef.current.open())
+      .then(() =>
+        toastRef.current.open({
+          text: "Thank you for the submission! I will get back to you shortly",
+        })
+      )
       .catch((error) => alert(error));
   };
 
@@ -91,11 +96,6 @@ function Contact() {
           SUBMIT
         </button>
       </form>
-
-      <Toast
-        ref={toastRef}
-        text="Thank you for the submission! I will get back to you shortly"
-      />
     </section>
   );
 }
