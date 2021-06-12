@@ -1,8 +1,5 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
-import SocialMediaNavigation from "../components/social-media-navigation";
-
-import icons from "../data/social-media.json";
 
 function About() {
   return (

@@ -35,7 +35,7 @@ const Toast = forwardRef(({ text, duration = 5000 }, ref) => {
 
   useEffect(() => {
     closeAfterTimeout();
-  }, [duration]);
+  });
 
   return (
     display && (
@@ -50,7 +50,7 @@ const Toast = forwardRef(({ text, duration = 5000 }, ref) => {
       >
         <span className="mr-5">{text}</span>
         <button className="p-1" onClick={handleClick}>
-          <img src={closeIcon} width={16} />
+          <img alt="close" src={closeIcon} width={16} />
         </button>
       </aside>
     )

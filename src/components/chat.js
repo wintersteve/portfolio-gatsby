@@ -19,7 +19,7 @@ function Chat() {
 
   useEffect(() => {
     isOpen ? blockScroll() : allowScroll();
-  }, [isOpen]);
+  }, [isOpen, allowScroll, blockScroll]);
 
   const handleSubmit = (formData) => {
     fetch("/", {

@@ -23,7 +23,7 @@ function Form({ children, handleSubmit, initialValues, ...props }) {
     if (expectedFieldsLength !== actualFieldsLength) {
       console.warn("Fields are missing");
     }
-  }, [children]);
+  }, [children, initialValues]);
 
   const submitHandler = (event) => {
     event.preventDefault();

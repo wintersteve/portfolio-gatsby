@@ -19,7 +19,10 @@ function Footer() {
         className="relative text-white text-center px-20 lg:px-40 py-20 lg:pb-28 lg:pt-0"
         style={{ backgroundColor: "#1f2937" }}
       >
-        <SocialMediaNavigation iconStyle="mx-4 w-12" style="justify-center" />
+        <SocialMediaNavigation
+          componentClass="justify-center"
+          iconClass="mx-4 w-12"
+        />
         <div className="mt-10 mb-2">Contact me</div>
         <div className="font-bold mb-10">contact@wintersteve.com</div>
         <div className="text-sm">© Steve Winter</div>

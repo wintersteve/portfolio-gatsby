@@ -21,7 +21,7 @@ const Menu = forwardRef((props, ref) => {
         allowScroll();
       };
     }
-  }, [display]);
+  }, [display, blockScroll, allowScroll]);
 
   useImperativeHandle(ref, () => {
     return {

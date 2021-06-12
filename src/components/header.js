@@ -104,7 +104,7 @@ function Header({ isScrollTop, lastScrollY }) {
           <h5 className="font-semibold mb-1 text-md">Contact me at</h5>
           <p className="mb-12">contact@wintersteve.com</p>
           <div className="mb-12">
-            <SocialMediaNavigation theme="gray" iconStyle="mr-4 w-8" />
+            <SocialMediaNavigation theme="gray" iconClass="mr-4 w-8" />
           </div>
         </div>
       </Menu>
