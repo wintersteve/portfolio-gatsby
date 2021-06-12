@@ -59,7 +59,7 @@ function Services() {
         </div>
         <ScrollAnimation animateIn="fade" delay={150} offset={1000}>
           <Tile
-            className="p-8 px-0 md:p-16"
+            className="p-8 px-0 md:py-24 md:px-12"
             imageStyle="h-12 md:h-16 mx-2 md:mx-6"
             images={[typescriptImage, angularImage, nuxtImage, graphqlImage]}
             label={"Programming"}
