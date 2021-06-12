@@ -12,44 +12,9 @@ import Projects from "../sections/projects";
 import Services from "../sections/services";
 
 const IndexPage = () => {
-  let ticking = false;
-  let lastScrollY = 0;
-
-  const [scroll, setScroll] = React.useState({
-    isScrollTop: false,
-    lastScrollY: 0,
-  });
-
-  React.useEffect(() => {
-    const handleScroll = () => {
-      const { scrollY } = window;
-
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          const isScrollTop = scrollY > lastScrollY;
-          setScroll({ isScrollTop, lastScrollY: scrollY });
-
-          lastScrollY = scrollY;
-          ticking = false;
-        });
-
-        ticking = true;
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <>
-      <Header
-        isScrollTop={scroll.isScrollTop}
-        lastScrollY={scroll.lastScrollY}
-      />
+      <Header />
       <Banner />
       <main>
         <Services />

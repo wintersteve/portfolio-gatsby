@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
+import useScrollPosition from "../hooks/use-scroll-position";
 import Branding from "./branding";
 import FragmentLink from "./fragment-link";
 import Hamburger from "./hamburger";
@@ -37,8 +38,10 @@ const navItems = [
   },
 ];
 
-function Header({ isScrollTop, lastScrollY }) {
+function Header() {
   const menuRef = useRef();
+
+  const { isScrollTop, lastScrollY } = useScrollPosition();
 
   return (
     <>
