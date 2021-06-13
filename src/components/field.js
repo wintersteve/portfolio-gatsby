@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { FormContext } from "../providers/form-provider";
 
-function Field({ as = "input", handleChange, ...props }) {
+function Field({ as = "input", ...props }) {
+  const { handleChange } = useContext(FormContext);
+
   const Template = as;
 
   return <Template onChange={handleChange} {...props} />;
