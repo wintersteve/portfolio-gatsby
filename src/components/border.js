@@ -9,8 +9,8 @@ const DEFAULT_STYLE = {
   width: "100%",
 };
 
-function Border(props) {
-  return <div style={Object.assign({}, DEFAULT_STYLE, props)}></div>;
+function Border({ style }) {
+  return <div style={Object.assign({}, DEFAULT_STYLE, style)}></div>;
 }
 
 export default Border;
