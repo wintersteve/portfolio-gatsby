@@ -23,7 +23,7 @@ function Banner() {
               <span className="block">Full-Stack</span>
               <span className="opacity-75">Web Developer</span>
             </h3>
-            <p className="max-w-md ml-1 md:ml-2 opacity-75 text-md">
+            <p className="max-w-md ml-1 md:ml-2 text-md">
               I'm a Germany-based software engineer who excels at building
               digital experiences. Currently, I'm an engineer at Upstatement
               focused on building accessible, human-centered products.
