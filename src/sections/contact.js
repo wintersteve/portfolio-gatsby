@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { encode } from "../utils/encode";
 import { ToastContext } from "../providers/toast-provider";
-import { NOTIFICATION } from "../models/notification";
+import { NOTIFICATION } from "../models/notification.enum";
 import Form from "../components/form";
 import Field from "../components/field";
 import formJSON from "../data/forms.json";

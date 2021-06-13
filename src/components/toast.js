@@ -6,7 +6,7 @@ import React, {
   useState,
 } from "react";
 import closeIcon from "../images/close.png";
-import { NOTIFICATION } from "../models/notification";
+import { NOTIFICATION } from "../models/notification.enum";
 
 const Toast = forwardRef((props, ref) => {
   const [display, setDisplay] = useState(false);
