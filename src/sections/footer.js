@@ -10,15 +10,12 @@ function Footer() {
         viewBox="0 0 1440 320"
       >
         <path
-          fill="#1f2937"
+          fill="var(--primary)"
           fillOpacity="1"
           d="M0,96L40,117.3C80,139,160,181,240,197.3C320,213,400,203,480,192C560,181,640,171,720,165.3C800,160,880,160,960,176C1040,192,1120,224,1200,229.3C1280,235,1360,213,1400,202.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
         ></path>
       </svg>
-      <div
-        className="relative text-white text-center px-20 lg:px-40 py-20 lg:pb-28 lg:pt-0"
-        style={{ backgroundColor: "#1f2937" }}
-      >
+      <div className="bg-primary relative text-white text-center px-20 lg:px-40 py-20 lg:pb-28 lg:pt-0">
         <SocialMediaNavigation
           componentClass="justify-center"
           iconClass="mx-4 w-12"

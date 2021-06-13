@@ -74,10 +74,7 @@ function Chat() {
             initialValues={DEFAULT_DATA}
             handleSubmit={handleSubmit}
           >
-            <div
-              className="flex justify-between mb-5 p-3 rounded"
-              style={{ backgroundColor: "rgb(238, 250, 245)" }}
-            >
+            <div className="bg-secondary-100 flex justify-between mb-5 p-3 rounded">
               <h6 className="font-semibold text-gray-600 text-lg">
                 Send me a message
               </h6>

@@ -60,10 +60,7 @@ function Projects() {
                   TypeScript
                 </li>
               </ul>
-              <a
-                className="font-bold inline-block p-5 rounded text-sm w-full lg:w-auto"
-                style={{ backgroundColor: "#eefaf5", color: "rgb(87 117 105)" }}
-              >
+              <a className="bg-secondary-100 text-secondary-900 font-bold inline-block p-5 rounded text-sm w-full lg:w-auto">
                 Take me to Project Title
               </a>
             </div>
