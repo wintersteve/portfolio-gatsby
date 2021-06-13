@@ -31,7 +31,12 @@ function Chat() {
         setIsOpen(false);
         toastRef.current.open();
       })
-      .catch((error) => console.error(error));
+      .catch(() =>
+        toastRef.current.open({
+          text: "Something went wrong. Please try again",
+          type: NOTIFICATION.ERROR,
+        })
+      );
   };
 
   const toggle = () => {
