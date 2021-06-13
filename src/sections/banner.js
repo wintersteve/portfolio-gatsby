@@ -4,7 +4,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 function Banner() {
   return (
-    <section className="bg-gray-100 flex flex-col items-center justify-center pt-12 pb-20 md:py-28 lg:pt-44 lg:pb-52 2xl:mx-6 relative">
+    <section className="bg-gray-100 flex flex-col items-center justify-center pt-12 pb-20 md:py-28 lg:pt-40 lg:pb-48 2xl:mx-6 relative">
       <div>
         <ScrollAnimation
           animateIn="fade"
