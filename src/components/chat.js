@@ -1,18 +1,18 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import useScroll from "../hooks/use-scroll";
 import chatIcon from "../images/chat.svg";
 import closeIcon from "../images/close.png";
 import Field from "./field";
 import Form from "./form";
 import Portal from "./portal";
-import Toast from "./toast";
 import formJSON from "../data/forms.json";
 import { encode } from "../utils/encode";
+import { ToastContext } from "../providers/toast-provider";
 
 const DEFAULT_DATA = { email: "", message: "", name: "" };
 
 function Chat() {
-  const toastRef = useRef();
+  const toastRef = useContext(ToastContext);
 
   const [isOpen, setIsOpen] = useState(false);
   const [blockScroll, allowScroll] = useScroll();
@@ -119,10 +119,6 @@ function Chat() {
           </Form>
         )}
       </aside>
-      <Toast
-        ref={toastRef}
-        text="Thank you for the submission! I will get back to you shortly"
-      />
     </Portal>
   );
 }
