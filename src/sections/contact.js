@@ -1,27 +1,22 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { encode } from "../utils/encode";
 import { ToastContext } from "../providers/toast-provider";
-
-import formJSON from "../data/forms.json";
 import { NOTIFICATION } from "../models/notification";
+import Form from "../components/form";
+import Field from "../components/field";
+import formJSON from "../data/forms.json";
 
 const DEFAULT_DATA = { email: "", message: "", name: "" };
 
 function Contact() {
   const toastRef = useContext(ToastContext);
-  const [formData, setFormData] = useState(DEFAULT_DATA);
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
+  const handleSubmit = (formData) => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": event.target.getAttribute("name"),
-        ...formData,
-      }),
+      body: encode(formData),
     })
       .then(() =>
         toastRef.current.open({
@@ -34,12 +29,6 @@ function Contact() {
           type: NOTIFICATION.ERROR,
         })
       );
-  };
-
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-
-    setFormData({ ...formData, [name]: value });
   };
 
   return (
@@ -56,44 +45,40 @@ function Contact() {
           opportunities.{" "}
         </p>
       </ScrollAnimation>
-      <form
+      <Form
         className="w-9/12 xl:w-6/12 mx-auto"
         name="contact"
         method="POST"
         data-netlify="true"
-        onSubmit={handleSubmit}
+        initialValues={DEFAULT_DATA}
+        handleSubmit={handleSubmit}
       >
         <div className="lg:grid lg:grid-cols-2 gap-5 lg:mb-5">
-          <input
+          <Field
             autoComplete="off"
             className="bg-gray-200 mb-5 lg:mb-0 p-8 rounded-xl w-full lg:w-auto"
             name="name"
             placeholder={formJSON.name.placeholder}
             required
             type="text"
-            value={formData.name}
-            onChange={handleChange}
           />
-          <input
+          <Field
             autoComplete="off"
             className="bg-gray-200 mb-5 lg:mb-0 p-8 rounded-xl w-full lg:w-auto"
             name="email"
             placeholder={formJSON.email.placeholder}
             required
             type="email"
-            value={formData.email}
-            onChange={handleChange}
           />
         </div>
         <div className="mb-8">
-          <textarea
+          <Field
+            as="textarea"
             className="bg-gray-200 p-8 rounded-xl w-full"
             name="message"
             placeholder={formJSON.message.placeholder}
             required
-            value={formData.message}
-            onChange={handleChange}
-          ></textarea>
+          ></Field>
         </div>
         <button
           className="border-2 bg-gray-700 border-solid font-semibold py-3 px-8 relative rounded-full text-white z-10"
@@ -101,7 +86,7 @@ function Contact() {
         >
           SUBMIT
         </button>
-      </form>
+      </Form>
     </section>
   );
 }
