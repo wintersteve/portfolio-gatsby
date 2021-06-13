@@ -1,6 +1,6 @@
 :root {
   --transition: cubic-bezier(0.645, 0.045, 0.355, 1);
-  --text-primary: rgb(31 41 55 / 92.5%);
+  --text-primary: rgb(31 41 55 / 90%);
   --primary: #1f2937;
   --primary-dark: #111827;
 }
@@ -9,6 +9,10 @@ body {
   color: var(--text-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  line-height: 1.8;
 }
 
 *:focus:not(.focus-visible) {
