@@ -13,7 +13,7 @@ function FragmentLink({ className, callback, children, id, offset = 140 }) {
 
   return (
     <button
-      className={`ml-2 px-3 py-2 text-gray-500 font-semibold text-sm transition duration-200 ease-in-out hover:bg-gray-100 hover:text-gray-600 rounded-full ${className}`}
+      className={`ml-2 px-3 py-2 text-gray-600 font-semibold text-sm transition duration-200 ease-in-out hover:bg-gray-100 hover:text-gray-700 rounded-full ${className}`}
       onClick={scroll}
     >
       {children}
