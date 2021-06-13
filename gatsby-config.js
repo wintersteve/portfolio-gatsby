@@ -1,6 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: "Portfolio",
+    title: "Steve Winter | Full-Stack Web Developer",
+    description:
+      "Steve Winter. Professional Full-Stack Web Developer. Focus on the JavaScript environment. Familiarity with all major modern technologies and stacks.",
+    og: {
+      description:
+        "Wondering where and how to find a good web developer? Looking for fast, performant web applications, web sites or cms work? Contact me",
+      title: "Steve Winter | Web Developer",
+      type: "website",
+      url: "https://wintersteve.com",
+    },
   },
   plugins: [
     "gatsby-plugin-image",
