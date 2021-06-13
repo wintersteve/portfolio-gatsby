@@ -1,17 +1,23 @@
 import React from "react";
 
-import icons from "../data/social-media.json";
+import models from "../data/social-media.json";
 
 function SocialMediaNavigation({ theme = "white", componentClass, iconClass }) {
   return (
     <nav className={`items-center flex ${componentClass}`}>
-      {icons.map((icon) => (
-        <img
-          alt={icon.images.alt}
-          className={`w-6 ${iconClass}`}
-          key={icon.label}
-          src={icon.images[theme]}
-        />
+      {models.map((model) => (
+        <a
+          href={model.url}
+          key={model.label}
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          <img
+            alt={model.images.alt}
+            className={`w-6 ${iconClass}`}
+            src={model.images[theme]}
+          />
+        </a>
       ))}
     </nav>
   );
