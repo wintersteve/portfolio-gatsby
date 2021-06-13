@@ -8,6 +8,7 @@ import Portal from "./portal";
 import formJSON from "../data/forms.json";
 import { encode } from "../utils/encode";
 import { ToastContext } from "../providers/toast-provider";
+import { NOTIFICATION } from "../models/notification";
 
 const DEFAULT_DATA = { email: "", message: "", name: "" };
 
