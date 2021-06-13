@@ -12,14 +12,14 @@ function Banner() {
         >
           <img
             alt="avatar"
-            className="h-56 md:h-72 mx-auto md:mx-0 mb-12 md:mb-0 md:mr-12"
+            className="h-56 md:h-64 lg:h-72 mx-auto md:mx-0 mb-12 md:mb-0 md:mr-6 lg:mr-12"
             src={avatar}
           />
-          <div className="px-6 md:px-0 mb-6 md:mb-0">
+          <div className="px-6 md:px-0 mb-6 md:mb-0 lg:mt-2">
             <h2 className="font-semibold ml-1 mb-1 opacity-75 text-lg">
               Hi, I am Steve Winter
             </h2>
-            <h3 className="font-bold mb-6 text-5xl lg:text-7xl">
+            <h3 className="font-bold mb-6 text-5xl md:text-6xl lg:text-7xl">
               <span className="block">Full-Stack</span>
               <span className="opacity-75">Web Developer</span>
             </h3>
