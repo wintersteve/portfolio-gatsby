@@ -10,10 +10,12 @@ import Experiences from "../sections/experiences";
 import Footer from "../sections/footer";
 import Projects from "../sections/projects";
 import Services from "../sections/services";
+import SEO from "../components/seo";
 
 const IndexPage = () => {
   return (
     <>
+      <SEO />
       <Header />
       <Banner />
       <main>
