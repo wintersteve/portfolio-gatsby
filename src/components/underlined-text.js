@@ -1,11 +1,11 @@
 import React from "react";
 import Border from "./border";
 
-function UnderlinedText({ children, textClass }) {
+function UnderlinedText({ children, position, textClass }) {
   return (
     <div className="relative w-max">
       <span className={`relative z-20 ${textClass}`}>{children}</span>
-      <Border style={{ bottom: "0.1rem" }} />
+      <Border style={position} />
     </div>
   );
 }
