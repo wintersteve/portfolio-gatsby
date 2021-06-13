@@ -46,7 +46,7 @@ function Header() {
   return (
     <>
       <header
-        className={`bg-white duration-500 py-7 lg:py-10 px-10 md:px-16 2xl:px-56 font-bold shadow-lg sticky transform transition-all top-0 z-50 ${
+        className={`bg-white duration-500 py-7 lg:py-8 px-10 md:px-16 2xl:px-56 font-bold shadow-lg sticky transform transition-all top-0 z-50 ${
           lastScrollY === 0 && "shadow-none"
         } ${
           lastScrollY > 100 && isScrollTop ? "-translate-y-32" : "translate-y-0"
@@ -65,7 +65,7 @@ function Header() {
               </FragmentLink>
             ))}
             <a
-              className="hover:bg-gray-100 border-2 ml-2 px-4 py-2 font-semibold rounded-full transition-all text-sm text-gray-500 hover:text-gray-600"
+              className="hover:bg-gray-100 border-2 ml-4 px-4 py-2 font-semibold rounded-full transition-all text-sm text-gray-600 hover:text-gray-700"
               download
               href="/resume.pdf"
             >
