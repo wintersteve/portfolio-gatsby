@@ -48,6 +48,7 @@ function Chat() {
     <Portal root="chat">
       {isOpen && (
         <div
+          aria-hidden
           className="fade fixed h-full left-0 top-0 w-full z-50"
           style={{ background: "hsl(0deg 0% 0% / 30%)" }}
           onClick={toggle}
