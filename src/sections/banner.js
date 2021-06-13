@@ -8,7 +8,7 @@ function Banner() {
       <div>
         <ScrollAnimation
           animateIn="fade"
-          className="flex flex-col md:flex-row items-start"
+          className="flex flex-col md:flex-row items-start ml-0 lg:ml-6"
         >
           <img
             alt="avatar"
@@ -20,10 +20,10 @@ function Banner() {
               Hi, I am Steve Winter
             </h2>
             <h3 className="font-bold mb-6 text-5xl lg:text-7xl">
-              <span className="block mb-2">Full-Stack</span>
+              <span className="block">Full-Stack</span>
               <span className="opacity-75">Web Developer</span>
             </h3>
-            <p className="max-w-md ml-2 opacity-75 text-md">
+            <p className="max-w-md ml-1 md:ml-2 opacity-75 text-md">
               I'm a Germany-based software engineer who excels at building
               digital experiences. Currently, I'm an engineer at Upstatement
               focused on building accessible, human-centered products.
