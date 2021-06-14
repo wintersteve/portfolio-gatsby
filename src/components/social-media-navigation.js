@@ -7,6 +7,7 @@ function SocialMediaNavigation({ theme = "white", componentClass, iconClass }) {
     <nav className={`items-center flex ${componentClass}`}>
       {models.map((model) => (
         <a
+          className="hover:float"
           href={model.url}
           key={model.label}
           rel="noreferrer noopener"

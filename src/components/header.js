@@ -65,7 +65,7 @@ function Header() {
               </FragmentLink>
             ))}
             <a
-              className="hover:bg-gray-100 border-2 ml-4 px-4 py-2 font-semibold rounded-full transition-all text-sm text-gray-600 hover:text-gray-700"
+              className="hover:float border-2 inline-block ml-4 px-4 py-2 font-semibold rounded-full text-sm text-gray-600 hover:text-gray-700"
               download
               href="/resume.pdf"
             >

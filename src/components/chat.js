@@ -57,7 +57,7 @@ function Chat() {
 
       <aside className="bottom-6 lg:bottom-12 fixed right-6 lg:right-12 z-50">
         <button
-          className="bg-gray-300 p-4 rounded-full shadow-4xl"
+          className="bg-gray-300 hover:scale p-4 rounded-full shadow-4xl"
           onClick={toggle}
         >
           <img alt="open chat" src={chatIcon} width="25" />
