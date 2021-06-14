@@ -18,7 +18,7 @@ function Banner() {
       >
         <img
           alt="avatar"
-          className="filter h-auto grayscale-30 mx-auto md:mx-0 mb-12 md:mb-0 md:mr-6 lg:mr-12 rounded-lg w-1/2"
+          className="filter h-auto grayscale-30 mx-auto md:mx-0 mb-12 md:mb-0 md:mr-6 lg:mr-12 rounded-lg shadow-4xl w-1/2"
           src="images/image.png"
         />
         <div className="px-6 md:px-0 mb-6 md:mb-0 lg:mt-2">
