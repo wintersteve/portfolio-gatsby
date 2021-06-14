@@ -66,7 +66,7 @@ function Experiences() {
   return (
     <section
       id="experience"
-      className="lg:flex lg:mx-12 py-20 lg:py-28 xl:py-44 px-6 md:px-12 lg:px-18 xl:px-32 2xl:px-72"
+      className="lg:flex lg:mx-12 py-20 lg:py-28 xl:pt-40 xl:pb-44 px-6 md:px-12 lg:px-18 xl:px-32 2xl:px-72"
     >
       <div>
         <ScrollAnimation animateIn="fade" duration={0.5}>
