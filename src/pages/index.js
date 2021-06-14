@@ -9,7 +9,6 @@ import Contact from "../sections/contact";
 import Experiences from "../sections/experiences";
 import Footer from "../sections/footer";
 import Projects from "../sections/projects";
-import Services from "../sections/services";
 import SEO from "../components/seo";
 
 const IndexPage = () => {
@@ -19,7 +18,6 @@ const IndexPage = () => {
       <Header />
       <Banner />
       <main>
-        <Services />
         <About />
         <Experiences />
         <Competencies />
