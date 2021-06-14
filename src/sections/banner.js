@@ -18,7 +18,7 @@ function Banner() {
       >
         <img
           alt="avatar"
-          className="h-auto mx-auto md:mx-0 mb-12 md:mb-0 md:mr-6 lg:mr-12 rounded-lg w-1/2"
+          className="filter h-auto grayscale-30 mx-auto md:mx-0 mb-12 md:mb-0 md:mr-6 lg:mr-12 rounded-lg w-1/2"
           src="images/image.png"
         />
         <div className="px-6 md:px-0 mb-6 md:mb-0 lg:mt-2">
@@ -38,7 +38,7 @@ function Banner() {
             <ScrollAnimation animateIn="fade" delay={150} offset={1000}>
               <Tile
                 className="mb-4 p-6 md:p-12 lg:mb-0"
-                imageStyle="h-12 md:h-16 mx-2 md:mx-4"
+                imageStyle="filter grayscale-30 h-12 md:h-16 mx-2 md:mx-4"
                 images={[webDesignImage]}
                 label={"Web Design"}
               />
@@ -46,7 +46,7 @@ function Banner() {
             <ScrollAnimation animateIn="fade" delay={150} offset={1000}>
               <Tile
                 className="mb-4 p-6 md:p-12 lg:mb-0"
-                imageStyle="h-12 md:h-16 mx-2 md:mx-4"
+                imageStyle="filter grayscale-30 h-12 md:h-16 mx-2 md:mx-4"
                 images={[marketingImage]}
                 label={"SEO & Analytics"}
               />
@@ -55,7 +55,7 @@ function Banner() {
           <ScrollAnimation animateIn="fade" delay={150} offset={1000}>
             <Tile
               className="p-6 px-0 md:py-16 md:px-12"
-              imageStyle="h-12 md:h-12 mx-2 md:mx-6"
+              imageStyle="filter grayscale-30 h-12 md:h-12 mx-2 md:mx-6"
               images={[typescriptImage, angularImage, nuxtImage, graphqlImage]}
               label={"Programming"}
             />

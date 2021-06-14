@@ -17,6 +17,11 @@ module.exports = {
     fontFamily: {
       sans: ["Poppins", "Arial", "sans-serif"],
     },
+    extend: {
+      grayscale: {
+        30: "30%",
+      },
+    },
   },
   variants: {
     extend: {},
