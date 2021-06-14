@@ -81,7 +81,7 @@ function Contact() {
           ></Field>
         </div>
         <button
-          className="border-2 bg-primary border-solid font-semibold py-3 px-8 relative rounded-full text-white z-10"
+          className="hover:scale bg-primary font-semibold py-3 px-8 relative rounded-full text-white z-10"
           type="submit"
         >
           SUBMIT

@@ -60,7 +60,10 @@ function Projects() {
                   TypeScript
                 </li>
               </ul>
-              <a className="bg-secondary-100 text-secondary-900 font-bold inline-block p-5 rounded text-sm w-full lg:w-auto">
+              <a
+                className="hover:float bg-secondary-100 text-secondary-900 font-bold inline-block p-5 rounded text-sm w-full lg:w-auto"
+                href="#"
+              >
                 Take me to Project Title
               </a>
             </div>
