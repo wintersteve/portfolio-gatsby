@@ -11,14 +11,14 @@ import nuxtImage from "../images/services/nuxt.svg";
 
 function Banner() {
   return (
-    <section className=" 2xl:mx-auto max-w-screen-2xl mt-10 mb-12 relative">
+    <section className=" 2xl:mx-auto max-w-screen-2xl mt-0 md:mt-10 mb-12 relative">
       <ScrollAnimation
         animateIn="fade"
         className="flex flex-col justify-center md:flex-row items-start"
       >
         <img
           alt="avatar"
-          className="filter h-auto grayscale-30 mx-auto md:mx-0 mb-12 md:mb-0 md:mr-6 lg:mr-12 rounded-lg shadow-4xl w-1/2"
+          className="filter h-auto grayscale-30 mx-auto md:mx-0 mb-6 md:mb-0 md:mr-6 lg:mr-12 rounded-lg shadow-4xl w-11/12 md:w-1/2"
           src="images/image.png"
         />
         <div className="px-6 md:px-0 mb-6 md:mb-0 lg:mt-2">
