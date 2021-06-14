@@ -21,6 +21,9 @@ module.exports = {
       grayscale: {
         30: "30%",
       },
+      maxWidth: {
+        "screen-2xl": "1440px",
+      },
     },
   },
   variants: {
