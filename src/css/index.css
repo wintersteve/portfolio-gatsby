@@ -14,6 +14,10 @@
     @apply transform transition hover:scale-95;
   }
 
+  .shadow-secondary {
+    box-shadow: 5px 5px rgb(238 250 245);
+  }
+
   .shadow-4xl {
     box-shadow: 0 1rem 3rem rgba(52, 58, 64, 0.175);
   }
