@@ -9,10 +9,6 @@ import SocialMediaNavigation from "./social-media-navigation";
 
 const navItems = [
   {
-    id: "services",
-    label: "Services",
-  },
-  {
     id: "about",
     label: "About",
   },
@@ -46,7 +42,7 @@ function Header() {
   return (
     <>
       <header
-        className={`bg-white duration-500 py-7 lg:py-8 px-10 md:px-16 lg:px-32 2xl:px-64 font-bold shadow-lg sticky transform transition-all top-0 z-50 ${
+        className={`bg-white duration-500 py-7 lg:py-8 px-10 md:px-16 lg:px-20 xl:px-32 2xl:px-64 font-bold shadow-lg sticky transform transition-all top-0 z-50 ${
           lastScrollY === 0 && "shadow-none"
         } ${
           lastScrollY > 100 && isScrollTop ? "-translate-y-32" : "translate-y-0"
