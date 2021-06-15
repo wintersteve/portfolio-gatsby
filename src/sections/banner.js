@@ -17,9 +17,9 @@ function Banner() {
         <h2 className="font-semibold ml-1 mb-6 opacity-80 text-5xl md:text-6xl">
           Steve Winter
         </h2>
-        <h3 className="bg-secondary-100 font-bold mb-6 py-2 px-3 text-5xl md:text-6xl lg:text-7xl">
+        <h3 className="bg-secondary-100 font-bold mb-6 py-2 px-3 text-4xl md:text-6xl lg:text-7xl rounded-md w-full md:w-auto">
           <span className="block mb-3">I am a professional</span>
-          <span className="opacity-75">Full-Stack Web Developer</span>
+          <span className="opacity-75">Full-Stack Developer</span>
         </h3>
 
         <p className="max-w-md ml-1 md:ml-2 mb-6 text-md">
@@ -31,7 +31,7 @@ function Banner() {
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:mb-6 w-full lg:w-auto">
           <ScrollAnimation animateIn="fade" delay={150} offset={1000}>
             <Tile
-              className="shadow-secondary bg-gray-100 p-10 md:py-20 lg:mb-0"
+              className="shadow-secondary bg-gray-100 px-10 py-8 md:py-20 lg:mb-0"
               imageStyle="h-12 md:h-12 mx-2 md:mx-2"
               images={[webDesignImage]}
               label={"Web Design"}
@@ -39,7 +39,7 @@ function Banner() {
           </ScrollAnimation>
           <ScrollAnimation animateIn="fade" delay={150} offset={1000}>
             <Tile
-              className="shadow-secondary bg-gray-100 p-10 md:py-20 lg:mb-0"
+              className="shadow-secondary bg-gray-100 px-10 py-8 md:py-20 lg:mb-0"
               imageStyle="h-12 md:h-12 mx-2 md:mx-2"
               images={[marketingImage]}
               label={"SEO & Analytics"}
