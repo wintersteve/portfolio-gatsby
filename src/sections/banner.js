@@ -17,7 +17,7 @@ function Banner() {
         <h2 className="font-semibold ml-1 mb-6 opacity-80 text-5xl md:text-6xl">
           Steve Winter
         </h2>
-        <h3 className="bg-secondary-100 font-bold mb-6 text-5xl md:text-6xl lg:text-7xl">
+        <h3 className="bg-secondary-100 font-bold mb-6 py-2 px-3 text-5xl md:text-6xl lg:text-7xl">
           <span className="block mb-3">I am a professional</span>
           <span className="opacity-75">Full-Stack Web Developer</span>
         </h3>
@@ -52,7 +52,7 @@ function Banner() {
             offset={1000}
           >
             <Tile
-              className="shadow-secondary bg-gray-100 p-10 md:py-20 lg:mb-0"
+              className="shadow-secondary bg-gray-100 py-10 md:py-20 lg:mb-0"
               imageStyle="h-12 md:h-12 mx-2 md:mx-2"
               images={[angularImage, typescriptImage, nuxtImage, graphqlImage]}
               label={"Programming"}
