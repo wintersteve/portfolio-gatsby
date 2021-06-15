@@ -13,7 +13,9 @@ function Banner() {
   return (
     <section className=" mx-auto px-6 md:px-12 lg:px-16 my-16 md:my-28 relative xl:max-w-screen-xl">
       <ScrollAnimation animateIn="fade" className="flex flex-col items-start">
-        <div className="font-semibold mb-2 ml-2 opacity-70">Hi, my name is</div>
+        <div className="font-semibold mb-2 ml-2 md:ml-3 opacity-70">
+          Hi, my name is
+        </div>
         <h2 className="font-semibold ml-1 mb-6 opacity-80 text-5xl md:text-6xl">
           Steve Winter
         </h2>
