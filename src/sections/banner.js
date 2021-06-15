@@ -4,9 +4,8 @@ import Tile from "../components/tile";
 
 import webDesignImage from "../images/services/design.png";
 import marketingImage from "../images/services/statistics.png";
-import angularImage from "../images/services/angular.svg";
 import typescriptImage from "../images/services/typescript.svg";
-import graphqlImage from "../images/services/graphql.svg";
+import gatsbyImage from "../images/services/gatsby.svg";
 import nuxtImage from "../images/services/nuxt.svg";
 
 function Banner() {
@@ -38,9 +37,9 @@ function Banner() {
             offset={1000}
           >
             <Tile
-              className="shadow-secondary bg-gray-100 py-10 md:py-20 md:px-4 lg:mb-0"
+              className="shadow-secondary bg-gray-100 py-10 md:py-20 md:px-10 lg:mb-0"
               imageStyle="h-12 md:h-12 mx-2 md:mx-3"
-              images={[angularImage, typescriptImage, nuxtImage, graphqlImage]}
+              images={[typescriptImage, nuxtImage, gatsbyImage]}
               label={"Programming"}
             />
           </ScrollAnimation>
