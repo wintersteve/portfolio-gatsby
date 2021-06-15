@@ -31,6 +31,19 @@ function Banner() {
         </p>
 
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:mb-6 w-full lg:w-auto">
+          <ScrollAnimation
+            animateIn="fade"
+            className="col-span-2 lg:col-auto"
+            delay={150}
+            offset={1000}
+          >
+            <Tile
+              className="shadow-secondary bg-gray-100 py-10 md:py-20 md:px-4 lg:mb-0"
+              imageStyle="h-12 md:h-12 mx-2 md:mx-3"
+              images={[angularImage, typescriptImage, nuxtImage, graphqlImage]}
+              label={"Programming"}
+            />
+          </ScrollAnimation>
           <ScrollAnimation animateIn="fade" delay={150} offset={1000}>
             <Tile
               className="shadow-secondary bg-gray-100 px-10 py-8 md:py-20 lg:mb-0"
@@ -45,19 +58,6 @@ function Banner() {
               imageStyle="h-12 md:h-12 mx-2 md:mx-2"
               images={[marketingImage]}
               label={"SEO & Analytics"}
-            />
-          </ScrollAnimation>
-          <ScrollAnimation
-            animateIn="fade"
-            className="col-span-2 lg:col-auto"
-            delay={150}
-            offset={1000}
-          >
-            <Tile
-              className="shadow-secondary bg-gray-100 py-10 md:py-20 md:px-10 lg:mb-0"
-              imageStyle="h-12 md:h-12 mx-2 md:mx-2"
-              images={[angularImage, typescriptImage, nuxtImage, graphqlImage]}
-              label={"Programming"}
             />
           </ScrollAnimation>
         </div>
