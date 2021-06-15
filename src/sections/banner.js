@@ -52,7 +52,7 @@ function Banner() {
             offset={1000}
           >
             <Tile
-              className="shadow-secondary bg-gray-100 py-10 md:py-20 lg:mb-0"
+              className="shadow-secondary bg-gray-100 py-10 md:py-20 md:px-10 lg:mb-0"
               imageStyle="h-12 md:h-12 mx-2 md:mx-2"
               images={[angularImage, typescriptImage, nuxtImage, graphqlImage]}
               label={"Programming"}
