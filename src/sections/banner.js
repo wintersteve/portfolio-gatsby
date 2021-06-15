@@ -2,8 +2,8 @@ import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import Tile from "../components/tile";
 
-import webDesignImage from "../images/services/app.svg";
-import marketingImage from "../images/services/social-media-marketing.svg";
+import webDesignImage from "../images/services/design.png";
+import marketingImage from "../images/services/statistics.png";
 import angularImage from "../images/services/angular.svg";
 import typescriptImage from "../images/services/typescript.svg";
 import graphqlImage from "../images/services/graphql.svg";
