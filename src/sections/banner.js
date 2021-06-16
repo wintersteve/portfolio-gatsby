@@ -3,7 +3,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 import Tile from "../components/tile";
 
 import webDesignImage from "../images/services/design.png";
-import marketingImage from "../images/services/statistics.png";
+import marketingImage from "../images/services/analytics.png";
 import typescriptImage from "../images/services/typescript.svg";
 import gatsbyImage from "../images/services/gatsby.svg";
 import nuxtImage from "../images/services/nuxt.svg";
