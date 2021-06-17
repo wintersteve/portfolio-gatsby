@@ -6,9 +6,9 @@ const MENU_ACTION = {
   TOGGLE: "TOGGLE",
 };
 
-const MenuContext = createContext();
-
 const initialState = { isOpen: false };
+
+const MenuContext = createContext(initialState);
 
 function MenuProvider({ children }) {
   const { CLOSE, OPEN, TOGGLE } = MENU_ACTION;
