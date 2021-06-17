@@ -42,7 +42,7 @@ function Header() {
   return (
     <>
       <header
-        className={`bg-white duration-500 py-7 lg:py-8 px-10 md:px-16 lg:px-20 xl:px-32 2xl:px-64 font-bold shadow-lg sticky transform transition-all top-0 z-50 ${
+        className={`bg-white duration-500 py-7 lg:py-8 px-8 md:px-16 lg:px-20 xl:px-32 2xl:px-64 font-bold shadow-lg sticky transform transition-all top-0 z-50 ${
           lastScrollY === 0 && "shadow-none"
         } ${
           lastScrollY > 100 && isScrollTop ? "-translate-y-32" : "translate-y-0"
@@ -70,15 +70,15 @@ function Header() {
           </nav>
           <Hamburger
             className="lg:hidden"
-            handleClick={() => menuRef.current.open()}
+            handleClick={() => menuRef.current.toggle()}
           />
         </ScrollAnimation>
       </header>
 
-      <Menu ref={menuRef} title={<Branding />}>
+      <Menu className="pt-28" ref={menuRef}>
         <nav className="flex flex-col mb-12">
           {navItems.map((item) => (
-            <div className="px-3 pb-5" key={item.id}>
+            <div className="px-2 pb-5" key={item.id}>
               <FragmentLink
                 callback={() => menuRef.current.close()}
                 className="text-md px-5"
@@ -89,7 +89,7 @@ function Header() {
               </FragmentLink>
             </div>
           ))}
-          <div className="px-5">
+          <div className="px-4">
             <a
               className="hover:bg-gray-100 border-4 ml-4 px-8 py-3 font-semibold inline-block rounded-xl transition-all text-md text-gray-500 hover:text-gray-600"
               download
@@ -99,7 +99,7 @@ function Header() {
             </a>
           </div>
         </nav>
-        <div className="px-10">
+        <div className="px-8">
           <h5 className="font-semibold mb-1 text-md">Contact me at</h5>
           <p className="mb-12">contact@wintersteve.com</p>
           <div className="mb-12">
