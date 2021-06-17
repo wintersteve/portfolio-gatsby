@@ -15,7 +15,7 @@ function Banner() {
         <div className="font-semibold mb-2 ml-2 md:ml-3 opacity-70">
           Hi, my name is
         </div>
-        <h2 className="font-semibold ml-1 mb-6 opacity-80 text-5xl md:text-6xl">
+        <h2 className="font-semibold md:ml-1 mb-6 opacity-80 text-4xl md:text-6xl">
           Steve Winter
         </h2>
         <h3 className="bg-secondary-100 font-bold mb-6 py-2 px-3 text-2xl md:text-6xl lg:text-7xl rounded-md w-full md:w-auto">
