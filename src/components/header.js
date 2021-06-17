@@ -1,6 +1,7 @@
-import React, { useRef } from "react";
+import React, { useContext } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import useScrollPosition from "../hooks/use-scroll-position";
+import { MenuContext, MENU_ACTION } from "../providers/menu-provider";
 import Branding from "./branding";
 import FragmentLink from "./fragment-link";
 import Hamburger from "./hamburger";
@@ -35,9 +36,8 @@ const navItems = [
 ];
 
 function Header() {
-  const menuRef = useRef();
-
   const { isScrollTop, lastScrollY } = useScrollPosition();
+  const { state, dispatch } = useContext(MenuContext);
 
   return (
     <>
@@ -70,17 +70,18 @@ function Header() {
           </nav>
           <Hamburger
             className="lg:hidden"
-            handleClick={() => menuRef.current.toggle()}
+            handleClick={() => dispatch({ type: MENU_ACTION.TOGGLE })}
+            isActive={state.isOpen}
           />
         </ScrollAnimation>
       </header>
 
-      <Menu className="pt-28" ref={menuRef}>
+      <Menu className="pt-28">
         <nav className="flex flex-col mb-12">
           {navItems.map((item) => (
             <div className="px-2 pb-5" key={item.id}>
               <FragmentLink
-                callback={() => menuRef.current.close()}
+                callback={() => dispatch({ type: MENU_ACTION.CLOSE })}
                 className="text-md px-5"
                 id={item.id}
                 offset={20}

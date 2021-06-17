@@ -1,49 +1,26 @@
-import React, {
-  useState,
-  useEffect,
-  forwardRef,
-  useImperativeHandle,
-} from "react";
+import React, { useEffect, useContext } from "react";
 import Portal from "./portal";
 
 import closeIcon from "../images/close.png";
 import useScroll from "../hooks/use-scroll";
+import { MenuContext, MENU_ACTION } from "../providers/menu-provider";
 
-const Menu = forwardRef(({ className, children, title }, ref) => {
-  const [display, setDisplay] = useState(false);
+const Menu = ({ className, children, title }) => {
+  const { state, dispatch } = useContext(MenuContext);
+
   const [blockScroll, allowScroll] = useScroll();
 
   useEffect(() => {
-    if (display) {
+    if (state.isOpen) {
       blockScroll();
 
       return () => {
         allowScroll();
       };
     }
-  }, [display, blockScroll, allowScroll]);
+  }, [state, blockScroll, allowScroll]);
 
-  useImperativeHandle(ref, () => {
-    return {
-      open: () => handleOpen(),
-      close: () => handleClose(),
-      toggle: () => handleToggle(),
-    };
-  });
-
-  const handleOpen = () => {
-    setDisplay(true);
-  };
-
-  const handleClose = () => {
-    setDisplay(false);
-  };
-
-  const handleToggle = () => {
-    setDisplay(!display);
-  };
-
-  if (display) {
+  if (state.isOpen) {
     return (
       <Portal root="menu">
         <div
@@ -52,7 +29,7 @@ const Menu = forwardRef(({ className, children, title }, ref) => {
           {title && (
             <div className="bg-white flex items-center justify-between p-10 sticky top-0">
               <div>{title}</div>
-              <button onClick={handleClose}>
+              <button onClick={() => dispatch({ type: MENU_ACTION.CLOSE })}>
                 <img
                   alt="Button to close menu"
                   className="opacity-60"
@@ -69,6 +46,6 @@ const Menu = forwardRef(({ className, children, title }, ref) => {
   }
 
   return null;
-});
+};
 
 export default Menu;
