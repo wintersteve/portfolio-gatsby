@@ -9,7 +9,7 @@ function Hamburger({ className, handleClick, isActive }) {
       <div
         className="bg-gray-600 h-1 mb-1 transform transition-all w-8"
         style={
-          isActive ? { transform: "matrix(1, 1, -1, 1, 1, 9) scale(0.65)" } : {}
+          isActive ? { transform: "matrix(1, 1, -1, 1, 1, 9) scale(0.6)" } : {}
         }
       ></div>
       <div
@@ -22,9 +22,7 @@ function Hamburger({ className, handleClick, isActive }) {
           isActive ? "w-8 " : "w-5"
         }`}
         style={
-          isActive
-            ? { transform: "matrix(1, -1, 1, 1, 1, -6) scale(0.65)" }
-            : {}
+          isActive ? { transform: "matrix(1, -1, 1, 1, 1, -6) scale(0.6)" } : {}
         }
       ></div>
     </button>
