@@ -8,7 +8,7 @@ const MENU_ACTION = {
 
 const initialState = { isOpen: false };
 
-const MenuContext = createContext(initialState);
+const MenuContext = createContext({ state: initialState, dispatch: null });
 
 function MenuProvider({ children }) {
   const { CLOSE, OPEN, TOGGLE } = MENU_ACTION;
