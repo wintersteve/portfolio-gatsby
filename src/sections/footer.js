@@ -22,7 +22,7 @@ function Footer() {
         />
         <div className="mt-10 mb-2">Contact me</div>
         <a
-          className="block font-bold mb-10"
+          className="block font-bold hover:scale mb-10"
           href="mailto:contact@wintersteve.com"
         >
           contact@wintersteve.com
