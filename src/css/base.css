@@ -18,6 +18,14 @@ p {
   line-height: 1.7;
 }
 
+a,
+button,
+img,
+input,
+textarea {
+  user-select: none;
+}
+
 *:focus:not(.focus-visible) {
   outline: none;
 }
