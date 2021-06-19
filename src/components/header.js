@@ -56,8 +56,8 @@ function Header() {
       >
         <ScrollAnimation
           animateIn="fade"
+          animateOnce={true}
           className="flex justify-between items-center"
-          style={isInitialPosition() ? null : { opacity: 1 }}
           offset={0}
         >
           <Branding />
