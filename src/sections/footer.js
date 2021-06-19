@@ -21,7 +21,12 @@ function Footer() {
           iconClass="mx-4 w-12"
         />
         <div className="mt-10 mb-2">Contact me</div>
-        <div className="font-bold mb-10">contact@wintersteve.com</div>
+        <a
+          className="block font-bold mb-10"
+          href="mailto:contact@wintersteve.com"
+        >
+          contact@wintersteve.com
+        </a>
         <div className="text-sm">© Steve Winter</div>
       </div>
     </footer>
