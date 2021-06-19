@@ -10,7 +10,7 @@ import nuxtImage from "../images/services/nuxt.svg";
 
 function Banner() {
   return (
-    <section className=" mx-auto px-6 md:px-12 lg:px-16 my-16 md:my-28 relative xl:max-w-screen-xl">
+    <section className=" mx-auto px-6 md:px-12 lg:px-16 my-16 md:mb-28 md:mt-56 relative xl:max-w-screen-xl">
       <ScrollAnimation animateIn="fade" className="flex flex-col items-start">
         <div className="font-semibold mb-1 md:mb-2 ml-1 md:ml-3 opacity-70">
           Hi, my name is
