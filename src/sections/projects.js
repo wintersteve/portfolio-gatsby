@@ -1,12 +1,7 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 
-import image1 from "../images/projects/malaiherbal.png";
-import image2 from "../images/projects/howtowebdev.png";
-import image3 from "../images/projects/todo-app.png";
-import image4 from "../images/projects/monify.png";
-
-const projects = [image1, image2, image3, image4];
+import projects from "../data/projects.json";
 
 const isEven = (num) => num % 2 === 0;
 
@@ -26,7 +21,7 @@ function Projects() {
       {projects.map((project, index) => (
         <article
           className="items-center flex flex-col-reverse lg:grid lg:grid-cols-2 mx-4 md:mx-12 lg:mx-20 mb-10 lg:mb-20"
-          key={project}
+          key={project.title}
         >
           <ScrollAnimation
             animateIn="fade"
@@ -39,32 +34,24 @@ function Projects() {
           >
             <div>
               <h4 className="font-bold mb-5 text-2xl text-gray-600">
-                Project Title
+                {project.title}
               </h4>
-              <p className="mb-3">
-                The to do application was built utilizing Angular, Material UI
-                and TypeScript. New features such as service workers and a
-                RESTful backend based on Node and MongoDB are being implemented.{" "}
-              </p>
+              <p className="mb-3">{project.description}</p>
               <ul className="flex mb-6">
-                <li className="font-semibold mr-3 text-xs text-gray-500">
-                  React
-                </li>
-                <li className="font-semibold mr-3 text-xs text-gray-500">
-                  Node.js
-                </li>
-                <li className="font-semibold mr-3 text-xs text-gray-500">
-                  Express
-                </li>
-                <li className="font-semibold mr-3 text-xs text-gray-500">
-                  TypeScript
-                </li>
+                {project.stack.map((technology) => (
+                  <li
+                    className="font-semibold mr-3 text-xs text-gray-500"
+                    key={technology}
+                  >
+                    {technology}
+                  </li>
+                ))}
               </ul>
               <a
                 className="hover:float bg-secondary-100 text-secondary-900 font-bold inline-block p-5 rounded text-sm w-full lg:w-auto"
-                href="#"
+                href={project.link}
               >
-                Take me to Project Title
+                Take me to {project.title}
               </a>
             </div>
           </ScrollAnimation>
@@ -76,7 +63,7 @@ function Projects() {
               className={`row-start-1 rounded-md shadow-4xl ${
                 isEven(index) ? "col-start-2" : "col-start-1"
               }`}
-              src={project}
+              src={project.image}
             />
           </ScrollAnimation>
         </article>
