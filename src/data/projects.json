@@ -16,7 +16,7 @@
   {
     "description": "Monify is an expense tracker Electron application that started as a side-project to learn more about native App Development. Currently, the app works with macOS and Windows. To get familiar with cross-platform development for mobile apps, I have utilized Flutter in a different project which can be found here.",
     "image": "/images/projects/monify.png",
-    "link": "http://monify.download/",
+    "link": "https://monify.netlify.app",
     "title": "Monify",
     "stack": ["Electron", "Flutter", "Dart", "SQLite"]
   },
