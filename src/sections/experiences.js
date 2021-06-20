@@ -41,9 +41,9 @@ function Experiences() {
             <h4 className="font-semibold text-lg">
               {experiences[activeTab].role}
             </h4>
-            <div className="flex italic mb-3 text-sm">
+            <div className="flex flex-col md:flex-row italic mb-3 text-sm">
               <span>{experiences[activeTab].location}</span>
-              <span className="mx-2">•</span>
+              <span className="hidden md:block mx-2">•</span>
               <time>{experiences[activeTab].date}</time>
             </div>
             <p className="bg-secondary-100 mb-5 py-4 px-5 relative rounded z-10">
@@ -51,7 +51,10 @@ function Experiences() {
             </p>
             <ul className="list-disc ml-6 lg:ml-5">
               {experiences[activeTab].tools.map((tool) => (
-                <li className="p-2 py-1" key={tool}>
+                <li
+                  className="font-medium py-1 text-sm text-gray-600"
+                  key={tool}
+                >
                   {tool}
                 </li>
               ))}
