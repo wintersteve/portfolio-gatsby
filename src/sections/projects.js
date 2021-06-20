@@ -37,7 +37,7 @@ function Projects() {
                 {project.title}
               </h4>
               <p className="mb-3">{project.description}</p>
-              <ul className="flex mb-6">
+              <ul className="flex flex-wrap mb-6">
                 {project.stack.map((technology) => (
                   <li
                     className="font-semibold mr-3 text-xs text-gray-500"
