@@ -12,33 +12,36 @@ import nuxtImage from "../images/services/nuxt.svg";
 function Banner() {
   return (
     <section className=" mx-auto px-6 md:px-12 lg:px-16 mt-40 mb-16 md:mb-28 md:mt-56 relative xl:max-w-screen-xl">
-      <ScrollAnimation animateIn="fade" className="flex flex-col items-start">
-        <div className="font-semibold mb-1 md:mb-2 ml-1 md:ml-3 opacity-70">
-          Hi, my name is
-        </div>
-        <h2 className="font-semibold md:ml-1 mb-6 opacity-80 text-4xl md:text-6xl">
-          Steve Winter
-        </h2>
-        <h3 className="bg-secondary-100 font-bold mb-6 py-2 px-3 text-2xl md:text-6xl lg:text-7xl rounded-md w-full md:w-auto">
-          <span className="block mb-1 md:mb-3">I am a professional</span>
-          <span className="opacity-75">Full-Stack Developer</span>
-        </h3>
+      <div className="flex flex-col items-start">
+        <ScrollAnimation animateIn="fade">
+          <div className="font-semibold mb-1 md:mb-2 ml-1 md:ml-3 opacity-70">
+            Hi, my name is
+          </div>
+          <h2 className="font-semibold md:ml-1 mb-6 opacity-80 text-4xl md:text-6xl">
+            Steve Winter
+          </h2>
+          <h3 className="bg-secondary-100 font-bold mb-6 py-2 px-3 text-2xl md:text-6xl lg:text-7xl rounded-md w-full md:w-auto">
+            <span className="block mb-1 md:mb-3">I am a professional</span>
+            <span className="opacity-75">Full-Stack Developer</span>
+          </h3>
 
-        <p className="max-w-md ml-1 md:ml-2 mb-6 text-md">
-          I'm a Germany-based software engineer who excels at building digital
-          experiences. Currently, I'm an engineer at{" "}
-          <a href="https://www.diva-e.com/en/" target="_blank" rel="noopener">
-            <UnderlinedText
-              className="inline"
-              position={{ bottom: ".3rem" }}
-              textClass="font-medium"
-            >
-              {" "}
-              diva-e{" "}
-            </UnderlinedText>
-          </a>
-          focusing on building scalable and highly performant digital products.
-        </p>
+          <p className="max-w-md ml-1 md:ml-2 mb-6 text-md">
+            I'm a Germany-based software engineer who excels at building digital
+            experiences. Currently, I'm an engineer at{" "}
+            <a href="https://www.diva-e.com/en/" target="_blank" rel="noopener">
+              <UnderlinedText
+                className="inline"
+                position={{ bottom: ".3rem" }}
+                textClass="font-medium"
+              >
+                {" "}
+                diva-e{" "}
+              </UnderlinedText>
+            </a>
+            focusing on building scalable and highly performant digital
+            products.
+          </p>
+        </ScrollAnimation>
 
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:mb-6 w-full lg:w-auto">
           <ScrollAnimation
@@ -71,7 +74,7 @@ function Banner() {
             />
           </ScrollAnimation>
         </div>
-      </ScrollAnimation>
+      </div>
     </section>
   );
 }
