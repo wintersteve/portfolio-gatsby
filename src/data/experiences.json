@@ -1,0 +1,49 @@
+[
+  {
+    "location": "Jena, Germany",
+    "role": "Software Engineer",
+    "title": "diva-e",
+    "description": "diva-e is a software development service provider. The company focuses on creating digital experiences that enhance customer interactions. My role mainly revolves around creating and improving front-end codebases yet, I also have had the opportunity to make use of my back-end expertise. Not only have I worked in agile teams, but I have also led projects myself.",
+    "date": "Novemeber 2019 - Present",
+    "tools": [
+      "Vue • Angular • TypeScript • RxJs",
+      "Handlebars • Gulp",
+      "OAuth • Data Integration • REST APIs",
+      "Scrum • Jira • Confluence"
+    ]
+  },
+  {
+    "location": "Bangkok, Thailand",
+    "role": "Full-Stack Software Engineer",
+    "title": "Malai Herbal",
+    "description": "Malai Herbal is a beauty business offering organic hair products. At the end of my freelance period I landed this gig, where I was tasked to create an ecommerce with product administration from scratch.",
+    "date": "October 2019 - November 2019",
+    "tools": [
+      "Gatsby",
+      "Styled Components",
+      "Netlify & Netlify CMS & Netlify Functions",
+      "AWS DynamoDB & Lambda functions"
+    ]
+  },
+  {
+    "location": "Jena, Germany",
+    "role": "Full-Stack Software Engineer",
+    "title": "Freelancer",
+    "description": "During the last year of my Bachelor's program, I took the oppurtunity to apply my self-taught engineering skills as a freelancer. The gigs included small bug fixes, some webscrapers and a B2C ecommerce.",
+    "date": "January 2020 - November 2020",
+    "tools": ["Cheerio / Scrapy", "HTML & CSS3", "React & Gatsby"]
+  },
+  {
+    "location": "Bangkok, Thailand",
+    "role": "Assistant Mananger & Web Developer",
+    "title": "Win-Win Asia",
+    "description": "Win-Win Asia is an international tour operator and destination management agency. During my occupation here, I was responsible first and foremost for the management of the staff and the efficient of the companies operations. Due to the seasonality of the business, I also had time to extend and optimise the company's WordPress websites and internal applications.",
+    "date": "June 2019 - October 2019",
+    "tools": [
+      "Custom Wordpress Development",
+      "Mobile/Responsive Design",
+      "SEO Optimization",
+      "Excel VBA"
+    ]
+  }
+]
