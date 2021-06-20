@@ -2,60 +2,7 @@ import React, { useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import Editor from "../components/editor";
 
-const experiences = [
-  {
-    role: "Software Engineer 2",
-    title: "Diva-e",
-    description:
-      "Coalition Technologies is a premier digital agency offering web development in Los Angeles, California. I was responsible for the timely and efficient coordination of the following",
-    date: "May 2015 - Feb 2016",
-    tools: [
-      "Custom Wordpress, Shopify & Magento builds",
-      "Mobile/Responsive Design",
-      "SEO Optimization",
-      "Link Building",
-    ],
-  },
-  {
-    role: "Software Engineer",
-    title: "Malai Herbal",
-    description:
-      "Coalition Technologies is a premier digital agency offering web development in Los Angeles, California. I was responsible for the timely and efficient coordination of the following",
-    date: "May 2015 - Feb 2016",
-    tools: [
-      "Custom Wordpress, Shopify & Magento builds",
-      "Mobile/Responsive Design",
-      "SEO Optimization",
-      "Link Building",
-    ],
-  },
-  {
-    role: "Software Engineer",
-    title: "Freelancer",
-    description:
-      "Coalition Technologies is a premier digital agency offering web development in Los Angeles, California. I was responsible for the timely and efficient coordination of the following",
-    date: "May 2015 - Feb 2016",
-    tools: [
-      "Custom Wordpress, Shopify & Magento builds",
-      "Mobile/Responsive Design",
-      "SEO Optimization",
-      "Link Building",
-    ],
-  },
-  {
-    role: "Software Engineer",
-    title: "Win-Win Asia",
-    description:
-      "Coalition Technologies is a premier digital agency offering web development in Los Angeles, California. I was responsible for the timely and efficient coordination of the following",
-    date: "May 2015 - Feb 2016",
-    tools: [
-      "Custom Wordpress, Shopify & Magento builds",
-      "Mobile/Responsive Design",
-      "SEO Optimization",
-      "Link Building",
-    ],
-  },
-];
+import experiences from "../data/experiences.json";
 
 function Experiences() {
   const [activeTab, setActiveTab] = useState(0);
@@ -89,14 +36,16 @@ function Experiences() {
           ))}
         </ul>
 
-        <div className="grid grid-cols-12 items-center">
+        <div className="grid grid-cols-12 items-start">
           <div className="col-start-1 col-end-13 lg:col-end-8 fade py-2 row-start-1">
             <h4 className="font-semibold text-lg">
               {experiences[activeTab].role}
             </h4>
-            <time className="block italic mb-3 text-sm">
-              {experiences[activeTab].date}
-            </time>
+            <div className="flex italic mb-3 text-sm">
+              <span>{experiences[activeTab].location}</span>
+              <span className="mx-2">•</span>
+              <time>{experiences[activeTab].date}</time>
+            </div>
             <p className="bg-secondary-100 mb-5 py-4 px-5 relative rounded z-10">
               {experiences[activeTab].description}
             </p>
