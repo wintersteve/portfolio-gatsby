@@ -42,7 +42,9 @@ function Certificates() {
     <section id="certificates" className="my-20 lg:my-40">
       <ScrollAnimation animateIn="fade">
         <div className="items-center grid grid-cols-2 mx-6 md:mx-12 lg:mx-20 2xl:mx-40 mb-10">
-          <h2 className="font-bold text-4xl text-gray-600">Certificates</h2>
+          <h2 className="font-bold ml-2 text-4xl text-gray-600">
+            Certificates
+          </h2>
           <div className="grid grid-cols-2 items-center justify-self-end">
             <button
               className="px-0 md:p-2 w-8 md:w-12"
