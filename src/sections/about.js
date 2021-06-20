@@ -4,7 +4,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 function About() {
   return (
     <section
-      className="bg-secondary-100 2xl:mx-6 py-20 md:py-28 lg:py-52 px-6 md:px-28 lg:px-48 xl:px-72 2xl:px-96"
+      className="bg-secondary-100 2xl:mx-6 py-20 md:py-28 lg:py-52 px-8 md:px-28 lg:px-48 xl:px-72 2xl:px-96"
       id="about"
     >
       <ScrollAnimation animateIn="fade" duration={0.75}>
