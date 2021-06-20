@@ -1,6 +1,6 @@
 import React from "react";
-import Border from "../components/border";
 import TiltDivider from "../components/tilt-divider";
+import UnderlinedText from "../components/underlined-text";
 import ScrollAnimation from "react-animate-on-scroll";
 
 import competencies from "../data/competencies.json";
@@ -35,10 +35,9 @@ function Competencies() {
                 delay={300}
                 duration={0.5 * (index + 1)}
               >
-                <h3 className="text-gray-700 text-2xl font-bold mb-5">
+                <h3 className="text-gray-700 text-2xl font-bold mb-10">
                   {competency.title}
                 </h3>
-                <p className="mb-10">{competency.description}</p>
                 {competency.categories.map((category, index) => (
                   <div
                     className={`${
@@ -48,15 +47,17 @@ function Competencies() {
                     }`}
                     key={category.title}
                   >
-                    <h4 className="font-bold mb-3 mx-auto w-min relative">
-                      <span className="relative text-gray-600 z-10">
-                        {category.title}
-                      </span>
-                      <Border />
+                    <h4 className="font-bold mb-3 mx-auto w-min text-gray-600">
+                      <UnderlinedText>{category.title}</UnderlinedText>
                     </h4>
                     <ul>
                       {category.values.map((value) => (
-                        <li key={value}>{value}</li>
+                        <li
+                          className="font-medium mb-1 text-sm text-gray-500"
+                          key={value}
+                        >
+                          {value}
+                        </li>
                       ))}
                     </ul>
                   </div>
