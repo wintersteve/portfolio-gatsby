@@ -1,6 +1,7 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import Tile from "../components/tile";
+import UnderlinedText from "../components/underlined-text";
 
 import webDesignImage from "../images/services/design.png";
 import marketingImage from "../images/services/analytics.png";
@@ -25,8 +26,18 @@ function Banner() {
 
         <p className="max-w-md ml-1 md:ml-2 mb-6 text-md">
           I'm a Germany-based software engineer who excels at building digital
-          experiences. Currently, I'm an engineer at Upstatement focused on
-          building accessible, human-centered products.
+          experiences. Currently, I'm an engineer at{" "}
+          <a href="https://www.diva-e.com/en/" target="_blank" rel="noopener">
+            <UnderlinedText
+              className="inline"
+              position={{ bottom: ".3rem" }}
+              textClass="font-medium"
+            >
+              {" "}
+              diva-e{" "}
+            </UnderlinedText>
+          </a>
+          focusing on building scalable and highly performant digital products.
         </p>
 
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:mb-6 w-full lg:w-auto">
