@@ -18,11 +18,17 @@ module.exports = {
       sans: ["Poppins", "Arial", "sans-serif"],
     },
     extend: {
+      fontSize: {
+        md: "1.075rem",
+      },
       grayscale: {
         30: "30%",
       },
       maxWidth: {
         "screen-2xl": "1440px",
+      },
+      width: {
+        fit: "fit-content",
       },
     },
   },
