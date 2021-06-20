@@ -1,15 +1,27 @@
 [
   {
     "title": "FRONT END",
-    "description": "I like to code things from scratch, and enjoy bringing ideas to life in the browser.",
+    "description": "My area of expertise. I have worked with all relevant web technologies so far.",
     "categories": [
       {
         "title": "Languages",
-        "values": ["HTML", "CSS", "JavaScript", "TypeScript"]
+        "values": [
+          "HTML",
+          "CSS / SCSS",
+          "JavaScript / TypeScript",
+          "Handlebars"
+        ]
       },
       {
-        "title": "JavaScript Frameworks",
-        "values": ["React", "Angular", "Vue", "Nuxt"]
+        "title": "Frameworks & Libraries",
+        "values": [
+          "Angular",
+          "React / Vue",
+          "Next / Nuxt",
+          "Gatsby",
+          "RxJs",
+          "Jest / Mocha"
+        ]
       },
       {
         "title": "CSS Frameworks",
@@ -19,11 +31,23 @@
   },
   {
     "title": "BACK END",
-    "description": "I value simple content structure, clean design patterns, and thoughtful interactions.",
+    "description": "I had the chance to acquire first back end related skills working on freelance and own projects.",
     "categories": [
       {
         "title": "Languages",
-        "values": ["Node", "Go", "Java", "JavaScript", "TypeScript"]
+        "values": ["Node / TypeScript", "Python", "Go / PHP"]
+      },
+      {
+        "title": "Databases",
+        "values": ["MongoDB", "PostgreSQL"]
+      },
+      {
+        "title": "Frameworks",
+        "values": ["Express / Nest", "Laravel"]
+      },
+      {
+        "title": "Other",
+        "values": ["GraphQL", "WASM"]
       }
     ]
   },
@@ -32,8 +56,16 @@
     "description": "I value simple content structure, clean design patterns, and thoughtful interactions.",
     "categories": [
       {
-        "title": "Testing",
-        "values": ["Cypress", "Mocha"]
+        "title": "DevOps",
+        "values": ["Git", "Jenkins", "Docker"]
+      },
+      {
+        "title": "Cloud Computing",
+        "values": ["AWS"]
+      },
+      {
+        "title": "Scraping & Automation",
+        "values": ["Cheerio", "Scrapy", "Selenium"]
       }
     ]
   }
