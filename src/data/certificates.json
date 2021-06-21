@@ -1,38 +1,38 @@
 [
   {
     "title": "Angular",
-    "image": "/images/certificates/angular.png"
+    "image": "../images/certificates/angular.png"
   },
   {
     "title": "CSS",
-    "image": "/images/certificates/css.png"
+    "image": "../images/certificates/css.png"
   },
   {
     "title": "Digital Marketing",
-    "image": "/images/certificates/digital-marketing.png"
+    "image": "../images/certificates/digital-marketing.png"
   },
   {
     "title": "Java",
-    "image": "/images/certificates/java.png"
+    "image": "../images/certificates/java.png"
   },
   {
     "title": "JavaScript (Basic)",
-    "image": "/images/certificates/javascript.png"
+    "image": "../images/certificates/javascript.png"
   },
   {
     "title": "JavaScript (Intermediate)",
-    "image": "/images/certificates/javascript-intermediate.png"
+    "image": "../images/certificates/javascript-intermediate.png"
   },
   {
     "title": "Problem Solving",
-    "image": "/images/certificates/problem-solving.png"
+    "image": "../images/certificates/problem-solving.png"
   },
   {
     "title": "React",
-    "image": "/images/certificates/react.png"
+    "image": "../images/certificates/react.png"
   },
   {
     "title": "SQL",
-    "image": "/images/certificates/sql.png"
+    "image": "../images/certificates/sql.png"
   }
 ]

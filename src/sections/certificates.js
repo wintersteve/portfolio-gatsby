@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
-import certificates from "../data/certificates.json";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { graphql, useStaticQuery } from "gatsby";
 
 import leftArrow from "../images/left-arrow.svg";
 import rightArrow from "../images/right-arrow.svg";
@@ -13,6 +14,23 @@ const DIRECTIONS = {
 const STEP = 1000;
 
 function Certificates() {
+  const data = useStaticQuery(graphql`
+    query AllCertificatesQuery {
+      allCertificatesJson {
+        nodes {
+          title
+          image {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED)
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const certificates = data.allCertificatesJson.nodes;
+
   const scrollContainer = useRef(null);
   const [canScroll, setCanScroll] = useState({
     left: false,
@@ -85,10 +103,10 @@ function Certificates() {
               duration={0.5}
               key={certificate.title}
             >
-              <img
+              <GatsbyImage
                 alt={certificate.title}
                 className="shadow-lg"
-                src={certificate.image}
+                image={getImage(certificate.image)}
               />
               <h5 className="font-bold m-2 text-gray-500">
                 {certificate.title}
