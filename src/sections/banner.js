@@ -2,14 +2,38 @@ import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import Tile from "../components/tile";
 import UnderlinedText from "../components/underlined-text";
-
-import webDesignImage from "../images/services/design.png";
-import marketingImage from "../images/services/analytics.png";
-import typescriptImage from "../images/services/typescript.svg";
-import gatsbyImage from "../images/services/gatsby.svg";
-import nuxtImage from "../images/services/nuxt.svg";
+import { graphql, useStaticQuery } from "gatsby";
 
 function Banner() {
+  const data = useStaticQuery(graphql`
+    query AllServiceImagesQuery {
+      programmingIcons: allFile(
+        filter: {
+          relativeDirectory: { eq: "services" }
+          name: { in: ["typescript", "nuxt", "gatsby"] }
+        }
+      ) {
+        nodes {
+          publicURL
+        }
+      }
+      designIcon: file(
+        relativeDirectory: { eq: "services" }
+        name: { eq: "design" }
+      ) {
+        publicURL
+      }
+      analyticsIcon: file(
+        relativeDirectory: { eq: "services" }
+        name: { eq: "analytics" }
+      ) {
+        publicURL
+      }
+    }
+  `);
+
+  const { programmingIcons, designIcon, analyticsIcon } = data;
+
   return (
     <section className=" mx-auto px-6 md:px-12 lg:px-16 mt-40 mb-16 md:mb-28 md:mt-56 relative xl:max-w-screen-xl">
       <div className="flex flex-col items-start">
@@ -53,7 +77,7 @@ function Banner() {
             <Tile
               className="shadow-secondary bg-gray-100 py-10 md:py-20 md:px-10 lg:mb-0"
               imageStyle="h-12 md:h-12 mx-2 md:mx-3"
-              images={[typescriptImage, nuxtImage, gatsbyImage]}
+              images={programmingIcons.nodes.map((icon) => icon.publicURL)}
               label={"Programming"}
             />
           </ScrollAnimation>
@@ -61,7 +85,7 @@ function Banner() {
             <Tile
               className="shadow-secondary bg-gray-100 px-10 py-8 md:py-20 lg:mb-0"
               imageStyle="h-12 md:h-12 mx-2 md:mx-2"
-              images={[webDesignImage]}
+              images={[designIcon.publicURL]}
               label={"Web Design"}
             />
           </ScrollAnimation>
@@ -69,7 +93,7 @@ function Banner() {
             <Tile
               className="shadow-secondary bg-gray-100 px-10 py-8 md:py-20 lg:mb-0"
               imageStyle="h-12 md:h-12 mx-2 md:mx-2"
-              images={[marketingImage]}
+              images={[analyticsIcon.publicURL]}
               label={"SEO & Analytics"}
             />
           </ScrollAnimation>
