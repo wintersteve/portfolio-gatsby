@@ -1,11 +1,31 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
-
-import projects from "../data/projects.json";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { graphql, useStaticQuery } from "gatsby";
 
 const isEven = (num) => num % 2 === 0;
 
 function Projects() {
+  const data = useStaticQuery(graphql`
+    query AllProjectsQuery {
+      allProjectsJson {
+        nodes {
+          description
+          link
+          title
+          stack
+          image {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED)
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const projects = data.allProjectsJson.nodes;
+
   return (
     <section
       className="max-w-screen-2xl mb-20 lg:mb-40 m-auto overflow-hidden sm:overflow-visible"
@@ -59,11 +79,13 @@ function Projects() {
             animateIn={isEven(index) ? "slideRight" : "slideLeft"}
             duration={0.7}
           >
-            <img
+            <GatsbyImage
+              alt={project.title}
               className={`row-start-1 rounded-md shadow-4xl ${
                 isEven(index) ? "col-start-2" : "col-start-1"
               }`}
-              src={project.image}
+              image={getImage(project.image)}
+              loading="lazy"
             />
           </ScrollAnimation>
         </article>
