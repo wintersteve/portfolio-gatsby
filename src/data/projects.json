@@ -1,28 +1,28 @@
 [
   {
     "description": "Malai Herbal is a B2C eCommerce that was build using the static site generator Gatsby in combination with Netlify CMS and AWS's cloud infrastructure. Products are fully manageable using the protected CMS which will be sourced by Gatsby with zero downtime.",
-    "image": "/images/projects/malaiherbal.png",
+    "image": "../images/projects/malaiherbal.png",
     "link": "https://malaiherbal.com/",
     "title": "Malai Herbal",
     "stack": ["Gatsby", "Netlify", "Netlify CMS", "AWS Lambda", "DynamoDB"]
   },
   {
     "description": "The to-do application was built with the intention to learn Angular, Material UI TypeScript, and RxJs. New features such as service workers and a RESTful backend based on Node and MongoDB are being currently implemented.",
-    "image": "/images/projects/todo-app.png",
+    "image": "../images/projects/todo-app.png",
     "link": "https://silly-hoover-3205ec.netlify.app/",
     "title": "Angular To-do Application",
     "stack": ["Angular", "Material UI", "TypeScript", "RxJs"]
   },
   {
     "description": "Monify is an expense tracker Electron application that started as a side-project to learn more about native App Development. Currently, the app works with macOS and Windows. To get familiar with cross-platform development for mobile apps, I have utilized Flutter in a different project which can be found here.",
-    "image": "/images/projects/monify.png",
+    "image": "../images/projects/monify.png",
     "link": "https://monify.netlify.app",
     "title": "Monify",
     "stack": ["Electron", "Flutter", "Dart", "SQLite"]
   },
   {
     "description": "HowToWebDev is a side-project that started with the idea in mind of getting familiar with static site generation, server-side rendering, and CD/CI. The blog is built utilizing React, Gatsby, Jest, and Jenkins. New articles are being released by creating markdown files and pushing them to the GitHub Repo.",
-    "image": "/images/projects/howtowebdev.png",
+    "image": "../images/projects/howtowebdev.png",
     "link": "https://howtowebdev.com/",
     "title": "HowToWebDev",
     "stack": ["React", "Gatsby", "Jest", "Jenkins", "Markdown"]
