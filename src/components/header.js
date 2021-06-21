@@ -52,7 +52,7 @@ function Header() {
   return (
     <>
       <header
-        className={`bg-white duration-500 fixed py-7 lg:py-8 px-7 md:px-16 lg:px-20 xl:px-32 2xl:px-64 font-bold shadow-lg transform transition-all top-0 w-full z-50 ${getShadowClass()} ${getTranslateClass()}`}
+        className={`bg-white duration-500 fixed py-7 lg:py-8 px-9 md:px-16 lg:px-20 xl:px-32 2xl:px-64 font-bold shadow-lg transform transition-all top-0 w-full z-50 ${getShadowClass()} ${getTranslateClass()}`}
       >
         <ScrollAnimation
           animateIn="fade"
