@@ -25,7 +25,7 @@ function Banner() {
             <span className="opacity-75">Full-Stack Developer</span>
           </h3>
 
-          <p className="max-w-md ml-1 md:ml-2 mb-6 text-md">
+          <div className="max-w-md ml-1 md:ml-2 mb-6 text-md">
             I'm a Germany-based software engineer who excels at building digital
             experiences. Currently, I'm an engineer at{" "}
             <a href="https://www.diva-e.com/en/" target="_blank" rel="noopener">
@@ -35,12 +35,12 @@ function Banner() {
                 textClass="font-medium"
               >
                 {" "}
-                diva-e{" "}
+                diva-e
               </UnderlinedText>
-            </a>
+            </a>{" "}
             focusing on building scalable and highly performant digital
             products.
-          </p>
+          </div>
         </ScrollAnimation>
 
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:mb-6 w-full lg:w-auto">
