@@ -14,7 +14,7 @@
     "stack": ["Angular", "Material UI", "TypeScript", "RxJs"]
   },
   {
-    "description": "Monify is an expense tracker Electron application that started as a side-project to learn more about native App Development. Currently, the app works with macOS and Windows. To get familiar with cross-platform development for mobile apps, I have utilized Flutter in a different project which can be found <a class='underline' href='https://play.google.com/store/apps/details?id=com.winter.random_word_generator' rel='noopener noreferrer' target='blank'>here</a>.",
+    "description": "Monify is an expense tracker Electron application that started as a side-project to learn more about native App Development. Currently, the app works with macOS and Windows. To get familiar with cross-platform development for mobile apps, I have utilized Flutter in a different project which can be found <a alt='Random Word Generator in Google Play Store' class='underline' href='https://play.google.com/store/apps/details?id=com.winter.random_word_generator' rel='noopener noreferrer' target='blank'>here</a>.",
     "image": "../images/projects/monify.png",
     "link": "https://monify.netlify.app",
     "title": "Monify",
