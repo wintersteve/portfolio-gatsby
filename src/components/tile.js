@@ -5,7 +5,7 @@ function Tile({ alt, className, imageStyle, images, label }) {
     <div
       className={`border-4 border-gray-100 rounded-lg relative select-none w-full ${className}`}
     >
-      <h3 className="absolute font-semibold text-sm text-gray-400 top-3 left-4">
+      <h3 className="absolute font-semibold text-sm text-gray-500 top-3 left-4">
         {label.toUpperCase()}
       </h3>
       <div

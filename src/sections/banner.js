@@ -38,7 +38,7 @@ function Banner() {
     <section className=" mx-auto px-6 md:px-12 lg:px-16 mt-40 mb-16 md:mb-28 md:mt-56 relative xl:max-w-screen-xl">
       <div className="flex flex-col items-start">
         <ScrollAnimation animateIn="fade">
-          <div className="font-semibold mb-1 md:mb-2 ml-1 md:ml-3 opacity-70">
+          <div className="font-semibold mb-1 md:mb-2 ml-1 md:ml-3 text-gray-500">
             Hi, my name is
           </div>
           <h2 className="font-semibold md:ml-1 mb-6 opacity-80 text-4xl md:text-6xl">
