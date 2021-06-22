@@ -14,7 +14,7 @@ function Tile({ alt, className, imageStyle, images, label }) {
       >
         {images.map((image) => (
           <img
-            alt={alt}
+            alt=""
             className={`${imageStyle} my-4 md:my-0`}
             src={image}
             key={image}
