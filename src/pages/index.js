@@ -9,12 +9,12 @@ import Contact from "../sections/contact";
 import Experiences from "../sections/experiences";
 import Footer from "../sections/footer";
 import Projects from "../sections/projects";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 
 const IndexPage = () => {
   return (
     <>
-      <SEO />
+      <Seo />
       <Header />
       <Banner />
       <main>

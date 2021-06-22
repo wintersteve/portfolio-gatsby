@@ -52,7 +52,11 @@ function Banner() {
           <div className="max-w-md ml-1 md:ml-2 mb-6 text-md">
             I'm a Germany-based software engineer who excels at building digital
             experiences. Currently, I'm an engineer at{" "}
-            <a href="https://www.diva-e.com/en/" target="_blank" rel="noopener">
+            <a
+              href="https://www.diva-e.com/en/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <UnderlinedText
                 className="inline"
                 position={{ bottom: ".3rem" }}

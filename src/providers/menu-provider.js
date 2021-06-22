@@ -21,6 +21,8 @@ function MenuProvider({ children }) {
         return { isOpen: true };
       case TOGGLE:
         return { isOpen: !state.isOpen };
+      default:
+        return state;
     }
   }, initialState);
 
