@@ -56,7 +56,10 @@ function Projects() {
               <h4 className="font-bold mb-5 text-2xl text-gray-600">
                 {project.title}
               </h4>
-              <p className="mb-3">{project.description}</p>
+              <p
+                dangerouslySetInnerHTML={{ __html: project.description }}
+                className="mb-3"
+              ></p>
               <ul className="flex flex-wrap mb-6">
                 {project.stack.map((technology) => (
                   <li
