@@ -35,7 +35,7 @@ function Banner() {
   const { programmingIcons, designIcon, analyticsIcon } = data;
 
   return (
-    <section className=" mx-auto px-6 md:px-12 lg:px-16 mt-40 mb-16 md:mb-28 md:mt-56 relative xl:max-w-screen-xl">
+    <section className=" mx-auto px-6 md:px-12 lg:px-40 xl:px-32 mt-40 mb-16 md:mb-28 md:mt-60 relative xl:max-w-screen-xl">
       <div className="flex flex-col items-start">
         <ScrollAnimation animateIn="fade">
           <div className="font-semibold mb-1 md:mb-2 ml-1 md:ml-3 text-gray-500">
@@ -44,12 +44,12 @@ function Banner() {
           <h2 className="font-semibold md:ml-1 mb-6 opacity-80 text-4xl md:text-6xl">
             Steve Winter
           </h2>
-          <h3 className="bg-secondary-100 font-bold mb-6 py-2 px-3 text-2xl md:text-6xl lg:text-7xl rounded-md w-full md:w-auto">
+          <h3 className="bg-secondary-100 font-bold mb-6 py-2 px-3 text-2xl md:text-7xl rounded-md w-full md:w-auto">
             <span className="block mb-1 md:mb-3">I am a professional</span>
             <span className="opacity-75">Full-Stack Developer</span>
           </h3>
 
-          <div className="max-w-md ml-1 md:ml-2 mb-6 text-md">
+          <div className="max-w-xl ml-1 md:ml-2 mb-6 text-md">
             I'm a Germany-based software engineer who excels at building digital
             experiences. Currently, I'm an engineer at{" "}
             <a
