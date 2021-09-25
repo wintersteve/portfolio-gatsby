@@ -23,7 +23,7 @@
   {
     "description": "HowToWebDev is a side-project that started with the idea in mind of getting familiar with static site generation, server-side rendering, and CD/CI. The blog is built utilizing React, Gatsby, Jest, and Jenkins. New articles are being released by creating markdown files and pushing them to the GitHub Repo.",
     "image": "../images/projects/howtowebdev.png",
-    "link": "https://howtowebdev.com/",
+    "link": "https://howtowebdev.netlify.app/",
     "title": "HowToWebDev",
     "stack": ["React", "Gatsby", "Jest", "Jenkins", "Markdown"]
   }
