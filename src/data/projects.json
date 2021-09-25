@@ -7,11 +7,20 @@
     "stack": ["Gatsby", "Netlify", "Netlify CMS", "AWS Lambda", "DynamoDB"]
   },
   {
-    "description": "The to-do application was built with the intention to learn Angular, Material UI TypeScript, and RxJs. New features such as service workers and a RESTful backend based on Node and MongoDB are being currently implemented.",
+    "description": "The to-do application was built with the intention to learn Angular, Material UI TypeScript, RxJs and utilize a JAMStack architecture and services. The app integrates a fully functioning database with CRUD operations and auth system using serverless functons.",
     "image": "../images/projects/todo-app.png",
-    "link": "https://silly-hoover-3205ec.netlify.app/",
-    "title": "Angular To-do Application",
-    "stack": ["Angular", "Material UI", "TypeScript", "RxJs"]
+    "link": "https://angular-jamstack-todo.netlify.app/",
+    "title": "JAMStack To-do Application",
+    "stack": [
+      "Angular",
+      "Material UI",
+      "TypeScript",
+      "RxJs",
+      "FaunaDB",
+      "GraphQL",
+      "Auth",
+      "Serverless Functions"
+    ]
   },
   {
     "description": "Monify is an expense tracker Electron application that started as a side-project to learn more about native App Development. Currently, the app works with macOS and Windows. To get familiar with cross-platform development for mobile apps, I have utilized Flutter in a different project which can be found <a class='underline' href='https://play.google.com/store/apps/details?id=com.winter.random_word_generator' rel='noopener noreferrer' target='blank'>in the Google Play Store</a>.",
