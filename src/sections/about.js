@@ -19,14 +19,13 @@ function About() {
           small to medium-sized companies, and additionally, have worked on
           personal projects continuously. Being a self-taught engineer, helped
           me learn to perpetually work on improving my skill set. Combined with
-          my passion for trying out and creating new things, it is only natural
-          that I have spent most of my time dedicated to coding so far. And It
-          has paid off! Up to this point I have worked with most modern web
-          development tools, languages and, frameworks. Therefore, I am
-          confident in my competencies and can assure creating and maintaining
-          high-quality code bases by following the industry's best practices and
-          using adequate technologies. Among the people I have worked with so
-          far I am known for my efficacy and also for the depth of my technical
+          my passion for creating things, it is only natural that I have spent
+          most of my time dedicated to coding so far. Up to this point I have
+          worked with most modern web development tools, languages and,
+          frameworks. Therefore, I am confident in my competencies and can
+          create and maintain high-quality code bases by following the
+          industry's best practices. Among the people I have worked with so far
+          I am known for my efficacy and also for the depth of my technical
           knowledge.
         </p>
       </ScrollAnimation>
