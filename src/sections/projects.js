@@ -2,7 +2,6 @@ import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { graphql, useStaticQuery } from "gatsby";
-import gallerySvg from "../images/gallery.svg";
 
 const isEven = (num) => num % 2 === 0;
 
@@ -91,9 +90,6 @@ function Projects() {
               image={getImage(project.image)}
               loading="lazy"
             />
-            <button className="absolute bg-white p-1 right-3 top-3 rounded">
-              <img src={gallerySvg} width="16" height="16" />
-            </button>
           </ScrollAnimation>
         </article>
       ))}
