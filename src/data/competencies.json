@@ -35,15 +35,15 @@
     "categories": [
       {
         "title": "Languages",
-        "values": ["Node / TypeScript", "Python", "Go / PHP"]
+        "values": ["Node / TypeScript", "Python", "Go"]
       },
       {
         "title": "Databases",
-        "values": ["MongoDB", "PostgreSQL"]
+        "values": ["Document-oriented", "Relational", "Cloud"]
       },
       {
         "title": "Frameworks",
-        "values": ["Express / Nest", "Laravel"]
+        "values": ["Express / Nest", "Martini"]
       },
       {
         "title": "Other",
