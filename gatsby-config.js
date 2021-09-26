@@ -64,5 +64,18 @@ module.exports = {
         id: "chat",
       },
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["G-R5X8TY91W4"],
+        gtagConfig: {
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        pluginConfig: {
+          head: false,
+        },
+      },
+    },
   ],
 };
