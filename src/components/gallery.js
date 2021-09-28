@@ -14,7 +14,7 @@ function Gallery({ onToggle, title, images }) {
   }, [blockScroll, allowScroll]);
 
   return (
-    <div className="bg-white fixed h-full top-0 w-full z-50 px-10 md:px-16 lg:px-20 xl:px-36 2xl:px-52 pt-24">
+    <div className="bg-white fixed h-full top-0 w-full z-50 px-10 lg:px-20 xl:px-36 2xl:px-52 pt-20 lg:pt-24">
       <div className="flex justify-between mb-4 px-10">
         <div className="font-bold text-2xl text-gray-600">{title}</div>
         <button className="hover:scale" onClick={onToggle}>

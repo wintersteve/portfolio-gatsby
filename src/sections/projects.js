@@ -109,7 +109,7 @@ function Projects() {
               />
               <button
                 className={`
-                  absolute flex items-center p-2 right-3 top-3 rounded-sm
+                  absolute md:flex hidden items-center p-2 right-3 top-3 rounded-sm 
                   ${
                     !project?.images?.length
                       ? "bg-gray-50 cursor-not-allowed"
