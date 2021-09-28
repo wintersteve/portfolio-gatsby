@@ -49,13 +49,13 @@ function Chat() {
       {isOpen && (
         <div
           aria-hidden
-          className="fade fixed h-full left-0 top-0 w-full z-50"
+          className="fade fixed h-full left-0 top-0 w-full z-40"
           style={{ background: "hsl(0deg 0% 0% / 30%)" }}
           onClick={toggle}
         ></div>
       )}
 
-      <aside className="bottom-6 lg:bottom-12 fixed right-6 lg:right-12 z-50">
+      <aside className="bottom-6 lg:bottom-12 fixed right-6 lg:right-12 z-40">
         <button
           className="bg-gray-300 hover:scale p-4 rounded-full shadow-4xl"
           onClick={toggle}
