@@ -41,6 +41,8 @@ function Header() {
 
   const isInitialPosition = () => lastScrollY === 0;
 
+  const getPaddingClass = () => (isInitialPosition() ? "lg:py-10" : "lg:py-8");
+
   const getShadowClass = () =>
     isInitialPosition() || state.isOpen ? "px-7 shadow-none" : "px-9";
 
@@ -52,7 +54,10 @@ function Header() {
   return (
     <>
       <header
-        className={`bg-white duration-500 fixed py-7 lg:py-8 md:px-16 lg:px-20 xl:px-32 2xl:px-64 font-bold shadow-lg transform transition-all top-0 w-full z-50 ${getShadowClass()} ${getTranslateClass()}`}
+        className={`
+        bg-white duration-500 fixed py-7 md:px-16 lg:px-20 xl:px-32 2xl:px-64 font-bold shadow-lg transform transition-all top-0 w-full z-30
+          ${getShadowClass()} ${getTranslateClass()} ${getPaddingClass()}
+      `}
       >
         <ScrollAnimation
           animateIn="fade"
