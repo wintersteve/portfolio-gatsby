@@ -44,12 +44,12 @@ function Banner() {
           <h2 className="font-semibold md:ml-1 mb-6 opacity-80 text-4xl md:text-6xl">
             Steve Winter
           </h2>
-          <h3 className="bg-secondary-100 font-bold mb-6 py-2 px-3 text-2xl md:text-7xl rounded-md w-full md:w-auto">
+          <h3 className="bg-secondary-100 font-bold mb-6 py-2 px-3 text-2xl md:text-6xl rounded-md w-full md:w-auto">
             <span className="block mb-1 md:mb-3">I am a professional</span>
             <span className="opacity-75">Full-Stack Developer</span>
           </h3>
 
-          <div className="max-w-xl ml-1 md:ml-2 mb-6 text-md">
+          <div className="max-w-xl ml-1 md:ml-2 mb-6 lg:text-md">
             I'm a Germany-based software engineer who excels at building digital
             experiences. Currently, I'm an engineer at{" "}
             <a
