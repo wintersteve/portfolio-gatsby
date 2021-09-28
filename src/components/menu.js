@@ -24,7 +24,7 @@ const Menu = ({ className, children, title }) => {
     return (
       <Portal root="menu">
         <div
-          className={`bg-white fixed h-full left-0 overflow-scroll slideIn top-0 w-full z-40 ${className}`}
+          className={`bg-white fixed h-full left-0 overflow-scroll slideIn top-0 w-full z-20 ${className}`}
         >
           {title && (
             <div className="bg-white flex items-center justify-between p-10 sticky top-0">
