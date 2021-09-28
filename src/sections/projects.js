@@ -1,20 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { graphql, useStaticQuery } from "gatsby";
-
-const isEven = (num) => num % 2 === 0;
+import gallerySvg from "../images/gallery.svg";
+import Gallery from "../components/gallery";
+import { isEven } from "../utils/is-even";
 
 function Projects() {
   const data = useStaticQuery(graphql`
     query AllProjectsQuery {
       allProjectsJson {
         nodes {
+          id
           description
           link
           title
           stack
-          image {
+          mainImage {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED)
+            }
+          }
+          images {
             childImageSharp {
               gatsbyImageData(placeholder: BLURRED)
             }
@@ -26,74 +33,109 @@ function Projects() {
 
   const projects = data.allProjectsJson.nodes;
 
+  const [galleryState, setGalleryState] = useState({
+    isOpen: false,
+    images: null,
+    title: "",
+  });
+
+  const toggleGallery = (title = "", images = null) =>
+    setGalleryState({ isOpen: !galleryState.isOpen, images, title });
+
   return (
-    <section
-      className="max-w-screen-2xl mb-20 lg:mb-40 m-auto overflow-hidden sm:overflow-visible"
-      id="projects"
-    >
-      <div className="text-center px-12 md:px-40">
-        <h2 className="mb-5 font-bold text-5xl text-gray-700">My Projects</h2>
-        <p className="mb-16 text-gray-500 text-lg">
-          Here are some projects I've worked on recently. You would like to see
-          more? Email me.
-        </p>
-      </div>
-      {projects.map((project, index) => (
-        <article
-          className="items-center flex flex-col-reverse lg:grid lg:grid-cols-2 mx-4 md:mx-12 lg:mx-20 mb-10 lg:mb-20"
-          key={project.title}
-        >
-          <ScrollAnimation
-            animateIn="fade"
-            className={`row-start-1 ${
-              isEven(index)
-                ? "col-start-1 py-10 px-6 lg:pr-10 2xl:pr-20 lg:pl-10 2xl:pl-20"
-                : "col-start-2 py-10 px-6 lg:pl-10 2xl:pl-20 lg:pr-10 2xl:pr-20"
-            }`}
-            duration={1}
+    <>
+      <section
+        className="max-w-screen-2xl mb-20 lg:mb-40 m-auto overflow-hidden sm:overflow-visible"
+        id="projects"
+      >
+        <div className="text-center px-12 md:px-40">
+          <h2 className="mb-5 font-bold text-5xl text-gray-700">My Projects</h2>
+          <p className="mb-16 text-gray-500 text-lg">
+            Here are some projects I've worked on recently. You would like to
+            see more? Email me.
+          </p>
+        </div>
+        {projects.map((project, index) => (
+          <article
+            className="items-center flex flex-col-reverse lg:grid lg:grid-cols-2 mx-4 md:mx-12 lg:mx-20 mb-10 lg:mb-20"
+            key={project.title}
           >
-            <div>
-              <h4 className="font-bold mb-5 text-2xl text-gray-600">
-                {project.title}
-              </h4>
-              <p
-                dangerouslySetInnerHTML={{ __html: project.description }}
-                className="mb-3"
-              ></p>
-              <ul className="flex flex-wrap mb-6">
-                {project.stack.map((technology) => (
-                  <li
-                    className="font-semibold mr-3 text-xs text-gray-500"
-                    key={technology}
-                  >
-                    {technology}
-                  </li>
-                ))}
-              </ul>
-              <a
-                className="hover:float bg-secondary-100 text-secondary-900 font-bold inline-block p-5 rounded text-sm w-full lg:w-auto"
-                href={project.link}
-              >
-                Take me to {project.title}
-              </a>
-            </div>
-          </ScrollAnimation>
-          <ScrollAnimation
-            animateIn={isEven(index) ? "slideRight" : "slideLeft"}
-            duration={0.7}
-          >
-            <GatsbyImage
-              alt={project.title}
-              className={`row-start-1 rounded-md shadow-4xl ${
-                isEven(index) ? "col-start-2" : "col-start-1"
+            <ScrollAnimation
+              animateIn="fade"
+              className={`row-start-1 ${
+                isEven(index)
+                  ? "col-start-1 py-10 px-6 lg:pr-10 2xl:pr-20 lg:pl-10 2xl:pl-20"
+                  : "col-start-2 py-10 px-6 lg:pl-10 2xl:pl-20 lg:pr-10 2xl:pr-20"
               }`}
-              image={getImage(project.image)}
-              loading="lazy"
-            />
-          </ScrollAnimation>
-        </article>
-      ))}
-    </section>
+              duration={1}
+            >
+              <div>
+                <h4 className="font-bold mb-5 text-2xl text-gray-600">
+                  {project.title}
+                </h4>
+                <p
+                  dangerouslySetInnerHTML={{ __html: project.description }}
+                  className="mb-3"
+                ></p>
+                <ul className="flex flex-wrap mb-6">
+                  {project.stack.map((technology) => (
+                    <li
+                      className="font-semibold mr-3 text-xs text-gray-500"
+                      key={technology}
+                    >
+                      {technology}
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  className="hover:float bg-secondary-100 text-secondary-900 font-bold inline-block p-5 rounded text-sm w-full lg:w-auto"
+                  href={project.link}
+                >
+                  Take me to {project.title}
+                </a>
+              </div>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn={isEven(index) ? "slideRight" : "slideLeft"}
+              duration={0.7}
+            >
+              <GatsbyImage
+                alt={project.title}
+                className={`row-start-1 rounded-md shadow-4xl ${
+                  isEven(index) ? "col-start-2" : "col-start-1"
+                }`}
+                image={getImage(project.mainImage)}
+                loading="lazy"
+              />
+              <button
+                className={`
+                  absolute flex items-center p-2 right-3 top-3 rounded-sm
+                  ${
+                    !project?.images?.length
+                      ? "bg-gray-50 cursor-not-allowed"
+                      : "bg-gray-100 hover:scale"
+                  }
+                `}
+                disabled={!project?.images?.length}
+                onClick={() => toggleGallery(project.title, project.images)}
+              >
+                <span className="text-xs font-semibold mr-1 text-gray-600">
+                  GALLERY
+                </span>
+                <img src={gallerySvg} width="18" height="18" />
+              </button>
+            </ScrollAnimation>
+          </article>
+        ))}
+      </section>
+      {galleryState.isOpen && (
+        <Gallery
+          images={galleryState.images}
+          onToggle={toggleGallery}
+          title={galleryState.title}
+        />
+      )}
+    </>
   );
 }
 
