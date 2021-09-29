@@ -17,7 +17,7 @@ function Experiences() {
       className="lg:mx-12 py-20 lg:py-28 xl:py-48 px-8 md:px-12 lg:px-18 xl:px-32 2xl:px-72"
     >
       <ScrollAnimation animateIn="fade" duration={0.5}>
-        <h2 className="font-bold mb-8 text-4xl md:text-5xl text-gray-700">
+        <h2 className="font-bold mb-8 text-4xl md:text-5xl text-gray-700 dark:text-gray-50">
           Experience
         </h2>
 
@@ -26,7 +26,9 @@ function Experiences() {
             <li key={experience.title}>
               <button
                 className={`font-semibold min-w-max py-2 px-4 rounded-md text-gray-400 transition-all w-max ${
-                  activeTab === index && "bg-gray-100 text-gray-900"
+                  activeTab === index
+                    ? "bg-gray-100 dark:bg-primaryDark text-gray-900 dark:text-gray-100"
+                    : ""
                 }`}
                 onClick={() => handleClick(index)}
               >
@@ -37,7 +39,7 @@ function Experiences() {
         </ul>
 
         <div className="grid grid-cols-12 items-start">
-          <div className="col-start-1 col-end-13 lg:col-end-8 fade py-2 row-start-1">
+          <div className="col-start-1 col-end-13 lg:col-end-8 dark:text-gray-200 fade py-2 row-start-1">
             <h4 className="font-semibold mb-1 md:mb-0 text-lg">
               {experiences[activeTab].role}
             </h4>
@@ -46,13 +48,13 @@ function Experiences() {
               <span className="hidden md:block mx-2">•</span>
               <time>{experiences[activeTab].date}</time>
             </div>
-            <p className="bg-secondary-100 mb-2 md:mb-3 py-4 px-5 relative rounded z-10">
+            <p className="bg-secondary-100 dark:bg-primaryDark dark:text-gray-100 mb-2 md:mb-3 py-4 px-5 relative rounded z-10">
               {experiences[activeTab].description}
             </p>
-            <ul className="list-disc ml-6 lg:ml-5">
+            <ul className="list-disc ml-6 lg:ml-6">
               {experiences[activeTab].tools.map((tool) => (
                 <li
-                  className="font-medium py-1 text-sm text-gray-600"
+                  className="font-medium py-1 text-sm text-gray-600 dark:text-gray-300"
                   key={tool}
                 >
                   {tool}

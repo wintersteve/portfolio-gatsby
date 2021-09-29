@@ -26,8 +26,10 @@ function Competencies() {
             key={competency.title}
           >
             <div
-              className={`bg-white border-b-2 h-full px-20 py-16 lg:py-20 text-center ${
-                index === 1 && "border-gray-100 border-l-2 border-r-2"
+              className={`bg-white dark:bg-primary h-full px-20 py-16 lg:py-20 text-center ${
+                index === 1
+                  ? "border-gray-100 dark:border-gray-700 dark:border-l-4 dark:border-r-4 border-l-2 border-r-2"
+                  : ""
               }`}
             >
               <ScrollAnimation
@@ -35,7 +37,7 @@ function Competencies() {
                 delay={300}
                 duration={0.5 * (index + 1)}
               >
-                <h3 className="text-gray-700 text-2xl font-bold mb-10">
+                <h3 className="dark:text-white text-gray-700 text-2xl font-bold mb-10">
                   {competency.title}
                 </h3>
                 {competency.categories.map((category, index) => (
@@ -47,13 +49,13 @@ function Competencies() {
                     }`}
                     key={category.title}
                   >
-                    <h4 className="font-bold mb-3 mx-auto w-min text-gray-600">
+                    <h4 className="font-bold mb-3 mx-auto w-min dark:text-gray-50 text-gray-600">
                       <UnderlinedText>{category.title}</UnderlinedText>
                     </h4>
                     <ul>
                       {category.values.map((value) => (
                         <li
-                          className="font-medium mb-1 text-sm text-gray-500"
+                          className="font-medium mb-1 text-sm text-gray-500 dark:text-gray-100"
                           key={value}
                         >
                           {value}

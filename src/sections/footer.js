@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="relative">
       <svg
-        className="absolute bg-gray-100 left-0 -top-20 sm:-top-32 md:-top-40 lg:-top-56 xl:-top-64 2xl:-top-80"
+        className="absolute bg-gray-100 dark:bg-primaryDark left-0 -top-20 sm:-top-32 md:-top-40 lg:-top-56 xl:-top-64 2xl:-top-80"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
       >

@@ -60,7 +60,7 @@ function Certificates() {
     <section id="certificates" className="my-20 lg:my-40">
       <ScrollAnimation animateIn="fade">
         <div className="items-center grid grid-cols-2 mx-6 md:mx-12 lg:mx-20 2xl:mx-40 mb-10">
-          <h2 className="font-bold ml-2 text-4xl text-gray-600">
+          <h2 className="font-bold ml-2 text-4xl text-gray-600 dark:text-gray-50">
             Certificates
           </h2>
           <div className="grid grid-cols-2 items-center justify-self-end">
@@ -105,10 +105,10 @@ function Certificates() {
             >
               <GatsbyImage
                 alt={certificate.title}
-                className="shadow-lg"
+                className="brightness-90 filter rounded-lg shadow-lg"
                 image={getImage(certificate.image)}
               />
-              <h5 className="font-bold m-2 text-gray-500">
+              <h5 className="font-bold m-2 dark:text-gray-200 text-gray-500">
                 {certificate.title}
               </h5>
             </ScrollAnimation>

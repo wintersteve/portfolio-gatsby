@@ -35,21 +35,21 @@ function Banner() {
   const { programmingIcons, designIcon, analyticsIcon } = data;
 
   return (
-    <section className=" mx-auto px-6 md:px-12 lg:px-40 xl:px-32 mt-40 mb-16 md:mb-28 md:mt-60 relative xl:max-w-screen-xl">
+    <section className=" mx-auto px-6 md:px-12 lg:px-40 xl:px-32 pt-40 md:pt-60 mb-16 md:mb-28 relative xl:max-w-screen-xl">
       <div className="flex flex-col items-start">
         <ScrollAnimation animateIn="fade">
-          <div className="font-semibold mb-1 md:mb-2 ml-1 md:ml-3 text-gray-500">
+          <div className="font-semibold mb-1 md:mb-2 ml-1 md:ml-3 text-gray-500 dark:text-gray-200">
             Hi, my name is
           </div>
-          <h2 className="font-semibold md:ml-1 mb-6 opacity-80 text-4xl md:text-6xl">
+          <h2 className="dark:text-white font-semibold md:ml-1 mb-6 opacity-80 text-4xl md:text-6xl">
             Steve Winter
           </h2>
-          <h3 className="bg-secondary-100 font-bold mb-6 py-2 px-3 text-2xl md:text-6xl rounded-md w-full md:w-auto">
+          <h3 className="bg-secondary-100 dark:bg-primaryDark dark:text-white font-bold mb-6 py-2 px-3 text-2xl md:text-6xl rounded-md w-full md:w-auto">
             <span className="block mb-1 md:mb-3">I am a professional</span>
             <span className="opacity-75">Full-Stack Developer</span>
           </h3>
 
-          <div className="max-w-xl ml-1 md:ml-2 mb-6 lg:text-md">
+          <div className="dark:text-gray-50 max-w-xl ml-1 md:ml-2 mb-6 lg:text-md">
             I'm a Germany-based software engineer who excels at building digital
             experiences. Currently, I'm an engineer at{" "}
             <a
@@ -79,7 +79,7 @@ function Banner() {
             offset={1000}
           >
             <Tile
-              className="shadow-secondary bg-gray-100 py-10 md:py-20 md:px-10 lg:mb-0"
+              className="shadow-secondary dark:shadow-primaryDark bg-gray-100 dark:bg-primary py-10 md:py-20 md:px-10 lg:mb-0"
               imageStyle="h-12 md:h-12 mx-2 md:mx-3"
               images={programmingIcons.nodes.map((icon) => icon.publicURL)}
               label={"Programming"}
@@ -87,7 +87,7 @@ function Banner() {
           </ScrollAnimation>
           <ScrollAnimation animateIn="fade" delay={150} offset={1000}>
             <Tile
-              className="shadow-secondary bg-gray-100 px-10 py-8 md:py-20 lg:mb-0"
+              className="shadow-secondary dark:shadow-primaryDark bg-gray-100 dark:bg-primary px-10 py-8 md:py-20 lg:mb-0"
               imageStyle="h-12 md:h-12 mx-2 md:mx-2"
               images={[designIcon.publicURL]}
               label={"Web Design"}
@@ -95,7 +95,7 @@ function Banner() {
           </ScrollAnimation>
           <ScrollAnimation animateIn="fade" delay={150} offset={1000}>
             <Tile
-              className="shadow-secondary bg-gray-100 px-10 py-8 md:py-20 lg:mb-0"
+              className="shadow-secondary dark:shadow-primaryDark bg-gray-100 dark:bg-primary px-10 py-8 md:py-20 lg:mb-0"
               imageStyle="h-12 md:h-12 mx-2 md:mx-2"
               images={[analyticsIcon.publicURL]}
               label={"SEO & Analytics"}

@@ -33,14 +33,14 @@ function Contact() {
 
   return (
     <section
-      className="bg-gray-100 text-center pt-16 pb-32 lg:pt-40 lg:pb-64 px-2"
+      className="bg-gray-100 dark:bg-primaryDark text-center pt-16 pb-32 lg:pt-40 lg:pb-64 px-2"
       id="contact"
     >
       <ScrollAnimation animateIn="fade">
-        <h2 className="font-bold mb-5 text-4xl text-gray-700">
+        <h2 className="font-bold mb-5 text-4xl text-gray-700 dark:text-gray-50">
           Interested in collaborating?
         </h2>
-        <p className="mb-10 px-20">
+        <p className="dark:text-gray-200 mb-10 px-20">
           Feel free to contact me to discuss your needs or partnership
           opportunities.{" "}
         </p>
@@ -56,7 +56,7 @@ function Contact() {
         <div className="lg:grid lg:grid-cols-2 gap-5 lg:mb-5">
           <Field
             autoComplete="off"
-            className="bg-gray-200 mb-5 lg:mb-0 p-8 rounded-xl w-full lg:w-auto"
+            className="bg-gray-200 dark:bg-primary mb-5 lg:mb-0 p-8 rounded-xl w-full lg:w-auto"
             name="name"
             placeholder={formJSON.name.placeholder}
             required
@@ -64,7 +64,7 @@ function Contact() {
           />
           <Field
             autoComplete="off"
-            className="bg-gray-200 mb-5 lg:mb-0 p-8 rounded-xl w-full lg:w-auto"
+            className="bg-gray-200 dark:bg-primary mb-5 lg:mb-0 p-8 rounded-xl w-full lg:w-auto"
             name="email"
             placeholder={formJSON.email.placeholder}
             required
@@ -74,7 +74,7 @@ function Contact() {
         <div className="mb-8">
           <Field
             as="textarea"
-            className="bg-gray-200 p-8 rounded-xl w-full"
+            className="bg-gray-200 dark:bg-primary p-8 rounded-xl w-full"
             name="message"
             placeholder={formJSON.message.placeholder}
             required

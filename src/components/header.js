@@ -55,7 +55,7 @@ function Header() {
     <>
       <header
         className={`
-        bg-white duration-500 fixed py-7 md:px-16 lg:px-20 xl:px-32 2xl:px-64 font-bold shadow-lg transform transition-all top-0 w-full z-30
+        bg-white dark:bg-primary duration-500 fixed py-7 md:px-16 lg:px-20 xl:px-32 2xl:px-64 font-bold shadow-lg transform transition-all top-0 w-full z-30
           ${getShadowClass()} ${getTranslateClass()} ${getPaddingClass()}
       `}
       >
@@ -73,7 +73,7 @@ function Header() {
               </FragmentLink>
             ))}
             <a
-              className="hover:float border-2 inline-block ml-4 px-4 py-2 font-semibold rounded-full text-sm text-gray-600 hover:text-gray-700"
+              className="hover:float border-2 inline-block ml-4 px-4 py-2 font-semibold rounded-full text-sm dark:text-gray-50 text-gray-600 hover:text-gray-700"
               download
               href="/resume.pdf"
             >

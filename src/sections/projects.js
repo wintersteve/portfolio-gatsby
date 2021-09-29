@@ -49,8 +49,10 @@ function Projects() {
         id="projects"
       >
         <div className="text-center px-12 md:px-40">
-          <h2 className="mb-5 font-bold text-5xl text-gray-700">My Projects</h2>
-          <p className="mb-16 text-gray-500 text-lg">
+          <h2 className="mb-5 font-bold text-5xl text-gray-700 dark:text-gray-50">
+            My Projects
+          </h2>
+          <p className="mb-16 dark:text-gray-100 text-gray-500 text-lg">
             Here are some projects I've worked on recently. You would like to
             see more? Email me.
           </p>
@@ -70,17 +72,17 @@ function Projects() {
               duration={1}
             >
               <div>
-                <h4 className="font-bold mb-5 text-2xl text-gray-600">
+                <h4 className="font-bold mb-5 text-2xl text-gray-600 dark:text-gray-100">
                   {project.title}
                 </h4>
                 <p
                   dangerouslySetInnerHTML={{ __html: project.description }}
-                  className="mb-3"
+                  className="dark:text-gray-100 mb-3"
                 ></p>
                 <ul className="flex flex-wrap mb-6">
                   {project.stack.map((technology) => (
                     <li
-                      className="font-semibold mr-3 text-xs text-gray-500"
+                      className="font-semibold mr-3 text-xs text-gray-500 dark:text-gray-400"
                       key={technology}
                     >
                       {technology}
@@ -88,7 +90,7 @@ function Projects() {
                   ))}
                 </ul>
                 <a
-                  className="hover:float bg-secondary-100 text-secondary-900 font-bold inline-block p-5 rounded text-sm w-full lg:w-auto"
+                  className="hover:float bg-secondary-100 dark:bg-primaryDark text-secondary-900 dark:text-gray-300 font-bold inline-block p-5 rounded text-sm w-full lg:w-auto"
                   href={project.link}
                 >
                   Take me to {project.title}
@@ -101,7 +103,7 @@ function Projects() {
             >
               <GatsbyImage
                 alt={project.title}
-                className={`row-start-1 rounded-md shadow-4xl ${
+                className={`brightness-90 filter row-start-1 rounded-md shadow-4xl ${
                   isEven(index) ? "col-start-2" : "col-start-1"
                 }`}
                 image={getImage(project.mainImage)}
