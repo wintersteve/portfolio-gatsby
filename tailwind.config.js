@@ -53,6 +53,9 @@ module.exports = {
       width: {
         fit: "fit-content",
       },
+      transitionProperty: {
+        "all-no-bg": "padding, shadow, translate, transform",
+      },
     },
   },
   variants: {
