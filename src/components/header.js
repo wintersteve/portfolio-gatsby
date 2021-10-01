@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useCallback, useContext } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import useDarkMode from "../hooks/use-dark-mode";
 import useScrollPosition from "../hooks/use-scroll-position";
@@ -43,17 +43,25 @@ function Header() {
   const { isScrollTop, lastScrollY } = useScrollPosition();
   const { state, dispatch } = useContext(MenuContext);
 
-  const isInitialPosition = () => lastScrollY === 0;
+  const isInitialPosition = lastScrollY === 0;
 
-  const getPaddingClass = () => (isInitialPosition() ? "lg:py-10" : "lg:py-8");
+  const getPaddingClass = useCallback(
+    () => (isInitialPosition ? "lg:py-10" : "lg:py-8"),
+    [isInitialPosition]
+  );
 
-  const getShadowClass = () =>
-    isInitialPosition() || state.isOpen ? "px-7 shadow-none" : "px-9";
+  const getShadowClass = useCallback(
+    () => (isInitialPosition || state.isOpen ? "px-7 shadow-none" : "px-9"),
+    [isInitialPosition, state]
+  );
 
-  const getTranslateClass = () =>
-    lastScrollY > 100 && isScrollTop && !state.isOpen
-      ? "-translate-y-32"
-      : "translate-y-0";
+  const getTranslateClass = useCallback(
+    () =>
+      lastScrollY > 100 && isScrollTop && !state.isOpen
+        ? "-translate-y-32"
+        : "translate-y-0",
+    [isInitialPosition, isScrollTop, state]
+  );
 
   return (
     <>
