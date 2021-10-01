@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
+import useDarkMode from "../hooks/use-dark-mode";
 import useScrollPosition from "../hooks/use-scroll-position";
 import { MenuContext, MENU_ACTION } from "../providers/menu-provider";
 import Branding from "./branding";
@@ -7,6 +8,8 @@ import FragmentLink from "./fragment-link";
 import Hamburger from "./hamburger";
 import Menu from "./menu";
 import SocialMediaNavigation from "./social-media-navigation";
+import lightModeSvg from "../images/light-mode.svg";
+import darkModeSvg from "../images/dark-mode.svg";
 
 const navItems = [
   {
@@ -36,6 +39,7 @@ const navItems = [
 ];
 
 function Header() {
+  const [isDarkMode, setIsDarkMode] = useDarkMode();
   const { isScrollTop, lastScrollY } = useScrollPosition();
   const { state, dispatch } = useContext(MenuContext);
 
@@ -55,7 +59,7 @@ function Header() {
     <>
       <header
         className={`
-        bg-white dark:bg-primary duration-500 fixed py-7 md:px-16 lg:px-20 xl:px-32 2xl:px-64 font-bold shadow-lg transform transition-all top-0 w-full z-30
+        bg-white dark:bg-primary-200 fixed py-7 md:px-16 lg:px-20 xl:px-32 2xl:px-64 font-bold shadow-lg transform transition-transform duration-500 top-0 w-full z-30
           ${getShadowClass()} ${getTranslateClass()} ${getPaddingClass()}
       `}
       >
@@ -66,7 +70,7 @@ function Header() {
           offset={0}
         >
           <Branding />
-          <nav className="hidden lg:block">
+          <nav className="hidden items-center lg:flex">
             {navItems.map((item) => (
               <FragmentLink id={item.id} key={item.id}>
                 {item.label}
@@ -77,8 +81,19 @@ function Header() {
               download
               href="/resume.pdf"
             >
-              Resumé
+              Resume
             </a>
+            <button
+              className="bg-secondary-100 dark:bg-primary-300 flex ml-4 p-3 px-3.5 rounded transition"
+              onClick={() => setIsDarkMode(!isDarkMode)}
+            >
+              <img
+                className={`filter ${isDarkMode ? "invert" : "opacity-75"}`}
+                src={isDarkMode ? lightModeSvg : darkModeSvg}
+                width="18"
+                alt=""
+              />
+            </button>
           </nav>
           <Hamburger
             className="lg:hidden"
