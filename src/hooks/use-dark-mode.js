@@ -8,23 +8,27 @@ const ROOT = isPlatformBrowser() && window.document.documentElement;
 const BODY = isPlatformBrowser() && window.document.body;
 
 function useDarkMode() {
-  const darkThemeFromStorage =
-    isPlatformBrowser() && JSON.parse(window?.localStorage?.darkMode || null);
-
-  const isDarkThemeSet = darkThemeFromStorage !== null;
-  const isDarkThemeActive = isDarkThemeSet && darkThemeFromStorage;
-
-  const isDarkThemePreferred =
-    isDarkThemeActive ||
-    (!isDarkThemeSet &&
-      window?.matchMedia("(prefers-color-scheme: dark)").matches);
-
-  const [isDarkMode, setState] = useState(isDarkThemePreferred);
+  const [isDarkMode, setState] = useState(false);
 
   const setIsDarkMode = (value) => {
     setState(value);
     window?.localStorage?.setItem("darkMode", value);
   };
+
+  useEffect(() => {
+    const darkThemeFromStorage =
+      isPlatformBrowser() && JSON.parse(window?.localStorage?.darkMode || null);
+
+    const isDarkThemeSet = darkThemeFromStorage !== null;
+    const isDarkThemeActive = isDarkThemeSet && darkThemeFromStorage;
+
+    const isDarkThemePreferred =
+      isDarkThemeActive ||
+      (!isDarkThemeSet &&
+        window?.matchMedia("(prefers-color-scheme: dark)").matches);
+
+    setIsDarkMode(isDarkThemePreferred);
+  }, []);
 
   useEffect(() => {
     if (isDarkMode) {
@@ -34,7 +38,7 @@ function useDarkMode() {
       ROOT.classList.remove(THEME);
       BODY.classList.remove(BACKGROUND);
     }
-  }, [isDarkMode, isDarkThemePreferred]);
+  }, [isDarkMode]);
 
   return [isDarkMode, setIsDarkMode];
 }
