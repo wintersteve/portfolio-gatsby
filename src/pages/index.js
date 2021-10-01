@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Banner from "../sections/banner";
 import Chat from "../components/chat";
 import Header from "../components/header";
@@ -12,12 +12,6 @@ import Projects from "../sections/projects";
 import Seo from "../components/seo";
 
 const IndexPage = () => {
-  useEffect(() => {
-    console.log("object");
-    window.document.documentElement.classList.add("dark");
-    window.document.body.classList.add("dark:bg-primary");
-  }, []);
-
   return (
     <>
       <Seo />

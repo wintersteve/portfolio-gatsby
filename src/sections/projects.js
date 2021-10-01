@@ -90,7 +90,7 @@ function Projects() {
                   ))}
                 </ul>
                 <a
-                  className="hover:float bg-secondary-100 dark:bg-primaryDark text-secondary-900 dark:text-gray-300 font-bold inline-block p-5 rounded text-sm w-full lg:w-auto"
+                  className="hover:float bg-secondary-100 dark:bg-primary-300 text-secondary-900 dark:text-gray-300 font-bold inline-block p-5 rounded text-sm w-full lg:w-auto"
                   href={project.link}
                 >
                   Take me to {project.title}
@@ -103,7 +103,7 @@ function Projects() {
             >
               <GatsbyImage
                 alt={project.title}
-                className={`brightness-90 filter row-start-1 rounded-md shadow-4xl ${
+                className={`dark:brightness-90 filter row-start-1 rounded-md shadow-4xl ${
                   isEven(index) ? "col-start-2" : "col-start-1"
                 }`}
                 image={getImage(project.mainImage)}

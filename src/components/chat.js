@@ -65,7 +65,7 @@ function Chat() {
 
         {isOpen && (
           <Form
-            className={`fixed lg:absolute bg-white bottom-0 right-0 p-5 lg:rounded transition-all w-full lg:w-96 shadow-4xl ${
+            className={`fixed lg:absolute bg-white dark:bg-primary-300 bottom-0 right-0 p-5 lg:rounded transition-all w-full lg:w-96 shadow-4xl ${
               isOpen && "fade"
             }`}
             data-netlify="true"
@@ -74,25 +74,25 @@ function Chat() {
             initialValues={DEFAULT_DATA}
             handleSubmit={handleSubmit}
           >
-            <div className="bg-secondary-100 flex justify-between mb-5 p-3 rounded">
-              <h6 className="font-semibold text-gray-600 text-lg">
+            <div className="bg-secondary-100 dark:bg-primary-200 flex justify-between mb-5 p-4 rounded">
+              <h6 className="font-semibold text-gray-600 dark:text-gray-100">
                 Send me a message
               </h6>
               <button className="py-1 px-2" type="button" onClick={toggle}>
                 <img
                   alt="close button icon"
-                  className="opacity-75"
+                  className="filter dark:invert opacity-75 dark:opacity-100"
                   src={closeIcon}
                   width="14"
                 />
               </button>
             </div>
-            <p className="px-2 mb-2 text-sm text-gray-500">
+            <p className="px-2 mb-2 text-sm text-gray-500 dark:text-gray-200">
               Fill out the form and I will get back to you within minutes
             </p>
             <Field
               autoComplete="off"
-              className="border-b-2 mb-5 px-2 py-4 text-sm w-full"
+              className="dark:bg-primary-200 border-b-2 dark:border-primary-100 mb-5 px-2 py-4 text-sm dark:text-gray-100 w-full"
               type="text"
               minLength="3"
               name="name"
@@ -101,7 +101,7 @@ function Chat() {
             />
             <Field
               autoComplete="off"
-              className="border-b-2 mb-5 px-2 py-4 text-sm w-full"
+              className="dark:bg-primary-200 border-b-2 dark:border-primary-100 mb-5 px-2 py-4 text-sm dark:text-gray-100 w-full"
               type="email"
               name="email"
               placeholder={formJSON.email.placeholder}
@@ -109,7 +109,7 @@ function Chat() {
             />
             <Field
               as="textarea"
-              className="border-b-2 mb-5 px-2 py-4 text-sm w-full"
+              className="dark:bg-primary-200 border-b-2 dark:border-primary-100 mb-5 px-2 py-4 text-sm dark:text-gray-100 w-full"
               name="message"
               placeholder={formJSON.message.placeholder}
               required

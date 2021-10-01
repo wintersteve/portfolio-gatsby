@@ -14,13 +14,17 @@ function Gallery({ onToggle, title, images }) {
   }, [blockScroll, allowScroll]);
 
   return (
-    <div className="bg-white dark:bg-primary fixed h-full top-0 w-full z-50 px-10 lg:px-20 xl:px-36 2xl:px-52 pt-20 lg:pt-24">
+    <div className="bg-white dark:bg-primary-200 fixed h-full top-0 w-full z-50 px-10 lg:px-20 xl:px-36 2xl:px-52 pt-20 lg:pt-24">
       <div className="flex justify-between mb-4 px-10">
         <div className="font-bold text-2xl text-gray-600 dark:text-gray-50">
           {title}
         </div>
         <button className="hover:scale" onClick={onToggle}>
-          <img className="opacity-70" src={closeImg} width="25" />
+          <img
+            className="filter dark:invert opacity-70 dark:opacity-90"
+            src={closeImg}
+            width="25"
+          />
         </button>
       </div>
       <div className="flex mt-14 h-3/4">
@@ -36,7 +40,7 @@ function Gallery({ onToggle, title, images }) {
             <GatsbyImage
               alt={title}
               className={`filter brightness-90 mb-2 rounded cursor-pointer border-4 ${
-                activeImage === index ? "" : "border-white"
+                activeImage === index ? "border-gray-300" : "border-none"
               }`}
               image={getImage(images[index])}
               key={index}

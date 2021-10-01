@@ -71,7 +71,9 @@ function Certificates() {
             >
               <img
                 alt="scroll left"
-                className={canScroll.left ? "opacity-75" : "opacity-25"}
+                className={`filter dark:invert ${
+                  canScroll.left ? "opacity-75 dark:opacity-100" : "opacity-25"
+                }`}
                 src={leftArrow}
               />
             </button>
@@ -81,7 +83,9 @@ function Certificates() {
             >
               <img
                 alt="scroll right"
-                className={canScroll.right ? "opacity-75" : "opacity-25"}
+                className={`filter dark:invert ${
+                  canScroll.right ? "opacity-75 dark:opacity-100" : "opacity-25"
+                }`}
                 src={rightArrow}
               />
             </button>
@@ -105,7 +109,7 @@ function Certificates() {
             >
               <GatsbyImage
                 alt={certificate.title}
-                className="brightness-90 filter rounded-lg shadow-lg"
+                className="dark:brightness-90 filter rounded-lg shadow-lg"
                 image={getImage(certificate.image)}
               />
               <h5 className="font-bold m-2 dark:text-gray-200 text-gray-500">

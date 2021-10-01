@@ -1,17 +1,25 @@
 import React from "react";
 
 const DEFAULT_STYLE = {
-  // background: "linear-gradient(45deg, #eefaf5, #dff5ec)",
-  background: "linear-gradient(45deg, #374151, #1f2937)",
   bottom: "-.1rem",
+  borderRadius: ".1rem",
   height: ".5rem",
   left: 0,
   position: "absolute",
   width: "100%",
 };
 
-function Border({ style }) {
-  return <div style={Object.assign({}, DEFAULT_STYLE, style)}></div>;
+function Border({ style, colorClasses }) {
+  return (
+    <div
+      className={
+        colorClasses
+          ? colorClasses
+          : "bg-gradient-to-r from-secondary-100 dark:from-primary-100 to-secondary-200 dark:to-primary-300"
+      }
+      style={Object.assign({}, DEFAULT_STYLE, style)}
+    ></div>
+  );
 }
 
 export default Border;

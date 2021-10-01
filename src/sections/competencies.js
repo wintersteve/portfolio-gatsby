@@ -8,7 +8,7 @@ import competencies from "../data/competencies.json";
 function Competencies() {
   return (
     <section className="2xl:mx-6" id="competencies">
-      <div className="px-10 md:px-16 lg:px-20 xl:px-36 2xl:px-52 pb-48 lg:pb-60 pt-20 lg:pt-40 relative bg-gradient-to-l from-primary to-primary-dark">
+      <div className="px-10 md:px-16 lg:px-20 xl:px-36 2xl:px-52 pb-48 lg:pb-60 pt-20 lg:pt-40 relative bg-gradient-to-l from-primary-200 to-primary-300">
         <TiltDivider className="-bottom-80 sm:-bottom-40 h-96 sm:h-80" />
         <ScrollAnimation animateIn="fade" duration={1}>
           <h2 className="font-semibold text-white text-4xl lg:text-5xl">
@@ -26,7 +26,7 @@ function Competencies() {
             key={competency.title}
           >
             <div
-              className={`bg-white dark:bg-primary h-full px-20 py-16 lg:py-20 text-center ${
+              className={`bg-white dark:bg-primary-200 h-full px-20 py-16 lg:py-20 text-center ${
                 index === 1
                   ? "border-gray-100 dark:border-gray-700 dark:border-l-4 dark:border-r-4 border-l-2 border-r-2"
                   : ""
@@ -50,7 +50,9 @@ function Competencies() {
                     key={category.title}
                   >
                     <h4 className="font-bold mb-3 mx-auto w-min dark:text-gray-50 text-gray-600">
-                      <UnderlinedText>{category.title}</UnderlinedText>
+                      <UnderlinedText position={{ bottom: ".1rem" }}>
+                        {category.title}
+                      </UnderlinedText>
                     </h4>
                     <ul>
                       {category.values.map((value) => (

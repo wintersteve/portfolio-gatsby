@@ -27,7 +27,7 @@ function Experiences() {
               <button
                 className={`font-semibold min-w-max py-2 px-4 rounded-md text-gray-400 transition-all w-max ${
                   activeTab === index
-                    ? "bg-gray-100 dark:bg-primaryDark text-gray-900 dark:text-gray-100"
+                    ? "bg-gray-100 dark:bg-primary-300 text-gray-900 dark:text-gray-100"
                     : ""
                 }`}
                 onClick={() => handleClick(index)}
@@ -48,7 +48,7 @@ function Experiences() {
               <span className="hidden md:block mx-2">•</span>
               <time>{experiences[activeTab].date}</time>
             </div>
-            <p className="bg-secondary-100 dark:bg-primaryDark dark:text-gray-100 mb-2 md:mb-3 py-4 px-5 relative rounded z-10">
+            <p className="bg-secondary-100 dark:bg-primary-300 dark:text-gray-100 mb-2 md:mb-3 py-4 px-5 relative rounded z-10">
               {experiences[activeTab].description}
             </p>
             <ul className="list-disc ml-6 lg:ml-6">

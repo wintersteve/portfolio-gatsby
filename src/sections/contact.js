@@ -33,7 +33,7 @@ function Contact() {
 
   return (
     <section
-      className="bg-gray-100 dark:bg-primaryDark text-center pt-16 pb-32 lg:pt-40 lg:pb-64 px-2"
+      className="bg-gray-100 dark:bg-primary-300 text-center pt-16 pb-32 lg:pt-40 lg:pb-64 px-2"
       id="contact"
     >
       <ScrollAnimation animateIn="fade">
@@ -56,7 +56,7 @@ function Contact() {
         <div className="lg:grid lg:grid-cols-2 gap-5 lg:mb-5">
           <Field
             autoComplete="off"
-            className="bg-gray-200 dark:bg-primary mb-5 lg:mb-0 p-8 rounded-xl w-full lg:w-auto"
+            className="bg-gray-200 dark:bg-primary-200 mb-5 lg:mb-0 p-8 rounded-xl dark:text-gray-100 w-full lg:w-auto"
             name="name"
             placeholder={formJSON.name.placeholder}
             required
@@ -64,7 +64,7 @@ function Contact() {
           />
           <Field
             autoComplete="off"
-            className="bg-gray-200 dark:bg-primary mb-5 lg:mb-0 p-8 rounded-xl w-full lg:w-auto"
+            className="bg-gray-200 dark:bg-primary-200 mb-5 lg:mb-0 p-8 rounded-xl dark:text-gray-100 w-full lg:w-auto"
             name="email"
             placeholder={formJSON.email.placeholder}
             required
@@ -74,14 +74,14 @@ function Contact() {
         <div className="mb-8">
           <Field
             as="textarea"
-            className="bg-gray-200 dark:bg-primary p-8 rounded-xl w-full"
+            className="bg-gray-200 dark:bg-primary-200 p-8 rounded-xl dark:text-gray-100 w-full"
             name="message"
             placeholder={formJSON.message.placeholder}
             required
           ></Field>
         </div>
         <button
-          className="hover:scale bg-primary font-semibold py-3 px-8 relative rounded-full text-white z-10"
+          className="hover:scale bg-primary-200 font-semibold py-3 px-8 relative rounded-full text-white z-10"
           type="submit"
         >
           SUBMIT
