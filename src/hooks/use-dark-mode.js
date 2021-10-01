@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 const THEME = "dark";
 const BACKGROUND = "dark:bg-primary-200";
 
-const ROOT = window.document.documentElement;
-const BODY = window.document.body;
+const ROOT = window?.document?.documentElement;
+const BODY = window?.document?.body;
 
 function useDarkMode() {
   const darkThemeFromStorage = JSON.parse(
