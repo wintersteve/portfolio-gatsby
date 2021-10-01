@@ -60,8 +60,8 @@ module.exports = {
   },
   variants: {
     extend: {
-      borderColor: ["dark"],
-      borderWidth: ["dark"],
+      borderColor: ["dark", "responsive"],
+      borderWidth: ["dark", "responsive"],
       boxShadow: ["dark"],
       brightness: ["dark"],
       invert: ["dark"],

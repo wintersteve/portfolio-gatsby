@@ -52,7 +52,7 @@ function Projects() {
           <h2 className="mb-5 font-bold text-5xl text-gray-700 dark:text-gray-50">
             My Projects
           </h2>
-          <p className="mb-16 dark:text-gray-100 text-gray-500 text-lg">
+          <p className="mb-16 dark:text-gray-200 text-gray-500 text-lg">
             Here are some projects I've worked on recently. You would like to
             see more? Email me.
           </p>
@@ -72,12 +72,12 @@ function Projects() {
               duration={1}
             >
               <div>
-                <h4 className="font-bold mb-5 text-2xl text-gray-600 dark:text-gray-100">
+                <h4 className="font-bold mb-5 text-2xl text-gray-600 dark:text-gray-200">
                   {project.title}
                 </h4>
                 <p
                   dangerouslySetInnerHTML={{ __html: project.description }}
-                  className="dark:text-gray-100 mb-3"
+                  className="dark:text-gray-200 mb-3"
                 ></p>
                 <ul className="flex flex-wrap mb-6">
                   {project.stack.map((technology) => (

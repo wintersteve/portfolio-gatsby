@@ -74,23 +74,30 @@ function Header() {
         <ScrollAnimation
           animateIn="fade"
           animateOnce={true}
-          className="flex justify-between items-center"
+          className="flex items-center justify-between"
           offset={0}
         >
           <Branding />
-          <nav className="hidden items-center lg:flex">
-            {navItems.map((item) => (
-              <FragmentLink id={item.id} key={item.id}>
-                {item.label}
-              </FragmentLink>
-            ))}
-            <a
-              className="hover:float border-2 inline-block ml-4 px-4 py-2 font-semibold rounded-full text-sm dark:text-gray-50 text-gray-600 hover:text-gray-700"
-              download
-              href="/resume.pdf"
-            >
-              Resume
-            </a>
+          <Hamburger
+            className="lg:hidden ml-auto"
+            handleClick={() => dispatch({ type: MENU_ACTION.TOGGLE })}
+            isActive={state.isOpen}
+          />
+          <nav className="items-center lg:flex">
+            <div className="hidden lg:block">
+              {navItems.map((item) => (
+                <FragmentLink id={item.id} key={item.id}>
+                  {item.label}
+                </FragmentLink>
+              ))}
+              <a
+                className="hover:float border-2 inline-block ml-4 px-4 py-2 font-semibold rounded-full text-sm dark:text-gray-50 text-gray-600 hover:text-gray-700"
+                download
+                href="/resume.pdf"
+              >
+                Resume
+              </a>
+            </div>
             <button
               className="bg-secondary-100 dark:bg-primary-300 flex ml-4 p-3 px-3.5 rounded transition"
               onClick={() => setIsDarkMode(!isDarkMode)}
@@ -103,11 +110,6 @@ function Header() {
               />
             </button>
           </nav>
-          <Hamburger
-            className="lg:hidden"
-            handleClick={() => dispatch({ type: MENU_ACTION.TOGGLE })}
-            isActive={state.isOpen}
-          />
         </ScrollAnimation>
       </header>
 
@@ -127,19 +129,24 @@ function Header() {
           ))}
           <div className="px-3">
             <a
-              className="hover:bg-gray-100 border-4 ml-4 px-8 py-3 font-semibold inline-block rounded-xl transition-all text-md text-gray-500 hover:text-gray-600"
+              className="hover:bg-gray-100 border-4 ml-4 px-8 py-3 font-semibold inline-block rounded-xl transition-all text-md text-gray-500 dark:text-gray-200 hover:text-gray-600"
               download
               href="/resume.pdf"
             >
-              Resumé
+              Resume
             </a>
           </div>
         </nav>
         <div className="px-7">
-          <h5 className="font-semibold mb-1 text-md">Contact me at</h5>
-          <p className="mb-12">contact@wintersteve.com</p>
+          <h5 className="font-semibold mb-1 text-md dark:text-gray-400">
+            Contact me at
+          </h5>
+          <p className="mb-12 dark:text-gray-200">contact@wintersteve.com</p>
           <div className="mb-12">
-            <SocialMediaNavigation theme="gray" iconClass="mr-4 w-8" />
+            <SocialMediaNavigation
+              theme={isDarkMode ? "white" : "gray"}
+              iconClass="mr-4 w-8"
+            />
           </div>
         </div>
       </Menu>

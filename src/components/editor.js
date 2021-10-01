@@ -7,7 +7,7 @@ function Editor({ className }) {
         className={`border-4 border-white dark:border-gray-600 rounded-md ${className}`}
       >
         <div className="mx-auto lg:max-w-2xl xl:max-w-none">
-          <div className="relative overflow-hidden md:rounded-xl shadow-2xl flex CodeWindow_root__1fMBP Hero_codeWindow__1W0zH bg-light-blue-500 pb-6 md:pb-0">
+          <div className="bg-primary-200 relative overflow-hidden md:rounded-xl shadow-2xl flex pb-6 md:pb-0">
             <div className="absolute inset-0 bg-black bg-opacity-75"></div>
             <div className="relative w-full flex flex-col">
               <div className="flex-none h-11 flex items-center px-4">

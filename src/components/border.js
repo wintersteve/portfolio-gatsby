@@ -15,7 +15,7 @@ function Border({ style, colorClasses }) {
       className={
         colorClasses
           ? colorClasses
-          : "bg-gradient-to-r from-secondary-100 dark:from-primary-100 to-secondary-200 dark:to-primary-300"
+          : "bg-gradient-to-r from-secondary-100 dark:from-primary-100 to-secondary-200 dark:to-primary-200"
       }
       style={Object.assign({}, DEFAULT_STYLE, style)}
     ></div>

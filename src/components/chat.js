@@ -65,7 +65,7 @@ function Chat() {
 
         {isOpen && (
           <Form
-            className={`fixed lg:absolute bg-white dark:bg-primary-300 bottom-0 right-0 p-5 lg:rounded transition-all w-full lg:w-96 shadow-4xl ${
+            className={`fixed lg:absolute bg-white dark:bg-primary-200 bottom-0 right-0 p-5 lg:rounded transition-all w-full lg:w-96 shadow-4xl ${
               isOpen && "fade"
             }`}
             data-netlify="true"
@@ -74,7 +74,7 @@ function Chat() {
             initialValues={DEFAULT_DATA}
             handleSubmit={handleSubmit}
           >
-            <div className="bg-secondary-100 dark:bg-primary-200 flex justify-between mb-5 p-4 rounded">
+            <div className="bg-secondary-100 dark:bg-primary-200 dark:border-2 dark:border-primary-100 flex justify-between mb-5 p-4 rounded">
               <h6 className="font-semibold text-gray-600 dark:text-gray-100">
                 Send me a message
               </h6>
@@ -115,7 +115,7 @@ function Chat() {
               required
             />
             <button
-              className="bg-gray-700 font-semibold p-3 text-white rounded w-full"
+              className="bg-gray-700 dark:bg-primary-300 font-semibold p-3 text-white rounded w-full"
               type="submit"
             >
               SUBMIT
