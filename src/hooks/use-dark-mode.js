@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
+import { isPlatformBrowser } from "../utils/is-platform-browser";
 
 const THEME = "dark";
 const BACKGROUND = "dark:bg-primary-200";
 
-const ROOT = window?.document?.documentElement;
-const BODY = window?.document?.body;
+const ROOT = isPlatformBrowser() && window.document.documentElement;
+const BODY = isPlatformBrowser() && window.document.body;
 
 function useDarkMode() {
-  const darkThemeFromStorage = JSON.parse(
-    window?.localStorage?.darkMode || null
-  );
+  const darkThemeFromStorage =
+    isPlatformBrowser() && JSON.parse(window?.localStorage?.darkMode || null);
 
   const isDarkThemeSet = darkThemeFromStorage !== null;
   const isDarkThemeActive = isDarkThemeSet && darkThemeFromStorage;
