@@ -14,16 +14,6 @@
     @apply transform transition hover:scale-95;
   }
 
-  .from-primary {
-    --tw-gradient-from: var(--primary);
-    --tw-gradient-stops: var(--tw-gradient-from),
-      var(--tw-gradient-to, rgba(251, 191, 36, 0));
-  }
-
-  .to-primary-dark {
-    --tw-gradient-to: var(--primary-dark);
-  }
-
   .z-60 {
     z-index: 60;
   }

@@ -5,7 +5,7 @@ module.exports = {
   darkMode: "class",
   theme: {
     boxShadow: {
-      primaryDark: "5px 5px #111827",
+      primary: "5px 5px #111827",
       secondary: "5px 5px rgb(238 250 245)",
       sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
       DEFAULT:
@@ -25,10 +25,14 @@ module.exports = {
     colors: {
       gray: colors.coolGray,
       white: colors.white,
-      primary: "#1f2937",
-      primaryDark: "#111827",
+      primary: {
+        100: "#374151",
+        200: "#1f2937",
+        300: "#111827",
+      },
       secondary: {
         100: "#EEFAF5",
+        200: "#DFF5EC",
         900: "#577569",
       },
       danger: "#D62828",
@@ -56,6 +60,9 @@ module.exports = {
       borderColor: ["dark"],
       borderWidth: ["dark"],
       boxShadow: ["dark"],
+      brightness: ["dark"],
+      invert: ["dark"],
+      opacity: ["dark"],
     },
   },
   plugins: [],
