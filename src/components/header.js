@@ -38,8 +38,6 @@ const navItems = [
   },
 ];
 
-const isInitialPosition = window.screenY <= 0;
-
 function Header() {
   const [isDarkMode, setIsDarkMode] = useDarkMode();
   const { isScrollTop, lastScrollY } = useScrollPosition();
