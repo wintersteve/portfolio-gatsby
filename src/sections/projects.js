@@ -72,7 +72,7 @@ function Projects() {
               duration={1}
             >
               <div>
-                <h4 className="font-bold mb-5 text-2xl text-gray-600 dark:text-gray-200">
+                <h4 className="bg-gray-50 dark:bg-primary-100 font-bold mb-3 -m-2 p-4 rounded-md text-lg text-gray-600 dark:text-gray-200">
                   {project.title}
                 </h4>
                 <p
@@ -103,7 +103,7 @@ function Projects() {
             >
               <GatsbyImage
                 alt={project.title}
-                className={`dark:brightness-90 filter row-start-1 rounded-md shadow-4xl ${
+                className={`dark:brightness-90 filter row-start-1 rounded-md shadow-4xl dark:shadow-xl ${
                   isEven(index) ? "col-start-2" : "col-start-1"
                 }`}
                 image={getImage(project.mainImage)}

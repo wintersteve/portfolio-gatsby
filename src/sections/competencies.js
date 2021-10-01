@@ -17,7 +17,7 @@ function Competencies() {
           </h2>
         </ScrollAnimation>
       </div>
-      <div className="lg:grid lg:grid-cols-3 mx-4 md:mx-10 lg:mx-12 xl:mx-28 2xl:mx-40 overflow-hidden relative rounded-2xl shadow-4xl -top-40">
+      <div className="lg:grid lg:grid-cols-3 mx-4 md:mx-10 lg:mx-12 xl:mx-28 2xl:mx-40 overflow-hidden relative rounded-2xl shadow-4xl dark:shadow-xl -top-40">
         {competencies.map((competency, index) => (
           <ScrollAnimation
             animateIn="slideUp"
@@ -26,9 +26,9 @@ function Competencies() {
             key={competency.title}
           >
             <div
-              className={`bg-white dark:bg-primary-200 border-b-4 lg:border-b-0 dark:border-primary-100 h-full px-20 py-16 lg:py-20 text-center ${
+              className={`bg-white dark:bg-primary-200 border-b-4 lg:border-b-0 dark:border-primary-300 h-full px-20 py-16 lg:py-20 text-center ${
                 index === 1
-                  ? "border-gray-100 dark:border-gray-700 border-l-0 border-r-0 lg:border-l-4 lg:border-r-4"
+                  ? "border-gray-100 dark:border-gray-700 border-l-0 border-r-0 lg:border-l-8 lg:border-r-8"
                   : ""
               }`}
             >
