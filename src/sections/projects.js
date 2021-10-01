@@ -114,17 +114,22 @@ function Projects() {
                   absolute md:flex hidden items-center p-2 right-3 top-3 rounded-sm 
                   ${
                     !project?.images?.length
-                      ? "bg-gray-50 cursor-not-allowed"
-                      : "bg-gray-100 hover:scale"
+                      ? "bg-gray-50 dark:bg-primary-100 cursor-not-allowed"
+                      : "bg-gray-100 dark:bg-primary-200 hover:scale"
                   }
                 `}
                 disabled={!project?.images?.length}
                 onClick={() => toggleGallery(project.title, project.images)}
               >
-                <span className="text-xs font-semibold mr-1 text-gray-600">
+                <span className="text-xs font-semibold mr-1 text-gray-600 dark:text-gray-300">
                   GALLERY
                 </span>
-                <img src={gallerySvg} width="18" height="18" />
+                <img
+                  className="filter invert-0 dark:invert"
+                  src={gallerySvg}
+                  width="18"
+                  height="18"
+                />
               </button>
             </ScrollAnimation>
           </article>
