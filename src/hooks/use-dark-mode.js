@@ -27,8 +27,6 @@ function useDarkMode() {
   };
 
   useEffect(() => {
-    console.log(isDarkThemePreferred);
-
     if (isDarkMode) {
       ROOT.classList.add(THEME);
       BODY.classList.add(BACKGROUND);
