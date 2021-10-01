@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const THEME = "dark";
-const BACKGROUND = ["dark:bg-primary-200", "transition-all"];
+const BACKGROUND = "dark:bg-primary-200";
 
 const ROOT = window.document.documentElement;
 const BODY = window.document.body;
@@ -31,10 +31,10 @@ function useDarkMode() {
 
     if (isDarkMode) {
       ROOT.classList.add(THEME);
-      BODY.classList.add(...BACKGROUND);
+      BODY.classList.add(BACKGROUND);
     } else {
       ROOT.classList.remove(THEME);
-      BODY.classList.remove(...BACKGROUND);
+      BODY.classList.remove(BACKGROUND);
     }
   }, [isDarkMode, isDarkThemePreferred]);
 
