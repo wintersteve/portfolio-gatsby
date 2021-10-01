@@ -55,13 +55,10 @@ function Header() {
     [isInitialPosition, state]
   );
 
-  const getTranslateClass = useCallback(
-    () =>
-      lastScrollY > 100 && isScrollTop && !state.isOpen
-        ? "-translate-y-32"
-        : "translate-y-0",
-    [isInitialPosition, isScrollTop, state]
-  );
+  const getTranslateClass = () =>
+    lastScrollY > 100 && isScrollTop && !state.isOpen
+      ? "-translate-y-32"
+      : "translate-y-0";
 
   return (
     <>
@@ -99,7 +96,7 @@ function Header() {
               </a>
             </div>
             <button
-              className="bg-secondary-100 dark:bg-primary-300 flex ml-4 p-3 px-3.5 rounded transition"
+              className="bg-secondary-100 dark:bg-primary-300 flex ml-5 p-3 px-3.5 rounded transition"
               onClick={() => setIsDarkMode(!isDarkMode)}
             >
               <img
