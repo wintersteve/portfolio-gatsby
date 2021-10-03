@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import useScroll from "../hooks/use-scroll";
-import chatIcon from "../images/chat.svg";
+import { ReactComponent as ChatIcon } from "../images/chat.svg";
 import closeIcon from "../images/close.png";
 import Field from "./field";
 import Form from "./form";
@@ -60,7 +60,11 @@ function Chat() {
           className="bg-gray-300 hover:scale p-4 rounded-full shadow-4xl"
           onClick={toggle}
         >
-          <img alt="open chat" src={chatIcon} width="25" />
+          <ChatIcon
+            alt="open chat"
+            width="25"
+            className="fill-current text-primary-200"
+          />
         </button>
 
         {isOpen && (

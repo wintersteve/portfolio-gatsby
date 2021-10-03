@@ -12,6 +12,14 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-svgr",
+      options: {
+        svgoConfig: {
+          plugins: [{ removeViewBox: false }],
+        },
+      },
+    },
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     {

@@ -1,29 +1,17 @@
 [
   {
     "label": "Facebook",
-    "images": {
-      "alt": "Open Facebook",
-      "gray": "/images/facebook-gray.svg",
-      "white": "/images/facebook.svg"
-    },
+    "type": "FACEBOOK",
     "url": "https://www.facebook.com/steve.winter.9659"
   },
   {
     "label": "LinkedIn",
-    "images": {
-      "alt": "Open LinkedIn",
-      "gray": "/images/linkedin-gray.svg",
-      "white": "/images/linkedin.svg"
-    },
+    "type": "LINKEDIN",
     "url": "https://www.linkedin.com/in/steve-winter/"
   },
   {
     "label": "GitHub",
-    "images": {
-      "alt": "Open GitHub",
-      "gray": "/images/github-gray.svg",
-      "white": "/images/github.svg"
-    },
+    "type": "GITHUB",
     "url": "https://github.com/wintersteve"
   }
 ]

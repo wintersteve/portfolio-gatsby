@@ -8,8 +8,8 @@ import FragmentLink from "./fragment-link";
 import Hamburger from "./hamburger";
 import Menu from "./menu";
 import SocialMediaNavigation from "./social-media-navigation";
-import lightModeSvg from "../images/light-mode.svg";
-import darkModeSvg from "../images/dark-mode.svg";
+import { ReactComponent as LightModeIcon } from "../images/light-mode.svg";
+import { ReactComponent as DarkModeIcon } from "../images/dark-mode.svg";
 
 const navItems = [
   {
@@ -99,12 +99,19 @@ function Header() {
               className="bg-secondary-100 dark:bg-primary-300 flex ml-5 p-3 px-3.5 rounded transition"
               onClick={() => setIsDarkMode(!isDarkMode)}
             >
-              <img
-                className={`filter ${isDarkMode ? "invert" : "opacity-75"}`}
-                src={isDarkMode ? lightModeSvg : darkModeSvg}
-                width="18"
-                alt=""
-              />
+              {isDarkMode ? (
+                <LightModeIcon
+                  className="fill-current text-gray-50"
+                  height="18"
+                  width="18"
+                />
+              ) : (
+                <DarkModeIcon
+                  className="fill-current text-primary-100"
+                  height="18"
+                  width="18"
+                />
+              )}
             </button>
           </nav>
         </ScrollAnimation>
@@ -135,14 +142,14 @@ function Header() {
           </div>
         </nav>
         <div className="px-7">
-          <h5 className="font-semibold mb-1 text-md dark:text-gray-400">
+          <h5 className="font-semibold mb-1 text-sm dark:text-gray-400">
             Contact me at
           </h5>
           <p className="mb-12 dark:text-gray-200">contact@wintersteve.com</p>
           <div className="mb-12">
             <SocialMediaNavigation
-              theme={isDarkMode ? "white" : "gray"}
-              iconClass="mr-4 w-8"
+              theme={isDarkMode ? "white" : "primary-200"}
+              iconClass="mr-5 w-10"
             />
           </div>
         </div>

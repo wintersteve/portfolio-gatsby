@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { graphql, useStaticQuery } from "gatsby";
-import gallerySvg from "../images/gallery.svg";
+import { ReactComponent as GalleryIcon } from "../images/gallery.svg";
 import Gallery from "../components/gallery";
 import { isEven } from "../utils/is-even";
 
@@ -124,11 +124,10 @@ function Projects() {
                 <span className="text-xs font-semibold mr-1 text-gray-600 dark:text-gray-300">
                   GALLERY
                 </span>
-                <img
-                  className="filter invert-0 dark:invert"
-                  src={gallerySvg}
-                  width="18"
-                  height="18"
+                <GalleryIcon
+                  className="fill-current text-primary-100 dark:text-gray-300"
+                  width={18}
+                  height={18}
                 />
               </button>
             </ScrollAnimation>
