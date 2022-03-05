@@ -14,7 +14,7 @@ function Branding() {
         position={{ bottom: "0" }}
         textClass="block dark:text-gray-100 text-gray-400 text-xs font-bold"
       >
-        Full-Stack Web Developer
+        Full-Stack Developer
       </UnderlinedText>
     </h1>
   );
