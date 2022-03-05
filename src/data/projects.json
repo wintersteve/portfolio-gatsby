@@ -1,6 +1,6 @@
 [
   {
-    "description": "Malai Herbal is a B2C eCommerce that was build using the static site generator Gatsby in combination with Netlify CMS and AWS's cloud infrastructure. Products are fully manageable using the protected CMS which will be sourced by Gatsby with zero downtime.",
+    "description": "Malai Herbal is a B2C eCommerce that was built using the static site generator Gatsby in combination with Netlify CMS and AWS's cloud infrastructure. Products are fully manageable using the protected CMS which will be sourced by Gatsby with zero downtime.",
     "mainImage": "../images/projects/malaiherbal.png",
     "images": [
       "../images/projects/malaiherbal.png",
@@ -12,7 +12,7 @@
     "stack": ["Gatsby", "Netlify", "Netlify CMS", "AWS Lambda", "DynamoDB"]
   },
   {
-    "description": "The to-do application was built with the intention to learn Angular, Material UI TypeScript, RxJs and utilize a JAMStack architecture and services. The app integrates a fully functioning database with CRUD operations and auth system using serverless functons.",
+    "description": "The to-do application was built with the intention to learn Angular, Material UI TypeScript, RxJs and utilize a JAMStack architecture and services. The app integrates a fully functioning database with CRUD operations and auth system using serverless functions.",
     "mainImage": "../images/projects/todo-app/overview.png",
     "images": [
       "../images/projects/todo-app/overview.png",
