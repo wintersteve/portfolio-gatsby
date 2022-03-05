@@ -2,10 +2,10 @@ module.exports = {
   siteMetadata: {
     title: "Steve Winter | Full-Stack Web Developer",
     description:
-      "Steve Winter. Professional Full-Stack Web Developer. Focus on the JavaScript environment. Familiarity with all major modern technologies and stacks.",
+      "Steve Winter - Full-Stack Software Engineer with a focus on modern JavaScript stacks and cloud envirnoments.",
     og: {
       description:
-        "Wondering where and how to find a good web developer? Looking for fast, performant web applications, web sites or cms work? Contact me",
+        "Steve Winter - Full-Stack Software Engineer with a focus on modern JavaScript stacks and cloud envirnoments.",
       title: "Steve Winter | Web Developer",
       type: "website",
       url: "https://wintersteve.com",
