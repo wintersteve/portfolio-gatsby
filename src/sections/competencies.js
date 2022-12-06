@@ -55,12 +55,12 @@ function Competencies() {
                       </UnderlinedText>
                     </h4>
                     <ul>
-                      {category.values.map((value) => (
+                      {category.skills.map(({ title }) => (
                         <li
                           className="font-medium mb-1 text-sm text-gray-500 dark:text-gray-200"
-                          key={value}
+                          key={title}
                         >
-                          {value}
+                          {title}
                         </li>
                       ))}
                     </ul>

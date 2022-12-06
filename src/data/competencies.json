@@ -1,71 +1,120 @@
 [
   {
     "title": "FRONT END",
+    "type": "FRONT_END",
     "description": "My area of expertise. I have worked with all relevant web technologies so far.",
     "categories": [
       {
         "title": "Languages",
-        "values": [
-          "HTML",
-          "CSS / SCSS",
-          "JavaScript / TypeScript",
-          "Handlebars"
+        "type": "LANGUAGE",
+        "skills": [
+          {"title": "HTML", "value": 100 },
+          {"title": "CSS / SCSS", "value": 100 },
+          {"title": "JavaScript / TypeScript", "value": 100 }
         ]
       },
       {
         "title": "Frameworks & Libraries",
-        "values": [
-          "Angular",
-          "React / Vue",
-          "Next / Nuxt",
-          "Gatsby",
-          "RxJs",
-          "Jest / Mocha"
+        "type": "TOOL",
+        "skills": [
+          {"title": "React", "value": 100 },
+          {"title": "Angular", "value": 90 },
+          {"title": "Next / Gatsby", "value": 100 },
+          {"title": "Redux", "value": 95 },
+          {"title": "RxJs", "value": 95 },
+          {"title": "Material-UI", "value": 90 },
+          {"title": "Jest", "value": 87 }
         ]
       },
       {
-        "title": "CSS Frameworks",
-        "values": ["Tailwind", "Bootstrap"]
+        "title": "Data Visualization",
+        "type": "OTHER",
+        "skills": [
+          {"title": "Three.js", "value": 80 },
+          {"title": "D3", "value": 82 }
+        ]
       }
     ]
   },
   {
     "title": "BACK END",
+    "type": "BACK_END",
     "description": "I had the chance to acquire first back end related skills working on freelance and own projects.",
     "categories": [
       {
         "title": "Languages",
-        "values": ["Node / TypeScript", "Python", "Go"]
+        "type": "LANGUAGE",
+        "skills": [
+          {"title": "Node", "value": 87 },
+          {"title": "Go", "value": 85 },
+          {"title": "Haskell", "value": 70 }
+        ]
       },
       {
         "title": "Databases",
-        "values": ["Document-oriented", "Relational", "Cloud"]
+        "type": "DATABASE",
+        "skills": [
+          {"title": "PostgreSQL", "value": 90 },
+          {"title": "MongoDB", "value": 87 },
+          {"title": "Cloud", "value": 85 }
+        ]
       },
       {
         "title": "Frameworks",
-        "values": ["Express / Nest", "Martini"]
+        "type": "FRAMEWORK",
+        "skills": [
+          {"title": "Express", "value": 92 },
+          {"title": "Nest", "value": 87 },
+          {"title": "Martini", "value": 81 }
+        ]
       },
       {
         "title": "Other",
-        "values": ["GraphQL", "WASM"]
+        "type": "OTHER",
+        "skills": [
+          {"title": "GraphQL", "value": 87 },
+          {"title": "WASM", "value": 80 }
+        ]
       }
     ]
   },
   {
     "title": "OTHER",
+    "type": "OTHER",
     "description": "I value simple content structure, clean design patterns, and thoughtful interactions.",
     "categories": [
       {
         "title": "DevOps",
-        "values": ["Git", "Jenkins", "Docker"]
+        "type": "TOOL",
+        "skills": [
+          {"title": "Git", "value": 95 },
+          {"title": "Docker", "value": 85 },
+          {"title": "Bash", "value": 85 }
+        ]
       },
       {
         "title": "Cloud Computing",
-        "values": ["AWS"]
+        "type": "CLOUD",
+        "skills": [
+          {"title": "AWS", "value": 85 },
+          {"title": "Supabase", "value": 82 }
+        ]
       },
       {
         "title": "Scraping & Automation",
-        "values": ["Cheerio", "Scrapy", "Selenium"]
+        "type": "OTHER",
+        "skills": [
+          {"title": "Cheerio / Scrapy", "value": 80 },
+          {"title": "Cypress", "value": 89 }
+        ]
+      },
+      {
+        "title": "Organization",
+        "type": "OTHER",
+        "skills": [
+          {"title": "NX", "value": 90 },
+          {"title": "Turborepo", "value": 85 }
+        ]
       }
     ]
   }
