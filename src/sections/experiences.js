@@ -14,7 +14,7 @@ function Experiences() {
   return (
     <section
       id="experience"
-      className="lg:mx-12 py-20 lg:py-28 xl:py-48 px-8 md:px-12 lg:px-18 xl:px-32 2xl:px-72"
+      className="lg:h-128 lg:mx-12 py-20 lg:py-28 xl:py-48 px-8 md:px-12 lg:px-18 xl:px-32 2xl:px-72"
     >
       <ScrollAnimation animateIn="fade" duration={0.5}>
         <h2 className="font-bold mb-8 text-4xl md:text-5xl text-gray-700 dark:text-gray-50">

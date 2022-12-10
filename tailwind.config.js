@@ -56,6 +56,9 @@ module.exports = {
       transitionProperty: {
         "all-no-bg": "padding, shadow, translate, transform",
       },
+      spacing: {
+        128: "50rem",
+      },
     },
   },
   variants: {

@@ -1,10 +1,22 @@
 [
   {
+    "location": "Singapore",
+    "role": "Full-Stack Engineer",
+    "title": "One X Tech",
+    "description": "One X Tech is a business technology partner, focused on building technological innovations for leading enterprises.",
+    "date": "November 2019 - May 2022",
+    "tools": [
+      "AWS • Next.js • TypeScript",
+      "Turborepo • Node",
+      "NX • DeckGL • Carto.js • Redux"
+    ]
+  },
+  {
     "location": "Jena, Germany",
     "role": "Software Engineer",
     "title": "diva-e",
-    "description": "diva-e is a software development service provider. The company focuses on creating digital experiences that enhance customer interactions. My role mainly revolves around creating and improving front-end codebases yet, I also have had the opportunity to make use of my back-end expertise. Not only have I worked in agile teams, but I have also led projects myself.",
-    "date": "Novemeber 2019 - Present",
+    "description": "diva-e is a software development service provider. The company focuses on creating digital experiences that enhance customer interactions. My role mainly revolves around creating and improving front-end code bases yet, I also have had the opportunity to make use of my back-end expertise. Not only have I worked in agile teams, I also had the opportunity to lead projects and technical interviews.",
+    "date": "May 2022 - Present",
     "tools": [
       "Vue • Angular • TypeScript • RxJs",
       "Handlebars • Gulp",
@@ -35,7 +47,7 @@
   },
   {
     "location": "Bangkok, Thailand",
-    "role": "Assistant Mananger & Web Developer",
+    "role": "Assistant Manager & Web Developer",
     "title": "Win-Win Asia",
     "description": "Win-Win Asia is an international tour operator and destination management agency. During my occupation here, I was responsible first and foremost for the management of the staff and the efficient of the companies operations. Due to the seasonality of the business, I also had time to extend and optimise the company's WordPress websites and internal applications.",
     "date": "June 2019 - October 2019",
