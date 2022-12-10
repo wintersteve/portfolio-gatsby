@@ -30,14 +30,17 @@ function Chat() {
     })
       .then(() => {
         setIsOpen(false);
-        toastRef.current.open();
+        toastRef.current.open({
+          text: "Thank you for your message! I will get back to you shortly",
+          type: NOTIFICATION.SUCCESS,
+        });
       })
-      .catch(() =>
+      .catch((error) => {
         toastRef.current.open({
           text: "Something went wrong. Please try again",
           type: NOTIFICATION.ERROR,
-        })
-      );
+        });
+      });
   };
 
   const toggle = () => {
@@ -74,7 +77,7 @@ function Chat() {
             }`}
             data-netlify="true"
             method="POST"
-            name="chat"
+            name="contact"
             initialValues={DEFAULT_DATA}
             handleSubmit={handleSubmit}
           >
