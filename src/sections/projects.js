@@ -59,8 +59,8 @@ function Projects() {
         </div>
         {projects.map((project, index) => (
           <article
-            className={`items-center lg:flex x-4 md:mx-12 lg:mx-20 mb-10 lg:mb-20 gap-8 ${
-              isEven(index) ? "flex-row" : "flex-row-reverse"
+            className={`items-center flex flex-col-reverse x-4 md:mx-12 lg:mx-20 mb-10 lg:mb-20 gap-8 ${
+              isEven(index) ? "lg:flex-row" : "lg:flex-row-reverse"
             }`}
             key={project.title}
           >
