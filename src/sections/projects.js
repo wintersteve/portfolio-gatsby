@@ -66,10 +66,10 @@ function Projects() {
           >
             <ScrollAnimation
               animateIn="fade"
-              className={`row-start-1 lg:w-5/12 ${
+              className={`row-start-1 lg:w-5/12 py-0 lg:py-10 ${
                 isEven(index)
-                  ? "py-10 px-6 lg:pr-10 2xl:pr-20 lg:pl-10 2xl:pl-20"
-                  : "py-10 px-6 lg:pl-10 2xl:pl-20 lg:pr-10 2xl:pr-20"
+                  ? "px-6 lg:pr-10 2xl:pr-20 lg:pl-10 2xl:pl-20"
+                  : "px-6 lg:pl-10 2xl:pl-20 lg:pr-10 2xl:pr-20"
               }`}
               duration={1}
             >
