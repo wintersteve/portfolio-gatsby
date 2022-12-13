@@ -5,6 +5,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import { ReactComponent as GalleryIcon } from "../images/gallery.svg";
 import Gallery from "../components/gallery";
 import { isEven } from "../utils/is-even";
+import folderImg from "../images/folder.png";
 
 function Projects() {
   const data = useStaticQuery(graphql`
@@ -144,6 +145,50 @@ function Projects() {
           title={galleryState.title}
         />
       )}
+      <ScrollAnimation animateIn="fade" duration={1}>
+        <section
+          className="max-w-screen-2xl mb-20 lg:mb-40 m-auto overflow-hidden sm:overflow-visible px-8 md:px-28 lg:px-48 xl:px-72 2xl:px-96 py-36 bg-gradient-to-l from-primary-200 dark:from-primary-300 to-primary-300"
+          id="libraries"
+        >
+          <div className="text-center md:px-40 mb-10">
+            <h2 className="mb-5 font-bold text-5xl text-gray-700 dark:text-gray-50">
+              Some Useful Libraries I've Built
+            </h2>
+            <p className="dark:text-gray-200 text-gray-500 text-lg">
+              Click to checkout the npm package
+            </p>
+          </div>
+          <div className="flex flex-col items-center gap-4">
+            {[
+              {
+                title: "better-template-strings",
+                description: "Make working with dynamic strings uncomplicated",
+                href: "https://www.npmjs.com/package/better-template-strings",
+              },
+              {
+                title: "filter-by",
+                description: "Make client-side data filtering a breeze",
+                href: "https://www.npmjs.com/package/filter-by",
+              },
+            ].map((library) => {
+              return (
+                <a
+                  className="hover:float cursor-pointer flex items-center dark:bg-primary-100 gap-4 bg-gray-50 p-5 rounded w-full lg:w-96"
+                  href={library.href}
+                  target={"_blank"}
+                  key={library.title}
+                >
+                  <img alt={"folder"} src={folderImg} height={32} width={32} />
+                  <div className="text-sm text-secondary-900 dark:text-gray-300">
+                    <div className={"font-bold"}>{library.title}</div>
+                    <div>{library.description}</div>
+                  </div>
+                </a>
+              );
+            })}
+          </div>
+        </section>
+      </ScrollAnimation>
     </>
   );
 }
