@@ -14,19 +14,11 @@ function About() {
           </h2>
         </div>
         <p className="md:text-md dark:text-gray-100">
-          Since beginning my journey as a software engineer approximately 4
-          years ago, I've done some freelance remote work, worked full-time in
-          small to medium-sized companies, and additionally, have worked on
-          personal projects continuously. Being a self-taught engineer, helped
-          me learn to perpetually work on improving my skill set. Combined with
-          my passion for creating things, it is only natural that I have spent
-          most of my time dedicated to coding so far. Up to this point I have
-          worked with most modern web development tools, languages and,
-          frameworks. Therefore, I am confident in my competencies and can
-          create and maintain high-quality code bases by following the
-          industry's best practices. Among the people I have worked with so far
-          I am known for my efficacy and also for the depth of my technical
-          knowledge.
+          4 years ago I started my journey as a software engineer.
+          The infinite potential for creating cool and useful things in various domains is what made me fall in love with it.
+          Since then I have worked for SMEs and enterprises, and to this day I keep on expanding my knowledge by working on personal projects continuously.
+          I am not only known for the depth of my technical knowledge covering front- and backend, but also for my efficacy.
+          I strive for excellence when creating and maintaining code bases by following the industry's best practices.
         </p>
       </ScrollAnimation>
     </section>

@@ -50,10 +50,10 @@ function Banner() {
           </h3>
 
           <div className="dark:text-gray-50 max-w-xl ml-1 md:ml-2 mb-6 lg:text-md">
-            I'm a Germany-based software engineer who excels at building digital
+            I'm a software engineer who excels at building digital
             experiences. Currently, I'm an engineer at{" "}
             <a
-              href="https://www.diva-e.com/en/"
+              href="https://www.onextech.com.sg/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -63,7 +63,7 @@ function Banner() {
                 textClass="font-medium"
               >
                 {" "}
-                diva-e
+                One X Tech
               </UnderlinedText>
             </a>{" "}
             focusing on building scalable and highly performant digital
