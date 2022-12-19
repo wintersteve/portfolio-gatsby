@@ -173,10 +173,11 @@ function Projects() {
             ].map((library) => {
               return (
                 <a
+                  key={library.title}
                   className="hover:float cursor-pointer flex items-center dark:bg-primary-100 gap-4 bg-gray-50 p-5 rounded w-full lg:w-96"
                   href={library.href}
+                  rel="noreferrer"
                   target={"_blank"}
-                  key={library.title}
                 >
                   <img alt={"folder"} src={folderImg} height={32} width={32} />
                   <div className="text-sm text-secondary-900 dark:text-gray-300">

@@ -16,7 +16,14 @@ module.exports = {
       resolve: "gatsby-plugin-svgr",
       options: {
         svgoConfig: {
-          plugins: [{ removeViewBox: false }],
+          plugins: [{
+            name: 'preset-default',
+            params: {
+              overrides: {
+                removeViewBox: false,
+              },
+            },
+          }],
         },
       },
     },

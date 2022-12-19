@@ -21,6 +21,7 @@ function Gallery({ onToggle, title, images }) {
         </div>
         <button className="hover:scale" onClick={onToggle}>
           <img
+            alt=""
             className="filter dark:invert opacity-70 dark:opacity-90"
             src={closeImg}
             width="25"
@@ -37,16 +38,16 @@ function Gallery({ onToggle, title, images }) {
         />
         <div className="flex-1 ml-5 overflow-y-scroll">
           {images.map((_, index) => (
-            <GatsbyImage
-              alt={title}
-              className={`filter brightness-90 mb-2 rounded cursor-pointer border-4 ${
-                activeImage === index ? "border-gray-300" : "border-none"
-              }`}
-              image={getImage(images[index])}
-              key={index}
-              loading="lazy"
-              onClick={() => setActiveImage(index)}
-            />
+            <div key={index} onClick={() => setActiveImage(index)}>
+              <GatsbyImage
+                alt={title}
+                className={`filter brightness-90 mb-2 rounded cursor-pointer border-4 ${
+                  activeImage === index ? "border-gray-300" : "border-none"
+                }`}
+                image={getImage(images[index])}
+                loading="lazy"
+              />
+            </div>
           ))}
         </div>
       </div>
