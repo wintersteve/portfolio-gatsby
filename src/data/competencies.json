@@ -9,8 +9,8 @@
         "type": "LANGUAGE",
         "skills": [
           {"title": "HTML", "value": 100 },
-          {"title": "CSS / SCSS", "value": 100 },
-          {"title": "JavaScript / TypeScript", "value": 100 }
+          {"title": "SCSS", "value": 100 },
+          {"title": "TypeScript", "value": 100 }
         ]
       },
       {
@@ -104,7 +104,7 @@
         "title": "Scraping & Automation",
         "type": "OTHER",
         "skills": [
-          {"title": "Cheerio / Scrapy", "value": 80 },
+          {"title": "Scrapy", "value": 80 },
           {"title": "Cypress", "value": 89 }
         ]
       },
