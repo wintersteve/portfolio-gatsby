@@ -79,7 +79,7 @@ function Banner() {
             offset={1000}
           >
             <Tile
-              className="shadow-secondary dark:shadow-primary bg-gray-100 dark:bg-primary-200 py-10 md:py-20 md:px-10 lg:mb-0"
+              className="shadow-secondary dark:shadow-primary bg-gray-100 dark:bg-primary-200 py-6 md:py-20 md:px-10 lg:mb-0"
               imageStyle="h-12 md:h-12 mx-2 md:mx-3"
               images={programmingIcons.nodes.map((icon) => icon.publicURL)}
               label={"Programming"}
@@ -87,15 +87,15 @@ function Banner() {
           </ScrollAnimation>
           <ScrollAnimation animateIn="fade" delay={150} offset={1000}>
             <Tile
-              className="shadow-secondary dark:shadow-primary bg-gray-100 dark:bg-primary-200 px-10 py-8 md:py-20 lg:mb-0"
+              className="shadow-secondary dark:shadow-primary bg-gray-100 dark:bg-primary-200 px-10 py-6 md:py-20 lg:mb-0"
               imageStyle="h-12 md:h-12 mx-2 md:mx-2"
               images={[dataVisualizationIcon.publicURL]}
-              label={"Data Visualization"}
+              label={"Visualization"}
             />
           </ScrollAnimation>
           <ScrollAnimation animateIn="fade" delay={150} offset={1000}>
             <Tile
-              className="shadow-secondary dark:shadow-primary bg-gray-100 dark:bg-primary-200 px-10 py-8 md:py-20 lg:mb-0"
+              className="shadow-secondary dark:shadow-primary bg-gray-100 dark:bg-primary-200 px-10 py-6 md:py-20 lg:mb-0"
               imageStyle="h-12 md:h-12 mx-2 md:mx-2"
               images={[designIcon.publicURL]}
               label={"Web Design"}
