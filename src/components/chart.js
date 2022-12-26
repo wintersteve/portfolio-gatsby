@@ -108,7 +108,7 @@ function Chart() {
       .attr("xlink:href", (_, index) => `#slice-${index}`)
       .style("text-anchor", "middle")
       .attr("startOffset", "5.5%")
-      .text((d) => d.value);
+      .text((d) => `${d.value}%`);
 
     group
       .selectAll(".titleText")
