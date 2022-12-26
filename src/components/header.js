@@ -95,24 +95,6 @@ function Header() {
                 Resume
               </a>
             </div>
-            <button
-              className="bg-secondary-100 dark:bg-primary-300 flex ml-5 p-3 px-3.5 rounded transition"
-              onClick={() => setIsDarkMode(!isDarkMode)}
-            >
-              {isDarkMode ? (
-                <LightModeIcon
-                  className="fill-current text-gray-50"
-                  height="18"
-                  width="18"
-                />
-              ) : (
-                <DarkModeIcon
-                  className="fill-current text-primary-100"
-                  height="18"
-                  width="18"
-                />
-              )}
-            </button>
           </nav>
         </ScrollAnimation>
       </header>
