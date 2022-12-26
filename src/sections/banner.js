@@ -17,22 +17,22 @@ function Banner() {
           publicURL
         }
       }
+      dataVisualizationIcon: file(
+        relativeDirectory: { eq: "services" }
+        name: { eq: "data-visualization" }
+      ) {
+        publicURL
+      }
       designIcon: file(
         relativeDirectory: { eq: "services" }
         name: { eq: "design" }
       ) {
         publicURL
       }
-      analyticsIcon: file(
-        relativeDirectory: { eq: "services" }
-        name: { eq: "analytics" }
-      ) {
-        publicURL
-      }
     }
   `);
 
-  const { programmingIcons, designIcon, analyticsIcon } = data;
+  const { programmingIcons, dataVisualizationIcon, designIcon } = data;
 
   return (
     <section className="mx-auto px-6 md:px-12 lg:px-40 xl:px-32 pt-40 md:pt-60 mb-16 md:mb-28 relative xl:max-w-screen-xl">
@@ -50,8 +50,8 @@ function Banner() {
           </h3>
 
           <div className="dark:text-gray-50 max-w-xl ml-1 md:ml-2 mb-6 lg:text-md">
-            I'm a software engineer who excels at building digital
-            experiences. Currently, I'm an engineer at{" "}
+            I'm a software engineer who excels at building digital experiences.
+            Currently, I'm an engineer at{" "}
             <a
               href="https://www.onextech.com.sg/"
               target="_blank"
@@ -89,16 +89,16 @@ function Banner() {
             <Tile
               className="shadow-secondary dark:shadow-primary bg-gray-100 dark:bg-primary-200 px-10 py-8 md:py-20 lg:mb-0"
               imageStyle="h-12 md:h-12 mx-2 md:mx-2"
-              images={[designIcon.publicURL]}
-              label={"Web Design"}
+              images={[dataVisualizationIcon.publicURL]}
+              label={"Data Visualization"}
             />
           </ScrollAnimation>
           <ScrollAnimation animateIn="fade" delay={150} offset={1000}>
             <Tile
               className="shadow-secondary dark:shadow-primary bg-gray-100 dark:bg-primary-200 px-10 py-8 md:py-20 lg:mb-0"
               imageStyle="h-12 md:h-12 mx-2 md:mx-2"
-              images={[analyticsIcon.publicURL]}
-              label={"SEO & Analytics"}
+              images={[designIcon.publicURL]}
+              label={"Web Design"}
             />
           </ScrollAnimation>
         </div>
