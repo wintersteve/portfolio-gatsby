@@ -95,6 +95,8 @@ function Projects() {
                 <a
                   className="hover:float bg-secondary-100 dark:bg-primary-300 text-secondary-900 dark:text-gray-300 font-bold inline-block p-5 rounded text-sm w-full lg:w-auto"
                   href={project.link}
+                  rel="noreferrer"
+                  target="_blank"
                 >
                   Take me to {project.title}
                 </a>
