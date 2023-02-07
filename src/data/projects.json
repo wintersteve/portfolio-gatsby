@@ -50,5 +50,17 @@
     "link": "https://howtowebdev.netlify.app/",
     "title": "HowToWebDev",
     "stack": ["React", "Gatsby", "Jest", "Jenkins", "Markdown"]
+  },
+  {
+    "description": "A small project to get myself familiar with native app development and distribution.",
+    "link": "https://play.google.com/store/apps/details?id=com.winter.random_word_generator&pli=1",
+    "title": "Random Word Generator",
+    "stack": ["Dart", "Flutter", "SQLite"]
+  },
+  {
+    "description": "The first version of my portfolio page. A simple static website demonstrating my early experiences with HTML, CSS and JavaScript.",
+    "link": "https://wintersteve.github.io/",
+    "title": "Portfolio V1",
+    "stack": ["HTML5", "CSS3", "JavaScript", "Bootstrap", "GitHub Pages"]
   }
 ]

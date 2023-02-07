@@ -6,6 +6,10 @@ import { ReactComponent as GalleryIcon } from "../images/gallery.svg";
 import Gallery from "../components/gallery";
 import { isEven } from "../utils/is-even";
 import folderImg from "../images/folder.png";
+import Modal from "../components/modal";
+import ProjectCard from "../components/project-card";
+
+const HIGHLIGHTED_PROJECTS = 4;
 
 function Projects() {
   const data = useStaticQuery(graphql`
@@ -33,12 +37,20 @@ function Projects() {
   `);
 
   const projects = data.allProjectsJson.nodes;
+  const [highlightedProjects, otherProjects] = [
+    projects.slice(0, HIGHLIGHTED_PROJECTS),
+    projects.slice(HIGHLIGHTED_PROJECTS),
+  ];
+
+  const [modalOpen, setModalOpen] = useState(false);
 
   const [galleryState, setGalleryState] = useState({
     isOpen: false,
     images: null,
     title: "",
   });
+
+  const toggleModal = () => setModalOpen(!modalOpen);
 
   const toggleGallery = (title = "", images = null) =>
     setGalleryState({ isOpen: !galleryState.isOpen, images, title });
@@ -58,7 +70,7 @@ function Projects() {
             see more? Email me.
           </p>
         </div>
-        {projects.map((project, index) => (
+        {highlightedProjects.map((project, index) => (
           <article
             className={`items-center flex flex-col-reverse x-4 md:mx-12 lg:mx-20 mb-10 lg:mb-20 gap-8 ${
               isEven(index) ? "lg:flex-row" : "lg:flex-row-reverse"
@@ -139,7 +151,24 @@ function Projects() {
             </ScrollAnimation>
           </article>
         ))}
+        <div className="flex justify-center mt-24">
+          <button
+            className="hover:scale rounded-full text-secondary-900 border-4 dark:border-primary-100 dark:text-gray-200 font-bold py-4 px-6 rounded text-sm w-auto"
+            onClick={toggleModal}
+          >
+            SHOW MORE
+          </button>
+        </div>
       </section>
+      {modalOpen && (
+        <Modal title={"Previous Projects"} onToggle={toggleModal}>
+          <div className="flex flex-wrap gap-4 w-full">
+            {otherProjects.map((project) => (
+              <ProjectCard {...project} />
+            ))}
+          </div>
+        </Modal>
+      )}
       {galleryState.isOpen && (
         <Gallery
           images={galleryState.images}
