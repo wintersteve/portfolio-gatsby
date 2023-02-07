@@ -10,7 +10,7 @@ function ProjectCard({
 }) {
   return (
     <a
-      className="hover:float dark:bg-primary-300 dark:text-gray-200 font-bold inline-block p-10 rounded-lg text-sm w-2/6"
+      className="hover:float dark:bg-primary-300 dark:text-gray-200 font-bold inline-block p-10 rounded-lg text-sm md:w-2/6"
       href={link}
       rel="noreferrer"
       target={"_blank"}
