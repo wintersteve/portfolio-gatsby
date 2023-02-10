@@ -20,7 +20,7 @@ function Modal({ children, onToggle, title }) {
         <button className="hover:scale" onClick={onToggle}>
           <img
             alt=""
-            className="filter dark:invert opacity-70 dark:opacity-90"
+            className="filter dark:invert opacity-70 dark:opacity-90 mr-3"
             src={closeImg}
             width="25"
           />
