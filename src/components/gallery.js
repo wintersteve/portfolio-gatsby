@@ -42,7 +42,7 @@ function Gallery({ onToggle, title, images }) {
               <GatsbyImage
                 alt={title}
                 className={`filter brightness-90 mb-2 rounded cursor-pointer border-4 ${
-                  activeImage === index ? "border-gray-300" : "border-none"
+                  activeImage === index ? "border-gray-300" : "border-opacity-0"
                 }`}
                 image={getImage(images[index])}
                 loading="lazy"
