@@ -162,7 +162,7 @@ function Projects() {
       </section>
       {modalOpen && (
         <Modal title={"Previous Projects"} onToggle={toggleModal}>
-          <div className="md:flex-row flex-col flex flex-wrap gap-4 w-full">
+          <div className="md:flex-row flex-col flex gap-2 justify-center w-full">
             {otherProjects.map((project) => (
               <ProjectCard {...project} />
             ))}

@@ -15,7 +15,7 @@ function ProjectCard({
       rel="noreferrer"
       target={"_blank"}
     >
-      <Icon className="mb-3" fill="white" />
+      <Icon className="mb-3 h-8 w-8" fill="white" viewBox="0 0 48 48" />
       <h4 className="text-md mb-2">{title}</h4>
       <p className="font-normal text-gray-400 mb-3">{description}</p>
       <ul className="flex flex-wrap">
