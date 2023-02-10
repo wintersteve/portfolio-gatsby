@@ -2,6 +2,7 @@ import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { ReactComponent as GalleryIcon } from "../images/gallery.svg";
+import { ReactComponent as GithubIcon } from "../images/github.svg";
 
 function ProjectDetail({
   description,
@@ -30,9 +31,21 @@ function ProjectDetail({
         duration={1}
       >
         <div>
-          <h4 className="bg-gray-50 dark:bg-primary-100 font-bold mb-3 -m-2 p-4 rounded-md text-lg text-gray-600 dark:text-gray-200">
-            {title}
-          </h4>
+          <div className="bg-gray-50 dark:bg-primary-100 flex align-center justify-between p-4 mb-3 -m-2 rounded-md">
+            <h4 className="font-bold text-lg text-gray-600 dark:text-gray-200">
+              {title}
+            </h4>
+            {github && (
+              <a
+                className="hover:scale flex"
+                href={github}
+                rel="noreferrer"
+                target="_blank"
+              >
+                <GithubIcon className="w-6" />
+              </a>
+            )}
+          </div>
           <p
             dangerouslySetInnerHTML={{ __html: description }}
             className="dark:text-gray-200 mb-3"

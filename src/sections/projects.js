@@ -18,6 +18,7 @@ function Projects() {
           id
           description
           link
+          github
           title
           stack
           mainImage {
