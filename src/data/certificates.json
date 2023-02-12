@@ -1,15 +1,23 @@
 [
   {
+    "title": "Cyber Security",
+    "image": "../images/certificates/thm.png"
+  },
+  {
+    "title": "React",
+    "image": "../images/certificates/react.png"
+  },
+  {
+    "title": "Digital Marketing",
+    "image": "../images/certificates/digital-marketing.png"
+  },
+  {
     "title": "Angular",
     "image": "../images/certificates/angular.png"
   },
   {
     "title": "CSS",
     "image": "../images/certificates/css.png"
-  },
-  {
-    "title": "Digital Marketing",
-    "image": "../images/certificates/digital-marketing.png"
   },
   {
     "title": "Java",
@@ -26,10 +34,6 @@
   {
     "title": "Problem Solving",
     "image": "../images/certificates/problem-solving.png"
-  },
-  {
-    "title": "React",
-    "image": "../images/certificates/react.png"
   },
   {
     "title": "SQL",
