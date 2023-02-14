@@ -12,6 +12,18 @@
     "stack": ["Gatsby", "Netlify", "Netlify CMS", "AWS Lambda", "DynamoDB"]
   },
   {
+    "description": "A showcase of map visualization that where build using DeckGL and MapLibre. The geospatial data was transformed using jq. Analyse bike roads and property values in Vancouver.",
+    "mainImage": "../images/projects/deckgl-example.png",
+    "images": [
+      "../images/projects/deckgl-example.png",
+      "../images/projects/deckgl-example/properties.png"
+    ],
+    "link": "https://deckgl-example.netlify.app/",
+    "github": "https://github.com/wintersteve/deckgl-example",
+    "title": "Map Visualizations",
+    "stack": ["React", "TypeScript", "DeckGL", "MapLibre", "jq"]
+  },
+  {
     "description": "The to-do application was built with the intention to learn Angular, Material UI TypeScript, RxJs and utilize a JAMStack architecture and services. The app integrates a fully functioning database with CRUD operations and auth system using serverless functions.",
     "mainImage": "../images/projects/todo-app/overview.png",
     "images": [
@@ -20,7 +32,7 @@
       "../images/projects/todo-app/add-todo.png"
     ],
     "link": "https://angular-jamstack-todo.netlify.app/",
-    "title": "JAMStack To-do Application",
+    "title": "To-do Application",
     "stack": [
       "Angular",
       "Material UI",
@@ -33,14 +45,20 @@
     ]
   },
   {
-    "description": "Monify is an expense tracker Electron application that started as a side-project to learn more about native App Development. Currently, the app works with macOS and Windows. To get familiar with cross-platform development for mobile apps, I have utilized Flutter in a different project which can be found <a class='underline' href='https://play.google.com/store/apps/details?id=com.winter.random_word_generator' rel='noopener noreferrer' target='blank'>in the Google Play Store</a>.",
+    "description": "Monify is an expense tracker Electron application that started as a side-project to learn more about native App Development. Currently, the app works with macOS and Windows.",
     "mainImage": "../images/projects/monify.png",
     "link": "https://monify.netlify.app",
     "title": "Monify",
     "stack": ["Electron", "Flutter", "Dart", "SQLite"]
   },
   {
-    "description": "HowToWebDev is a side-project that started with the idea in mind of getting familiar with static site generation, server-side rendering, and CD/CI. The blog is built utilizing React, Gatsby, Jest, and Jenkins. New articles are being released by creating markdown files and pushing them to the GitHub Repo.",
+    "description": "A simple random word generator built to get myself familiar with native app development and distribution.",
+    "link": "https://play.google.com/store/apps/details?id=com.winter.random_word_generator&pli=1",
+    "title": "Random Word Generator",
+    "stack": ["Dart", "Flutter", "SQLite"]
+  },
+  {
+    "description": "HowToWebDev is a statically generated blog (SSG) that utilizes React, Gatsby, and Jest. New posts are created from markdown files.",
     "mainImage": "../images/projects/howtowebdev.png",
     "images": [
       "../images/projects/howtowebdev.png",
@@ -52,13 +70,7 @@
     "stack": ["React", "Gatsby", "Jest", "Jenkins", "Markdown"]
   },
   {
-    "description": "A small project to get myself familiar with native app development and distribution.",
-    "link": "https://play.google.com/store/apps/details?id=com.winter.random_word_generator&pli=1",
-    "title": "Random Word Generator",
-    "stack": ["Dart", "Flutter", "SQLite"]
-  },
-  {
-    "description": "The first version of my portfolio page. A simple static website demonstrating my early experiences with HTML, CSS and JavaScript.",
+    "description": "The first version of my portfolio. A static website demonstrating my early experiences with HTML, CSS and JavaScript.",
     "link": "https://wintersteve.github.io/",
     "title": "Portfolio V1",
     "stack": ["HTML5", "CSS3", "JavaScript", "Bootstrap", "GitHub Pages"]
