@@ -105,7 +105,7 @@ function Projects() {
       )}
       <ScrollAnimation animateIn="fade" duration={1}>
         <section
-          className="max-w-screen-2xl mb-20 lg:mb-40 m-auto overflow-hidden sm:overflow-visible px-8 md:px-28 lg:px-48 xl:px-72 2xl:px-96 py-36 bg-gradient-to-l from-primary-200 dark:from-primary-300 to-primary-300"
+          className="mb-20 lg:mb-40 m-auto overflow-hidden sm:overflow-visible px-8 md:px-28 lg:px-48 xl:px-72 2xl:px-96 py-36 bg-gradient-to-l from-primary-200 dark:from-primary-300 to-primary-300"
           id="libraries"
         >
           <div className="text-center md:px-40 mb-10">
