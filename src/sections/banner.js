@@ -53,7 +53,7 @@ function Banner() {
             I'm a software engineer who excels at building digital experiences.
             Currently, I'm an engineer at{" "}
             <a
-              href="https://www.onextech.com.sg/"
+              href="https://interdiscount.ch/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -63,7 +63,7 @@ function Banner() {
                 textClass="font-medium"
               >
                 {" "}
-                One X Tech
+                Interdiscount
               </UnderlinedText>
             </a>{" "}
             focusing on building scalable and highly performant digital

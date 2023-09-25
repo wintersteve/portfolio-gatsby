@@ -1,10 +1,21 @@
 [
   {
+    "location": "Bern, Switzerland",
+    "role": "Software Engineer",
+    "title": "Interdiscount",
+    "description": "Interdiscount is the leading omnichannel retailer for electronic goods in Switzerland and part of the coop group. I played an integral role in their migration to a nextjs monorepo.",
+    "date": "June 2023 - Present",
+    "tools": [
+      "GCP • React • Redux",
+      "Turborepo • Nextjs 13 • Tailwind"
+    ]
+  },
+  {
     "location": "Singapore",
     "role": "Full-Stack Engineer",
     "title": "One X Tech",
     "description": "One X Tech is a business technology partner, focused on building technological innovations for leading enterprises.",
-    "date": "May 2022 - Present",
+    "date": "May 2022 - June 2023",
     "tools": [
       "AWS • Next.js • TypeScript",
       "Turborepo • Node",

@@ -14,11 +14,9 @@ function About() {
           </h2>
         </div>
         <p className="md:text-md dark:text-gray-100">
-          4 years ago I started my journey as a software engineer.
-          The infinite potential for creating cool and useful things in various domains is what made me fall in love with it.
-          Since then I have worked for SMEs and enterprises, and to this day I keep on expanding my knowledge by working on personal projects continuously.
-          I am not only known for the depth of my technical knowledge covering front- and backend, but also for my efficacy.
-          I strive for excellence when creating and maintaining code bases by following the industry's best practices.
+          5 years ago I started my journey as a software engineer and have put countless hours into my craft since then.
+          The potential for creating interesting and useful things in various domains is what made me fall in love with it.
+          I have worked for SMEs, enterprises, and continuously on personal projects as a frontend and backend dev, designed architectures in the cloud, and dabbled in cyber security and system administrations.
         </p>
       </ScrollAnimation>
     </section>
