@@ -18,6 +18,9 @@ function SocialMediaNavigation({ theme = "white", componentClass, iconClass }) {
 
       case "LINKEDIN":
         return <LinkedInIcon className={className} />;
+
+       default:
+         throw Error('invalid icon type')
     }
   };
 

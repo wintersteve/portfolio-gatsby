@@ -127,7 +127,7 @@ function Chart() {
       .style("text-anchor", "end")
       .attr("startOffset", "100%")
       .text((d) => d.title);
-  }, [data]);
+  }, [colorScale, paths]);
 
   return <svg ref={ref} />;
 }

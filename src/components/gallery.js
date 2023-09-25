@@ -16,7 +16,7 @@ function Gallery({ onToggle, title, images }) {
       />
       <div className="flex-1 ml-5 overflow-y-scroll">
         {images.map((_, index) => (
-          <div key={index} onClick={() => setActiveImage(index)}>
+          <button key={index} onClick={() => setActiveImage(index)}>
             <GatsbyImage
               alt={title}
               className={`filter brightness-90 mb-2 rounded cursor-pointer border-4 ${
@@ -25,7 +25,7 @@ function Gallery({ onToggle, title, images }) {
               image={getImage(images[index])}
               loading="lazy"
             />
-          </div>
+          </button>
         ))}
       </div>
     </Modal>

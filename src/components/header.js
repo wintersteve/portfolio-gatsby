@@ -2,14 +2,12 @@ import React, { useCallback, useContext } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import useDarkMode from "../hooks/use-dark-mode";
 import useScrollPosition from "../hooks/use-scroll-position";
-import { MenuContext, MENU_ACTION } from "../providers/menu-provider";
+import { MENU_ACTION, MenuContext } from "../providers/menu-provider";
 import Branding from "./branding";
 import FragmentLink from "./fragment-link";
 import Hamburger from "./hamburger";
 import Menu from "./menu";
 import SocialMediaNavigation from "./social-media-navigation";
-import { ReactComponent as LightModeIcon } from "../images/light-mode.svg";
-import { ReactComponent as DarkModeIcon } from "../images/dark-mode.svg";
 
 const navItems = [
   {
@@ -39,7 +37,7 @@ const navItems = [
 ];
 
 function Header() {
-  const [isDarkMode, setIsDarkMode] = useDarkMode();
+  const [isDarkMode] = useDarkMode();
   const { isScrollTop, lastScrollY } = useScrollPosition();
   const { state, dispatch } = useContext(MenuContext);
 
