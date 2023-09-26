@@ -21,7 +21,7 @@ function Experiences() {
           Experience
         </h2>
 
-        <ul className="flex mb-6 -ml-1 md:-ml-3 overflow-x-scroll">
+        <ul className="flex mb-6 -ml-1 md:-ml-3 overflow-x-auto">
           {experiences.map((experience, index) => (
             <li key={experience.title}>
               <button
