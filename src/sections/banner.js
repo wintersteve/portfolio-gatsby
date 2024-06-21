@@ -50,7 +50,7 @@ function Banner() {
           </h3>
 
           <div className="dark:text-gray-50 max-w-xl ml-1 md:ml-2 mb-6 lg:text-md">
-            I'm a software engineer who excels at building digital experiences.
+            I'm a senior software engineer who excels at building digital experiences.
             Currently, I'm an engineer at{" "}
             <a
               href="https://interdiscount.ch/"
