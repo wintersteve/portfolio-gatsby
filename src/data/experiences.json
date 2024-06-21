@@ -1,13 +1,13 @@
 [
   {
     "location": "Bern, Switzerland",
-    "role": "Software Engineer",
+    "role": "Senior Software Engineer",
     "title": "Interdiscount",
-    "description": "Interdiscount is the leading omnichannel retailer for electronic goods in Switzerland and part of the coop group. I played an integral role in their migration to a nextjs monorepo.",
+    "description": "Interdiscount is the leading omnichannel retailer for electronic goods in Switzerland and part of the coop group. I played a key role in setting up and migrating a legacy React project to a state-of-the-art Next.js monorepo, incorporating support for React server components.",
     "date": "June 2023 - Present",
     "tools": [
       "GCP • React • Redux",
-      "Turborepo • Nextjs 13 • Tailwind"
+      "Turborepo • Nextjs • Tailwind"
     ]
   },
   {
