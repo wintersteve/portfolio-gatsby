@@ -14,9 +14,16 @@ function About() {
           </h2>
         </div>
         <p className="md:text-md dark:text-gray-100">
-          5 years ago I started my journey as a software engineer and have put countless hours into my craft since then.
-          The potential for creating interesting and useful things in various domains is what made me fall in love with it.
-          I have worked for SMEs, enterprises, and continuously on personal projects as a frontend and backend dev, designed architectures in the cloud, and dabbled in cyber security and system administrations.
+          Five years ago, I embarked on my journey as a software engineer,
+          dedicating countless hours to honing my craft. My passion for creating
+          innovative and practical solutions across various domains has been the
+          driving force behind my career. I have had the privilege of working
+          with SMEs and enterprises, as well as continually developing personal
+          projects. My expertise spans both frontend and backend development,
+          cloud architecture design, and ventures into cybersecurity and system
+          administration. This diverse experience has equipped me with a robust
+          skill set, enabling me to tackle complex challenges and deliver
+          exceptional results.
         </p>
       </ScrollAnimation>
     </section>
