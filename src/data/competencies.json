@@ -9,25 +9,37 @@
         "type": "LANGUAGE",
         "skills": [
           {"title": "HTML", "value": 100 },
-          {"title": "SCSS", "value": 100 },
+          {"title": "CSS", "value": 100 },
           {"title": "TypeScript", "value": 100 }
         ]
       },
       {
-        "title": "Frameworks & Libraries",
+        "title": "Frameworks",
         "type": "TOOL",
         "skills": [
-          {"title": "React", "value": 100 },
-          {"title": "Angular", "value": 90 },
-          {"title": "Next / Gatsby", "value": 100 },
-          {"title": "Redux", "value": 95 },
-          {"title": "RxJs", "value": 95 },
-          {"title": "Material-UI", "value": 90 },
-          {"title": "Jest", "value": 87 }
+          {"title": "Nextjs", "value": 100 },
+          {"title": "Angular", "value": 90 }
         ]
       },
       {
-        "title": "Data Visualization",
+        "title": "Libraries",
+        "type": "TOOL",
+        "skills": [
+          {"title": "Lodash", "value": 100 },
+          {"title": "Redux", "value": 95 },
+          {"title": "RxJs", "value": 95 }
+        ]
+      },
+      {
+        "title": "Monorepos",
+        "type": "OTHER",
+        "skills": [
+          {"title": "NX", "value": 90 },
+          {"title": "Turborepo", "value": 85 }
+        ]
+      },
+      {
+        "title": "Visualizations",
         "type": "OTHER",
         "skills": [
           {"title": "Three.js", "value": 80 },
@@ -45,9 +57,9 @@
         "title": "Languages",
         "type": "LANGUAGE",
         "skills": [
-          {"title": "Node", "value": 87 },
-          {"title": "Go", "value": 85 },
-          {"title": "Haskell", "value": 70 }
+          {"title": "Node", "value": 90 },
+          {"title": "Python", "value": 80 },
+          {"title": "Go", "value": 72 }
         ]
       },
       {
@@ -55,8 +67,7 @@
         "type": "DATABASE",
         "skills": [
           {"title": "PostgreSQL", "value": 90 },
-          {"title": "MongoDB", "value": 87 },
-          {"title": "Cloud", "value": 85 }
+          {"title": "MongoDB", "value": 87 }
         ]
       },
       {
@@ -64,14 +75,21 @@
         "type": "FRAMEWORK",
         "skills": [
           {"title": "Express", "value": 92 },
-          {"title": "Nest", "value": 87 },
-          {"title": "Martini", "value": 81 }
+          {"title": "Nest", "value": 87 }
+        ]
+      },
+      {
+        "title": "Scraping",
+        "type": "OTHER",
+        "skills": [
+          {"title": "Scrapy", "value": 80 }
         ]
       },
       {
         "title": "Other",
         "type": "OTHER",
         "skills": [
+          {"title": "REST APIs", "value": 90 },
           {"title": "GraphQL", "value": 87 },
           {"title": "WASM", "value": 80 }
         ]
@@ -84,36 +102,45 @@
     "description": "I value simple content structure, clean design patterns, and thoughtful interactions.",
     "categories": [
       {
-        "title": "DevOps",
-        "type": "TOOL",
-        "skills": [
-          {"title": "Git", "value": 95 },
-          {"title": "Docker", "value": 85 },
-          {"title": "Bash", "value": 85 }
-        ]
-      },
-      {
-        "title": "Cloud Computing",
+        "title": "Cloud",
         "type": "CLOUD",
         "skills": [
-          {"title": "AWS", "value": 85 },
-          {"title": "Supabase", "value": 82 }
+          {"title": "GCP", "value": 95 },
+          {"title": "AWS", "value": 90 },
+          {"title": "Supabase", "value": 85 }
         ]
       },
       {
-        "title": "Scraping & Automation",
-        "type": "OTHER",
+        "title": "Containers",
+        "type": "TOOL",
         "skills": [
-          {"title": "Scrapy", "value": 80 },
-          {"title": "Cypress", "value": 89 }
+          {"title": "Docker", "value": 90 },
+          {"title": "Kubernetes", "value": 85 }
         ]
       },
       {
-        "title": "Organization",
-        "type": "OTHER",
+        "title": "Testing",
+        "type": "TOOL",
         "skills": [
-          {"title": "NX", "value": 90 },
-          {"title": "Turborepo", "value": 85 }
+          {"title": "Cypress", "value": 95 },
+          {"title": "Playwright", "value": 90 }
+        ]
+      },
+      {
+        "title": "Monitoring",
+        "type": "TOOL",
+        "skills": [
+          {"title": "Prometheus", "value": 85 },
+          {"title": "OpenTelemetry", "value": 80 }
+        ]
+      },
+      {
+        "title": "Others",
+        "type": "TOOL",
+        "skills": [
+          {"title": "Git", "value": 100 },
+          {"title": "GitHub", "value": 95 },
+          {"title": "Linux", "value": 90 }
         ]
       }
     ]
