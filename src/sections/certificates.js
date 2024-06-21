@@ -93,7 +93,7 @@ function Certificates() {
         </div>
       </ScrollAnimation>
       <div
-        className="overflow-x-scroll"
+        className="overflow-x-scroll pb-4"
         style={{ scrollBehavior: "smooth" }}
         onScroll={handleScroll}
         ref={scrollContainer}
