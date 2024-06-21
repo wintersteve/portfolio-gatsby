@@ -9,7 +9,7 @@ function Tile({ className, imageStyle, images, label }) {
         {label.toUpperCase()}
       </h3>
       <div
-        className="flex flex-wrap items-center justify-center relative top-1"
+        className="flex flex-wrap gap-4 items-center justify-center relative top-1"
         style={{ minHeight: "3rem" }}
       >
         {images.map((image) => (

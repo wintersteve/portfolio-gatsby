@@ -10,24 +10,32 @@ function Banner() {
       programmingIcons: allFile(
         filter: {
           relativeDirectory: { eq: "services" }
-          name: { in: ["typescript", "nuxt", "gatsby"] }
+          name: { in: ["typescript", "react", "angular"] }
         }
       ) {
         nodes {
           publicURL
         }
       }
-      dataVisualizationIcon: file(
-        relativeDirectory: { eq: "services" }
-        name: { eq: "data-visualization" }
+      dataVisualizationIcon: allFile(
+        filter: {
+          relativeDirectory: { eq: "services" }
+          name: { in: ["nodejs", "go", "python"] }
+        }
       ) {
-        publicURL
+        nodes {
+          publicURL
+        }
       }
-      designIcon: file(
-        relativeDirectory: { eq: "services" }
-        name: { eq: "design" }
+      designIcon: allFile(
+        filter: {
+          relativeDirectory: { eq: "services" }
+          name: { in: ["aws", "gcp"] }
+        }
       ) {
-        publicURL
+        nodes {
+          publicURL
+        }
       }
     }
   `);
@@ -50,8 +58,8 @@ function Banner() {
           </h3>
 
           <div className="dark:text-gray-50 max-w-xl ml-1 md:ml-2 mb-6 lg:text-md">
-            I'm a senior software engineer who excels at building digital experiences.
-            Currently, I'm an engineer at{" "}
+            I'm a senior software engineer who excels at building digital
+            experiences. Currently, I'm an engineer at{" "}
             <a
               href="https://interdiscount.ch/"
               target="_blank"
@@ -71,34 +79,44 @@ function Banner() {
           </div>
         </ScrollAnimation>
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:mb-6 w-full lg:w-auto">
+        <div className="flex flex-col lg:flex-row gap-4 md:gap-6 lg:mb-6 w-full">
           <ScrollAnimation
             animateIn="fade"
-            className="col-span-2 lg:col-auto"
             delay={150}
             offset={1000}
+            className="flex-grow"
           >
             <Tile
-              className="shadow-secondary dark:shadow-primary bg-gray-100 dark:bg-primary-200 py-6 md:py-20 md:px-10 lg:mb-0"
-              imageStyle="h-12 md:h-12 mx-2 md:mx-3"
+              className="flex-grow shadow-secondary dark:shadow-primary bg-gray-100 dark:bg-primary-200 py-6 md:py-20 md:px-10 lg:mb-0"
+              imageStyle="w-12 h-12 object-contain"
               images={programmingIcons.nodes.map((icon) => icon.publicURL)}
-              label={"Programming"}
+              label="Frontend"
             />
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fade" delay={150} offset={1000}>
+          <ScrollAnimation
+            animateIn="fade"
+            delay={150}
+            offset={1000}
+            className="flex-grow"
+          >
             <Tile
               className="shadow-secondary dark:shadow-primary bg-gray-100 dark:bg-primary-200 px-10 py-6 md:py-20 lg:mb-0"
-              imageStyle="h-12 md:h-12 mx-2 md:mx-2"
-              images={[dataVisualizationIcon.publicURL]}
-              label={"Visualization"}
+              imageStyle="w-12 h-12 object-contain"
+              images={dataVisualizationIcon.nodes.map((icon) => icon.publicURL)}
+              label="Backend"
             />
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fade" delay={150} offset={1000}>
+          <ScrollAnimation
+            animateIn="fade"
+            delay={150}
+            offset={1000}
+            className="flex-grow"
+          >
             <Tile
               className="shadow-secondary dark:shadow-primary bg-gray-100 dark:bg-primary-200 px-10 py-6 md:py-20 lg:mb-0"
-              imageStyle="h-12 md:h-12 mx-2 md:mx-2"
-              images={[designIcon.publicURL]}
-              label={"Web Design"}
+              imageStyle="w-12 h-12 object-contain"
+              images={designIcon.nodes.map((icon) => icon.publicURL)}
+              label="Cloud Architecure"
             />
           </ScrollAnimation>
         </div>
