@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { lazy, Suspense, useState } from "react";
 import TiltDivider from "../components/tilt-divider";
 import UnderlinedText from "../components/underlined-text";
 import ScrollAnimation from "react-animate-on-scroll";
 import competencies from "../data/competencies.json";
-import Chart from "../components/chart";
 import chartImage from "../images/chart.png";
+
+const Chart = lazy(() => import("../components/chart"));
 
 function Competencies() {
   const [showChart, setShowChart] = useState(false);
@@ -34,9 +35,11 @@ function Competencies() {
         </div>
       </div>
       {showChart ? (
-        <div className="relative bottom-36">
-          <Chart />
-        </div>
+        <Suspense>
+          <div className="relative bottom-36">
+            <Chart />
+          </div>
+        </Suspense>
       ) : (
         <div className="lg:grid lg:grid-cols-3 mx-4 md:mx-10 lg:mx-12 xl:mx-28 2xl:mx-40 overflow-hidden relative rounded-2xl shadow-4xl dark:shadow-xl -top-40">
           {competencies.map((competency, index) => (
