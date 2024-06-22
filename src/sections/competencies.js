@@ -27,7 +27,7 @@ function Competencies() {
               }
               onClick={() => setShowChart(!showChart)}
             >
-              Show Cart
+              Show Chart
               <img alt="chart button" height={32} width={32} src={chartImage} />
             </button>
           </ScrollAnimation>
