@@ -39,6 +39,20 @@
       max-width: 33.3333%;
     }
 
+    .line-clamp-none {
+      overflow: visible;
+      display: block;
+      -webkit-box-orient: horizontal;
+      -webkit-line-clamp: none;
+    }
+
+    .line-clamp-10 {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 10;
+    }
+
     .left-unset {
       left: unset;
     }
