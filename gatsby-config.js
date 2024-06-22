@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: "Steve Winter | Full-Stack Web Developer",
+    title: "Software Engineer | Full-Stack | Cloud Expert",
     description:
-      "Steve Winter - Full-Stack Software Engineer with a focus on modern JavaScript stacks and cloud envirnoments.",
+      "Seasoned software engineer with 5+ years of experience in full-stack development, cloud architecture, cybersecurity, and system administration. Proven track record of delivering innovative solutions for SMEs and enterprises.",
     og: {
       description:
-        "Steve Winter - Full-Stack Software Engineer with a focus on modern JavaScript stacks and cloud envirnoments.",
+        "Seasoned software engineer with 5+ years of experience in full-stack development, cloud architecture, cybersecurity, and system administration. Proven track record of delivering innovative solutions for SMEs and enterprises.",
       title: "Steve Winter | Web Developer",
       type: "website",
       url: "https://wintersteve.com",
@@ -16,14 +16,16 @@ module.exports = {
       resolve: "gatsby-plugin-svgr",
       options: {
         svgoConfig: {
-          plugins: [{
-            name: 'preset-default',
-            params: {
-              overrides: {
-                removeViewBox: false,
+          plugins: [
+            {
+              name: "preset-default",
+              params: {
+                overrides: {
+                  removeViewBox: false,
+                },
               },
             },
-          }],
+          ],
         },
       },
     },
