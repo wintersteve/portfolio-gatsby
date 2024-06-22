@@ -10,10 +10,12 @@ import Experiences from "../sections/experiences";
 import Footer from "../sections/footer";
 import Projects from "../sections/projects";
 import Seo from "../components/seo";
+import { Helmet } from "react-helmet";
 
 const IndexPage = () => {
   return (
     <>
+      <Helmet htmlAttributes={{ lang: "en" }} />
       <Seo />
       <Header />
       <Banner />

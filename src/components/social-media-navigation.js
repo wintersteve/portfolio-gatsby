@@ -19,8 +19,8 @@ function SocialMediaNavigation({ theme = "white", componentClass, iconClass }) {
       case "LINKEDIN":
         return <LinkedInIcon className={className} />;
 
-       default:
-         throw Error('invalid icon type')
+      default:
+        throw Error("invalid icon type");
     }
   };
 
@@ -28,9 +28,10 @@ function SocialMediaNavigation({ theme = "white", componentClass, iconClass }) {
     <nav className={`items-center flex ${componentClass}`}>
       {models.map((model) => (
         <a
+          key={model.label}
+          aria-label={`Visit ${model.label}`}
           className="hover:float"
           href={model.url}
-          key={model.label}
           rel="noreferrer noopener"
           target="_blank"
         >

@@ -64,7 +64,7 @@ function Chat() {
           onClick={toggle}
         >
           <ChatIcon
-            alt="open chat"
+            aria-label="open chat"
             width="25"
             className="fill-current text-primary-200"
           />

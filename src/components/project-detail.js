@@ -37,6 +37,7 @@ function ProjectDetail({
             </h4>
             {github && (
               <a
+                aria-label="Show in GitHub"
                 className="hover:scale flex"
                 href={github}
                 rel="noreferrer"
