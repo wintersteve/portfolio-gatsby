@@ -119,6 +119,12 @@ function Projects() {
           <div className="flex flex-col items-center gap-4">
             {[
               {
+                title: "use-state-v2",
+                description:
+                  "Simplifies React state management by providing reusable operations",
+                href: "https://www.npmjs.com/package/use-state-v2",
+              },
+              {
                 title: "better-template-strings",
                 description: "Make working with dynamic strings uncomplicated",
                 href: "https://www.npmjs.com/package/better-template-strings",
