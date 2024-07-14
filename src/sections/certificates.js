@@ -19,9 +19,10 @@ function Certificates() {
       allCertificatesJson {
         nodes {
           title
+          issuer
           image {
             childImageSharp {
-              gatsbyImageData(placeholder: BLURRED)
+              gatsbyImageData(placeholder: NONE)
             }
           }
         }
@@ -93,28 +94,34 @@ function Certificates() {
         </div>
       </ScrollAnimation>
       <div
-        className="overflow-x-scroll pb-4"
+        className="overflow-x-scroll pb-10"
         style={{ scrollBehavior: "smooth" }}
         onScroll={handleScroll}
         ref={scrollContainer}
       >
-        <div className="flex px-6 md:px-12 lg:px-20 2xl:px-40">
+        <div className="flex px-6 md:px-12 lg:px-20 2xl:px-40 gap-4 md:gap-8">
           {certificates.map((certificate, index) => (
             <ScrollAnimation
               animateIn="fade"
-              className="mr-4 2xl:mr-8 flex-5/6 lg:flex-2/6"
+              className="flex flex-col gap-4"
               delay={150 * (index + 1)}
               duration={0.5}
               key={certificate.title}
             >
               <GatsbyImage
                 alt={certificate.title}
-                className="dark:brightness-90 filter rounded-lg shadow-lg"
+                className="h-52 w-52 md:h-80 md:w-80 dark:brightness-90 filter rounded-lg"
                 image={getImage(certificate.image)}
+                imgStyle={{ objectFit: "contain" }}
               />
-              <h5 className="font-bold m-2 dark:text-gray-200 text-gray-500">
-                {certificate.title}
-              </h5>
+              <div className="px-2">
+                <h6 className="font-bold text-sm text-gray-300">
+                  {certificate.issuer}
+                </h6>
+                <h5 className="font-medium dark:text-gray-200 text-gray-500">
+                  {certificate.title}
+                </h5>
+              </div>
             </ScrollAnimation>
           ))}
         </div>

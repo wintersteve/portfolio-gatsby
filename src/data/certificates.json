@@ -1,46 +1,82 @@
 [
   {
-    "title": "Linux Foundation Certified System Administrator",
-    "image": "../images/certificates/lfcs.jpg"
+    "title": "GCP Cloud Architect",
+    "image": "../images/certificates/gcp.png",
+    "issuer": "Google"
+  },
+  {
+    "title": "Solutions Architect",
+    "image": "../images/certificates/solutions-architect.png",
+    "issuer": "AWS"
+  },
+  {
+    "title": "Cloud Practitioner",
+    "image": "../images/certificates/cloud-practitioner.png",
+    "issuer": "AWS"
+  },
+  {
+    "title": "Terraform Associate (003)",
+    "image": "../images/certificates/terraform.png",
+    "issuer": "HashiCorp"
+  },
+  {
+    "title": "Certified Kubernetes Admin",
+    "image": "../images/certificates/cka.png",
+    "issuer": "Cloud Native Computing Foundation"
+  },
+  {
+    "title": "SysAdmin",
+    "image": "../images/certificates/lfcs.jpg",
+    "issuer": "Linux Foundation"
   },
   {
     "title": "Cyber Security",
-    "image": "../images/certificates/thm.png"
-  },
-  {
-    "title": "React",
-    "image": "../images/certificates/react.png"
+    "image": "../images/certificates/thm.png",
+    "issuer": "TryHackMe"
   },
   {
     "title": "Digital Marketing",
-    "image": "../images/certificates/digital-marketing.png"
+    "image": "../images/certificates/digital-marketing.png",
+    "issuer": "Google"
+  },
+  {
+    "title": "React",
+    "image": "../images/certificates/react.png",
+    "issuer": "HackerRank"
   },
   {
     "title": "Angular",
-    "image": "../images/certificates/angular.png"
+    "image": "../images/certificates/angular.png",
+    "issuer": "HackerRank"
   },
   {
     "title": "CSS",
-    "image": "../images/certificates/css.png"
+    "image": "../images/certificates/css.png",
+    "issuer": "HackerRank"
   },
   {
     "title": "Java",
-    "image": "../images/certificates/java.png"
-  },
-  {
-    "title": "JavaScript (Basic)",
-    "image": "../images/certificates/javascript.png"
+    "image": "../images/certificates/java.png",
+    "issuer": "HackerRank"
   },
   {
     "title": "JavaScript (Intermediate)",
-    "image": "../images/certificates/javascript-intermediate.png"
+    "image": "../images/certificates/javascript-intermediate.png",
+    "issuer": "HackerRank"
+  },
+  {
+    "title": "JavaScript (Basic)",
+    "image": "../images/certificates/javascript.png",
+    "issuer": "HackerRank"
   },
   {
     "title": "Problem Solving",
-    "image": "../images/certificates/problem-solving.png"
+    "image": "../images/certificates/problem-solving.png",
+    "issuer": "HackerRank"
   },
   {
     "title": "SQL",
-    "image": "../images/certificates/sql.png"
+    "image": "../images/certificates/sql.png",
+    "issuer": "HackerRank"
   }
 ]
