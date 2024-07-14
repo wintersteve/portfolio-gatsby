@@ -110,7 +110,7 @@ function Certificates() {
             >
               <GatsbyImage
                 alt={certificate.title}
-                className="h-52 w-52 md:h-80 md:w-80 dark:brightness-90 filter rounded-lg"
+                className="h-52 w-52 md:h-64 md:w-64 dark:brightness-90 filter rounded-lg"
                 image={getImage(certificate.image)}
                 imgStyle={{ objectFit: "contain" }}
               />

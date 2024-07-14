@@ -10,9 +10,9 @@
     "issuer": "AWS"
   },
   {
-    "title": "Cloud Practitioner",
-    "image": "../images/certificates/cloud-practitioner.png",
-    "issuer": "AWS"
+    "title": "Certified Kubernetes Admin",
+    "image": "../images/certificates/cka.png",
+    "issuer": "Cloud Native Computing Foundation"
   },
   {
     "title": "Terraform Associate (003)",
@@ -20,14 +20,14 @@
     "issuer": "HashiCorp"
   },
   {
-    "title": "Certified Kubernetes Admin",
-    "image": "../images/certificates/cka.png",
-    "issuer": "Cloud Native Computing Foundation"
-  },
-  {
     "title": "SysAdmin",
     "image": "../images/certificates/lfcs.jpg",
     "issuer": "Linux Foundation"
+  },
+  {
+    "title": "Cloud Practitioner",
+    "image": "../images/certificates/cloud-practitioner.png",
+    "issuer": "AWS"
   },
   {
     "title": "Cyber Security",
