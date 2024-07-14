@@ -26,7 +26,7 @@
     "location": "Jena, Germany",
     "role": "Software Engineer",
     "title": "diva-e",
-    "description": "diva-e is a software development service provider. The company focuses on creating digital experiences that enhance customer interactions. My role mainly revolves around creating and improving front-end code bases yet, I also have had the opportunity to make use of my back-end expertise. Not only have I worked in agile teams, I also had the opportunity to lead projects and technical interviews.",
+    "description": "At diva-e, a leading software development service provider, I focused on crafting and enhancing digital experiences to elevate customer interactions. My role primarily involved developing and refining front-end code bases, while also leveraging my back-end expertise. I gained extensive experience working in agile teams and successfully led projects and conducted technical interviews.",
     "date": "November 2019 - May 2022",
     "tools": [
       "Vue • Angular • TypeScript • RxJs",
@@ -39,7 +39,7 @@
     "location": "Bangkok, Thailand",
     "role": "Full-Stack Software Engineer",
     "title": "Malai Herbal",
-    "description": "Malai Herbal is a beauty business offering organic hair products. At the end of my freelance period I landed this gig, where I was tasked to create an ecommerce with product administration from scratch.",
+    "description": "Malai Herbal, a beauty business specializing in organic hair products, entrusted me with developing their e-commerce platform from the ground up. I implemented a serverless architecture to ensure scalability and optimized performance. The project involved creating a robust online store complete with comprehensive product administration capabilities.\n\n",
     "date": "October 2019 - November 2019",
     "tools": [
       "Gatsby",
@@ -52,7 +52,7 @@
     "location": "Jena, Germany",
     "role": "Full-Stack Software Engineer",
     "title": "Freelancer",
-    "description": "During the last year of my Bachelor's program, I took the opportunity to apply my self-taught engineering skills as a freelancer. The gigs included small bug fixes, some webscrapers and a B2C ecommerce.",
+    "description": "In the final year of my Bachelor's program, I leveraged my self-taught engineering skills as a freelancer. My projects ranged from small bug fixes and developing web scrapers to building a B2C e-commerce platform.",
     "date": "January 2020 - November 2020",
     "tools": ["Cheerio / Scrapy", "HTML & CSS3", "React & Gatsby"]
   },
@@ -60,7 +60,7 @@
     "location": "Bangkok, Thailand",
     "role": "Assistant Manager & Web Developer",
     "title": "Win-Win Asia",
-    "description": "Win-Win Asia is an international tour operator and destination management agency. During my occupation here, I was responsible first and foremost for the management of the staff and the efficient of the companies operations. Due to the seasonality of the business, I also had time to extend and optimise the company's WordPress websites and internal applications.",
+    "description": "Win-Win Asia is an international tour operator and destination management agency. During my tenure, I primarily managed staff and ensured efficient company operations. Given the seasonal nature of the business, I also had the opportunity to extend and optimize the company's WordPress websites and internal applications.",
     "date": "June 2019 - October 2019",
     "tools": [
       "Custom Wordpress Development",
