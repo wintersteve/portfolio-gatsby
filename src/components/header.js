@@ -62,7 +62,7 @@ function Header() {
     <>
       <header
         className={`
-        bg-white dark:bg-primary-200 fixed py-7 md:px-16 lg:px-20 xl:px-32 2xl:px-64 font-bold shadow-lg transform transition-all-no-bg duration-500 top-0 w-full z-30
+        dark:bg-primary-200 fixed py-7 md:px-16 lg:px-20 xl:px-32 2xl:px-64 font-bold shadow-lg transform transition-all-no-bg duration-500 top-0 w-full z-30
           ${getShadowClass()} ${getTranslateClass()} ${getPaddingClass()}
       `}
       >
@@ -113,7 +113,7 @@ function Header() {
           ))}
           <div className="px-3">
             <a
-              className="hover:bg-gray-100 border-4 ml-4 px-8 py-3 font-semibold inline-block rounded-xl transition-all text-md text-gray-500 dark:text-gray-200 hover:text-gray-600"
+              className="hover:border-4 ml-4 px-8 py-3 font-semibold inline-block rounded-xl transition-all text-md text-gray-500 dark:text-gray-200 hover:text-gray-600"
               download
               href="/resume.pdf"
             >

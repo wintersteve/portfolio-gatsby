@@ -24,7 +24,7 @@ function Competencies() {
           <ScrollAnimation animateIn="fade" duration={2}>
             <button
               className={
-                "hidden md:flex items-center gap-2 hover:float bg-secondary-100 dark:bg-primary-200 text-secondary-900 dark:text-gray-300 font-bold inline-block p-5 rounded text-sm w-full lg:w-auto"
+                "hidden md:flex items-center gap-2 hover:float dark:bg-primary-200 text-secondary-900 dark:text-gray-300 font-bold inline-block p-5 rounded text-sm w-full lg:w-auto"
               }
               onClick={() => setShowChart(!showChart)}
             >
@@ -50,7 +50,7 @@ function Competencies() {
               key={competency.title}
             >
               <div
-                className={`bg-white dark:bg-primary-200 border-b-4 lg:border-b-0 dark:border-primary-300 h-full px-20 py-16 lg:py-20 text-center ${
+                className={`dark:bg-primary-200 border-b-4 lg:border-b-0 dark:border-primary-300 h-full px-20 py-16 lg:py-20 text-center ${
                   index === 1
                     ? "border-gray-100 dark:border-gray-700 border-l-0 border-r-0 lg:border-l-8 lg:border-r-8"
                     : ""

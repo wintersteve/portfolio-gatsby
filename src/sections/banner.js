@@ -87,7 +87,7 @@ function Banner() {
             className="flex-grow"
           >
             <Tile
-              className="flex-grow shadow-secondary dark:shadow-primary bg-gray-100 dark:bg-primary-200 py-6 md:py-20 md:px-10 lg:mb-0"
+              className="flex-grow shadow-secondary dark:shadow-primary dark:bg-primary-200 py-6 md:py-20 md:px-10 lg:mb-0"
               imageStyle="w-12 h-12 object-contain"
               images={programmingIcons.nodes.map((icon) => icon.publicURL)}
               label="Frontend"
@@ -100,7 +100,7 @@ function Banner() {
             className="flex-grow"
           >
             <Tile
-              className="shadow-secondary dark:shadow-primary bg-gray-100 dark:bg-primary-200 px-10 py-6 md:py-20 lg:mb-0"
+              className="shadow-secondary dark:shadow-primary dark:bg-primary-200 px-10 py-6 md:py-20 lg:mb-0"
               imageStyle="w-12 h-12 object-contain"
               images={dataVisualizationIcon.nodes.map((icon) => icon.publicURL)}
               label="Backend"
@@ -113,7 +113,7 @@ function Banner() {
             className="flex-grow"
           >
             <Tile
-              className="shadow-secondary dark:shadow-primary bg-gray-100 dark:bg-primary-200 px-10 py-6 md:py-20 lg:mb-0"
+              className="shadow-secondary dark:shadow-primary dark:bg-primary-200 px-10 py-6 md:py-20 lg:mb-0"
               imageStyle="w-12 h-12 object-contain"
               images={designIcon.nodes.map((icon) => icon.publicURL)}
               label="CLOUD & DEVOPS"

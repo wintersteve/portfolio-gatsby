@@ -63,7 +63,7 @@ function ProjectDetail({
           </ul>
           <div>
             <a
-              className="hover:float bg-secondary-100 dark:bg-primary-300 text-secondary-900 dark:text-gray-300 font-bold inline-block p-5 rounded text-sm w-full lg:w-auto"
+              className="hover:float dark:bg-primary-300 text-secondary-900 dark:text-gray-300 font-bold inline-block p-5 rounded text-sm w-full lg:w-auto"
               href={link}
               rel="noreferrer"
               target="_blank"
@@ -92,7 +92,7 @@ function ProjectDetail({
                   ${
                     !images?.length
                       ? "bg-gray-50 dark:bg-primary-100 cursor-not-allowed"
-                      : "bg-gray-100 dark:bg-primary-200 hover:scale"
+                      : "dark:bg-primary-200 hover:scale"
                   }
                 `}
           disabled={!images?.length}

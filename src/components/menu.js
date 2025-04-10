@@ -24,10 +24,10 @@ const Menu = ({ className, children, title }) => {
     return (
       <Portal root="menu">
         <div
-          className={`bg-white dark:bg-primary-200 fixed h-full left-0 overflow-scroll slideIn top-0 w-full z-20 ${className}`}
+          className={`dark:bg-primary-200 fixed h-full left-0 overflow-scroll slideIn top-0 w-full z-20 ${className}`}
         >
           {title && (
-            <div className="bg-white flex items-center justify-between p-10 sticky top-0">
+            <div className="flex items-center justify-between p-10 sticky top-0">
               <div>{title}</div>
               <button onClick={() => dispatch({ type: MENU_ACTION.CLOSE })}>
                 <img

@@ -48,7 +48,7 @@ function Experiences() {
               <span className="hidden md:block mx-2">•</span>
               <time>{experiences[activeTab].date}</time>
             </div>
-            <p className="bg-secondary-100 dark:bg-primary-300 dark:text-gray-100 mb-2 md:mb-3 py-4 px-5 relative rounded z-10">
+            <p className="dark:bg-primary-300 dark:text-gray-100 mb-2 md:mb-3 py-4 px-5 relative rounded z-10">
               {experiences[activeTab].description}
             </p>
             <ul className="list-disc ml-6 lg:ml-6">

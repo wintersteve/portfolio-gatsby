@@ -12,7 +12,7 @@ function Modal({ children, onToggle, title }) {
   }, [blockScroll, allowScroll]);
 
   return (
-    <div className="bg-white dark:bg-primary-200 fixed h-full top-0 w-full z-50 px-10 lg:px-20 xl:px-36 2xl:px-52 pt-12 lg:pt-24">
+    <div className="dark:bg-primary-200 fixed h-full top-0 w-full z-50 px-10 lg:px-20 xl:px-36 2xl:px-52 pt-12 lg:pt-24">
       <div className="flex justify-between mb-4 px-4">
         <div className="font-bold text-2xl text-gray-600 dark:text-gray-50">
           {title}

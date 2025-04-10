@@ -33,7 +33,7 @@ function Contact() {
 
   return (
     <section
-      className="bg-gray-100 dark:bg-primary-300 text-center pt-16 pb-32 lg:pt-40 lg:pb-64 px-2"
+      className="dark:bg-primary-300 text-center pt-16 pb-32 lg:pt-40 lg:pb-64 px-2"
       id="contact"
     >
       <ScrollAnimation animateIn="fade">
