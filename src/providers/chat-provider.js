@@ -1,6 +1,6 @@
 import React, { createContext, useState } from "react";
 
-const ChatContext = createContext();
+const ChatContext = createContext([false, () => {}]);
 
 function ChatProvider({ children }) {
   const [isOpen, setIsOpen] = useState(false);
