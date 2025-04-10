@@ -8,6 +8,7 @@ import FragmentLink from "./fragment-link";
 import Hamburger from "./hamburger";
 import Menu from "./menu";
 import SocialMediaNavigation from "./social-media-navigation";
+import { ReactComponent as FileIcon } from "../images/file.svg";
 
 const navItems = [
   {
@@ -86,11 +87,12 @@ function Header() {
                 </FragmentLink>
               ))}
               <a
-                className="hover:float border-2 inline-block ml-4 px-4 py-2 font-semibold rounded-full text-sm dark:text-gray-50 text-gray-600 hover:text-gray-700"
+                className="inline-flex items-center gap-2 hover:float border-2 ml-4 px-4 py-2 font-semibold rounded-full text-sm dark:text-gray-50 text-gray-600 hover:text-gray-700"
                 download
                 href="/resume.pdf"
               >
-                Resume
+                <FileIcon />
+                CV
               </a>
             </div>
           </nav>
@@ -113,11 +115,12 @@ function Header() {
           ))}
           <div className="px-3">
             <a
-              className="hover:border-4 ml-4 px-8 py-3 font-semibold inline-block rounded-xl transition-all text-md text-gray-500 dark:text-gray-200 hover:text-gray-600"
+              className="inline-flex items-center gap-2 hover:float border-2 ml-4 px-4 py-2 font-semibold rounded-full text-sm dark:text-gray-50 text-gray-600 hover:text-gray-700"
               download
               href="/resume.pdf"
             >
-              Resume
+              <FileIcon />
+              CV
             </a>
           </div>
         </nav>

@@ -46,10 +46,10 @@ function Banner() {
     <section className="mx-auto px-6 md:px-12 lg:px-40 xl:px-32 pt-40 md:pt-60 mb-16 md:mb-28 relative xl:max-w-screen-xl">
       <div className="flex flex-col items-start">
         <ScrollAnimation animateIn="fade">
-          <div className="font-semibold mb-1 md:mb-2 ml-1 md:ml-3 text-gray-500 dark:text-gray-200">
-            Hi, my name is
+          <div className="font-semibold ml-1 md:ml-3 text-gray-500 dark:text-gray-200">
+            Hi, I'm
           </div>
-          <h2 className="dark:text-white font-semibold md:ml-1 mb-6 opacity-80 text-4xl md:text-6xl">
+          <h2 className="dark:text-white font-semibold md:ml-1 mb-4 opacity-80 text-4xl md:text-6xl">
             Steve Winter
           </h2>
           <h3 className="bg-secondary-100 dark:bg-primary-300 dark:text-white font-bold mb-6 py-2 px-3 text-2xl md:text-6xl rounded-md w-full md:w-auto">
