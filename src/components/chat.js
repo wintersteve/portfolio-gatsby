@@ -9,13 +9,14 @@ import formJSON from "../data/forms.json";
 import { encode } from "../utils/encode";
 import { ToastContext } from "../providers/toast-provider";
 import { NOTIFICATION } from "../models/notification.enum";
+import { useChat } from "../hooks/use-chat";
 
 const DEFAULT_DATA = { email: "", message: "", name: "" };
 
 function Chat() {
   const toastRef = useContext(ToastContext);
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useChat();
   const [blockScroll, allowScroll] = useScroll();
 
   useEffect(() => {
@@ -72,7 +73,7 @@ function Chat() {
 
         {isOpen && (
           <Form
-            className={`fixed lg:absolute dark:bg-primary-200 bottom-0 right-0 p-5 lg:rounded transition-all w-full lg:w-96 shadow-4xl ${
+            className={`fixed lg:absolute dark:bg-primary-200 bottom-0 right-0 p-6 lg:rounded-3xl transition-all w-full lg:w-96 shadow-4xl ${
               isOpen && "fade"
             }`}
             data-netlify="true"
@@ -81,9 +82,9 @@ function Chat() {
             initialValues={DEFAULT_DATA}
             handleSubmit={handleSubmit}
           >
-            <div className="dark:bg-primary-200 dark:border-2 dark:border-primary-100 flex justify-between mb-5 p-4 rounded">
-              <h6 className="font-semibold text-gray-600 dark:text-gray-100">
-                Send me a message
+            <div className="dark:bg-primary-200 dark:border-2 dark:border-primary-100 flex justify-between mb-5 p-4 rounded-lg items-center">
+              <h6 className="font-semibold text-gray-600 dark:text-gray-100 text-sm">
+                Send a message
               </h6>
               <button className="py-1 px-2" type="button" onClick={toggle}>
                 <img

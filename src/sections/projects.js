@@ -7,6 +7,7 @@ import Modal from "../components/modal";
 import ProjectCard from "../components/project-card";
 import ProjectDetail from "../components/project-detail";
 import { isEven } from "../utils/is-even";
+import { useChat } from "../hooks/use-chat";
 
 const HIGHLIGHTED_PROJECTS = 4;
 
@@ -44,6 +45,8 @@ function Projects() {
 
   const [modalOpen, setModalOpen] = useState(false);
 
+  const [_, setChat] = useChat();
+
   const [galleryState, setGalleryState] = useState({
     isOpen: false,
     images: null,
@@ -67,7 +70,10 @@ function Projects() {
           </h2>
           <p className="mb-16 dark:text-gray-200 text-gray-500 text-lg">
             Here are some projects I've worked on recently. You would like to
-            see more? Get in touch.
+            see more?{" "}
+            <button className="underline" onClick={() => setChat(true)}>
+              Get in touch
+            </button>
           </p>
         </div>
         {highlightedProjects.map((project, index) => (
