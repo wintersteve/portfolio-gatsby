@@ -3,70 +3,75 @@
     "location": "Bern, Switzerland",
     "role": "Senior Software Engineer",
     "title": "Interdiscount",
-    "description": "Interdiscount is the leading omnichannel retailer for electronic goods in Switzerland and part of the coop group. I played a key role in setting up and migrating a legacy React project to a state-of-the-art Next.js monorepo, incorporating support for React server components.",
+    "description": "Interdiscount is the leading omnichannel retailer for electronic goods and part of the Coop group. I played a key role in the modernization of our frontend architecture and backend microservices.",
     "date": "June 2023 - Present",
     "tools": [
-      "GCP • React • Redux",
-      "Turborepo • Nextjs • Tailwind"
+      "React",
+      "Next.js",
+      "Angular",
+      "GCP",
+      "Kubernetes",
+      "Java",
+      "Spring Boot",
+      "ArgoCD",
+      "Wiz"
     ]
   },
   {
     "location": "Singapore",
-    "role": "Full-Stack Engineer",
+    "role": "Full-Stack Software Engineer",
     "title": "One X Tech",
     "description": "One X Tech is a business technology partner, focused on building technological innovations for leading enterprises.",
     "date": "May 2022 - June 2023",
     "tools": [
-      "AWS • Next.js • TypeScript",
-      "Turborepo • Node",
-      "NX • DeckGL • Carto.js • Redux"
+      "AWS",
+      "Supabase",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Redux",
+      "Node.js",
+      "Turborepo",
+      "Nx",
+      "Mapbox",
+      "DeckGL"
     ]
   },
   {
     "location": "Jena, Germany",
-    "role": "Software Engineer",
+    "role": "Full-Stack Software Engineer",
     "title": "diva-e",
     "description": "At diva-e, a leading software development service provider, I focused on crafting and enhancing digital experiences to elevate customer interactions. My role primarily involved developing and refining front-end code bases, while also leveraging my back-end expertise. I gained extensive experience working in agile teams and successfully led projects and conducted technical interviews.",
     "date": "November 2019 - May 2022",
     "tools": [
-      "Vue • Angular • TypeScript • RxJs",
-      "Handlebars • Gulp",
-      "OAuth • Data Integration • REST APIs",
-      "Scrum • Jira • Confluence"
-    ]
-  },
-  {
-    "location": "Bangkok, Thailand",
-    "role": "Full-Stack Software Engineer",
-    "title": "Malai Herbal",
-    "description": "Malai Herbal, a beauty business specializing in organic hair products, entrusted me with developing their e-commerce platform from the ground up. I implemented a serverless architecture to ensure scalability and optimized performance. The project involved creating a robust online store complete with comprehensive product administration capabilities.\n\n",
-    "date": "October 2019 - November 2019",
-    "tools": [
-      "Gatsby",
-      "Styled Components",
-      "Netlify & Netlify CMS & Netlify Functions",
-      "AWS DynamoDB & Lambda functions"
+      "Angular",
+      "RxJs",
+      "NgRx",
+      "Handlebars",
+      "Java",
+      "Spring Boot"
     ]
   },
   {
     "location": "Jena, Germany",
     "role": "Full-Stack Software Engineer",
     "title": "Freelancer",
-    "description": "In the final year of my Bachelor's program, I leveraged my self-taught engineering skills as a freelancer. My projects ranged from small bug fixes and developing web scrapers to building a B2C e-commerce platform.",
-    "date": "January 2020 - November 2020",
-    "tools": ["Cheerio / Scrapy", "HTML & CSS3", "React & Gatsby"]
+    "description": "One of the highlights of my freelance work involved designing a scalable application infrastructure and developing a Python-based backend for a cloud-hosted computer vision platform. I also architected and implemented a batch workload processing system tailored for a subscription-based business model, ensuring performance, scalability, and cost-efficiency.\n\n",
+    "date": "January 2018 - November 2020",
+    "tools": ["AWS", "Python"]
   },
   {
     "location": "Bangkok, Thailand",
     "role": "Assistant Manager & Web Developer",
     "title": "Win-Win Asia",
-    "description": "Win-Win Asia is an international tour operator and destination management agency. During my tenure, I primarily managed staff and ensured efficient company operations. Given the seasonal nature of the business, I also had the opportunity to extend and optimize the company's WordPress websites and internal applications.",
+    "description": "As part of the management team at Win-Win Asia, I was responsible for overseeing staff and ensuring smooth day-to-day operations. In addition to my managerial role, I leveraged off-season periods to enhance and optimize the company’s WordPress websites and internal tools, contributing to improved digital performance and operational efficiency.",
     "date": "June 2019 - October 2019",
     "tools": [
-      "Custom Wordpress Development",
-      "Mobile/Responsive Design",
-      "SEO Optimization",
-      "Excel VBA"
+      "WordPress",
+      "PHP",
+      "HTML",
+      "CSS",
+      "JavaScript"
     ]
   }
 ]

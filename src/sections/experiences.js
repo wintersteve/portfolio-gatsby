@@ -51,10 +51,10 @@ function Experiences() {
             <p className="dark:bg-primary-300 dark:text-gray-100 mb-2 md:mb-3 py-4 px-5 relative rounded z-10">
               {experiences[activeTab].description}
             </p>
-            <ul className="list-disc ml-6 lg:ml-6">
+            <ul className="flex ml-2 gap-2 mr-24 flex-wrap">
               {experiences[activeTab].tools.map((tool) => (
                 <li
-                  className="font-medium py-1 text-sm text-gray-600 dark:text-gray-300"
+                  className="px-2.5 py-1.5 text-xs font-bold border-2 border-gray-300  bg-primary-300 dark:text-gray-300 rounded-full"
                   key={tool}
                 >
                   {tool}
