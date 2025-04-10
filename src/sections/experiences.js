@@ -48,10 +48,10 @@ function Experiences() {
               <span className="hidden md:block mx-2">•</span>
               <time>{experiences[activeTab].date}</time>
             </div>
-            <p className="dark:bg-primary-300 dark:text-gray-100 mb-2 md:mb-3 py-4 px-5 relative rounded z-10">
+            <p className="dark:bg-primary-300 dark:text-gray-100 mb-4 py-4 px-5 relative rounded z-10 -mx-2 md:mx-0 leading-6">
               {experiences[activeTab].description}
             </p>
-            <ul className="flex ml-2 gap-2 mr-24 flex-wrap">
+            <ul className="flex gap-2 -mx-1 md:ml-2 md:mr-24 flex-wrap">
               {experiences[activeTab].tools.map((tool) => (
                 <li
                   className="px-2.5 py-1.5 text-xs font-bold border-2 border-gray-300  bg-primary-300 dark:text-gray-300 rounded-full"

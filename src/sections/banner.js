@@ -52,7 +52,7 @@ function Banner() {
           <h2 className="dark:text-white font-semibold md:ml-1 mb-4 opacity-80 text-4xl md:text-6xl">
             Steve Winter
           </h2>
-          <h3 className="bg-secondary-100 dark:bg-primary-300 dark:text-white font-bold mb-6 py-2 px-3 text-2xl md:text-6xl rounded-md w-full md:w-auto">
+          <h3 className="bg-secondary-100 dark:bg-primary-300 dark:text-white font-bold mb-4 md:mb-6 py-2 px-3 text-2xl md:text-6xl rounded-md w-full md:w-auto">
             <span className="block mb-1 md:mb-3">I am a professional</span>
             <span className="opacity-75">Full-Stack Developer</span>
           </h3>

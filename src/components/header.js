@@ -50,7 +50,7 @@ function Header() {
   );
 
   const getShadowClass = useCallback(
-    () => (isInitialPosition || state.isOpen ? "px-7 shadow-none" : "px-9"),
+    () => (isInitialPosition || state.isOpen ? "px-6 shadow-none" : "px-8"),
     [isInitialPosition, state]
   );
 
@@ -63,7 +63,7 @@ function Header() {
     <>
       <header
         className={`
-        dark:bg-primary-200 fixed py-7 md:px-16 lg:px-20 xl:px-32 2xl:px-64 font-bold shadow-lg transform transition-all-no-bg duration-500 top-0 w-full z-30
+        dark:bg-primary-200 fixed py-7 md:px-10 lg:px-20 xl:px-32 2xl:px-64 font-bold shadow-lg transform transition-all-no-bg duration-500 top-0 w-full z-30
           ${getShadowClass()} ${getTranslateClass()} ${getPaddingClass()}
       `}
       >
