@@ -67,7 +67,7 @@ function Projects() {
           </h2>
           <p className="mb-16 dark:text-gray-200 text-gray-500 text-lg">
             Here are some projects I've worked on recently. You would like to
-            see more? Email me.
+            see more? Get in touch.
           </p>
         </div>
         {highlightedProjects.map((project, index) => (

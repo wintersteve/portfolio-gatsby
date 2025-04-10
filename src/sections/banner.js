@@ -20,7 +20,7 @@ function Banner() {
       dataVisualizationIcon: allFile(
         filter: {
           relativeDirectory: { eq: "services" }
-          name: { in: ["nodejs", "go", "python"] }
+          name: { in: ["nodejs", "java", "python"] }
         }
       ) {
         nodes {
@@ -30,7 +30,7 @@ function Banner() {
       designIcon: allFile(
         filter: {
           relativeDirectory: { eq: "services" }
-          name: { in: ["aws", "gcp"] }
+          name: { in: ["aws", "gcp", "kubernetes"] }
         }
       ) {
         nodes {
@@ -58,8 +58,8 @@ function Banner() {
           </h3>
 
           <div className="dark:text-gray-50 max-w-xl ml-1 md:ml-2 mb-6 lg:text-md">
-            I'm a senior software engineer who excels at building digital
-            experiences. Currently, I'm an engineer at{" "}
+            I'm a senior full-stack software engineer who excels at building
+            digital experiences. Currently, I'm an engineer at{" "}
             <a
               href="https://interdiscount.ch/"
               target="_blank"
@@ -116,7 +116,7 @@ function Banner() {
               className="shadow-secondary dark:shadow-primary bg-gray-100 dark:bg-primary-200 px-10 py-6 md:py-20 lg:mb-0"
               imageStyle="w-12 h-12 object-contain"
               images={designIcon.nodes.map((icon) => icon.publicURL)}
-              label="Cloud Architecure"
+              label="CLOUD & DEVOPS"
             />
           </ScrollAnimation>
         </div>

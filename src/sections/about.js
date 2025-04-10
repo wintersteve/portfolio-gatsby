@@ -20,7 +20,7 @@ function About() {
             isClamped ? "line-clamp-10" : "line-clamp-none"
           }`}
         >
-          Five years ago, I embarked on my journey as a software engineer,
+          Seven years ago, I embarked on my journey as a software engineer,
           dedicating countless hours to honing my craft. My passion for creating
           innovative and practical solutions across various domains has been the
           driving force behind my career. I have had the privilege of working

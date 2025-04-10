@@ -10,6 +10,7 @@
         "skills": [
           {"title": "HTML", "value": 100 },
           {"title": "CSS", "value": 100 },
+          {"title": "JavaScript", "value": 100 },
           {"title": "TypeScript", "value": 100 }
         ]
       },
@@ -17,8 +18,8 @@
         "title": "Frameworks",
         "type": "TOOL",
         "skills": [
-          {"title": "Nextjs", "value": 100 },
-          {"title": "Angular", "value": 90 }
+          {"title": "Angular", "value": 90 },
+          {"title": "Nextjs", "value": 100 }
         ]
       },
       {
@@ -34,7 +35,7 @@
         "title": "Monorepos",
         "type": "OTHER",
         "skills": [
-          {"title": "NX", "value": 90 },
+          {"title": "Nx", "value": 90 },
           {"title": "Turborepo", "value": 85 }
         ]
       },
@@ -57,9 +58,9 @@
         "title": "Languages",
         "type": "LANGUAGE",
         "skills": [
+          {"title": "Java", "value": 85 },
           {"title": "Node", "value": 90 },
-          {"title": "Python", "value": 80 },
-          {"title": "Go", "value": 72 }
+          {"title": "Python", "value": 80 }
         ]
       },
       {
@@ -74,6 +75,7 @@
         "title": "Frameworks",
         "type": "FRAMEWORK",
         "skills": [
+          {"title": "Spring Boot", "value": 80 },
           {"title": "Express", "value": 92 },
           {"title": "Nest", "value": 87 }
         ]
@@ -89,9 +91,9 @@
         "title": "Other",
         "type": "OTHER",
         "skills": [
+          {"title": "Microservices", "value": 94 },
           {"title": "REST APIs", "value": 90 },
-          {"title": "GraphQL", "value": 87 },
-          {"title": "WASM", "value": 80 }
+          {"title": "GraphQL", "value": 87 }
         ]
       }
     ]
@@ -114,8 +116,9 @@
         "title": "Containers",
         "type": "TOOL",
         "skills": [
-          {"title": "Docker", "value": 90 },
-          {"title": "Kubernetes", "value": 85 }
+          {"title": "Docker", "value": 94 },
+          {"title": "Kubernetes", "value": 94 },
+          {"title": "ArgoCD", "value": 85 }
         ]
       },
       {
