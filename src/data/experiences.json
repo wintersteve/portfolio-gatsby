@@ -57,8 +57,8 @@
     "role": "Full-Stack Software Engineer",
     "title": "Freelancer",
     "description": "One of the highlights of my freelance work involved designing a scalable application infrastructure and developing a Python-based backend for a cloud-hosted computer vision platform. I also architected and implemented a batch workload processing system tailored for a subscription-based business model, ensuring performance, scalability, and cost-efficiency.\n\n",
-    "date": "January 2018 - November 2020",
-    "tools": ["AWS", "Python"]
+    "date": "January 2019 - November 2020",
+    "tools": ["AWS", "Python", "TypeScript", "React"]
   },
   {
     "location": "Bangkok, Thailand",
